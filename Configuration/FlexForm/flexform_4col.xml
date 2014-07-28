@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.mediumDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <mdCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <default>col-md-3</default>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-md-3)</numIndex>
+                                        <numIndex index="1">col-md-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-md-4)</numIndex>
+                                        <numIndex index="1">col-md-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-md-6)</numIndex>
+                                        <numIndex index="1">col-md-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-md-8)</numIndex>
+                                        <numIndex index="1">col-md-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-md-9)</numIndex>
+                                        <numIndex index="1">col-md-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-md-1)</numIndex>
+                                        <numIndex index="1">col-md-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-md-2)</numIndex>
+                                        <numIndex index="1">col-md-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-md-5)</numIndex>
+                                        <numIndex index="1">col-md-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-md-7)</numIndex>
+                                        <numIndex index="1">col-md-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-md-10)</numIndex>
+                                        <numIndex index="1">col-md-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-md-11)</numIndex>
+                                        <numIndex index="1">col-md-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-md-12)</numIndex>
+                                        <numIndex index="1">col-md-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.special</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-md</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-md</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </mdCol1>
+                    <mdCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <default>col-md-3</default>
+                                <items type="array">
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">25% (col-md-3)</numIndex>
+                                        <numIndex index="1">col-md-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">33% (col-md-4)</numIndex>
+                                        <numIndex index="1">col-md-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">50% (col-md-6)</numIndex>
+                                        <numIndex index="1">col-md-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">66% (col-md-8)</numIndex>
+                                        <numIndex index="1">col-md-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">75% (col-md-9)</numIndex>
+                                        <numIndex index="1">col-md-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">8.3% (col-md-1)</numIndex>
+                                        <numIndex index="1">col-md-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">16.6%  (col-md-2)</numIndex>
+                                        <numIndex index="1">col-md-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">41.6% (col-md-5)</numIndex>
+                                        <numIndex index="1">col-md-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">58.3% (col-md-7)</numIndex>
+                                        <numIndex index="1">col-md-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">83.3% (col-md-10)</numIndex>
+                                        <numIndex index="1">col-md-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">91.6% (col-md-11)</numIndex>
+                                        <numIndex index="1">col-md-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">100% (col-md-12)</numIndex>
+                                        <numIndex index="1">col-md-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.special</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-md</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-md</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </mdCol2>
+                    <mdCol3 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>select</type>
+                                <default>col-md-3</default>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-md-3)</numIndex>
+                                        <numIndex index="1">col-md-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-md-4)</numIndex>
+                                        <numIndex index="1">col-md-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-md-6)</numIndex>
+                                        <numIndex index="1">col-md-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-md-8)</numIndex>
+                                        <numIndex index="1">col-md-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-md-9)</numIndex>
+                                        <numIndex index="1">col-md-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-md-1)</numIndex>
+                                        <numIndex index="1">col-md-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-md-2)</numIndex>
+                                        <numIndex index="1">col-md-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-md-5)</numIndex>
+                                        <numIndex index="1">col-md-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-md-7)</numIndex>
+                                        <numIndex index="1">col-md-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-md-10)</numIndex>
+                                        <numIndex index="1">col-md-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-md-11)</numIndex>
+                                        <numIndex index="1">col-md-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-md-12)</numIndex>
+                                        <numIndex index="1">col-md-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.special</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-md</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-md</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </mdCol3>
+                    <mdCol4 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col4</label>
+                            <config type="array">
+                                <type>select</type>
+                                <default>col-md-3</default>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-md-3)</numIndex>
+                                        <numIndex index="1">col-md-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-md-4)</numIndex>
+                                        <numIndex index="1">col-md-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-md-6)</numIndex>
+                                        <numIndex index="1">col-md-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-md-8)</numIndex>
+                                        <numIndex index="1">col-md-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-md-9)</numIndex>
+                                        <numIndex index="1">col-md-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-md-1)</numIndex>
+                                        <numIndex index="1">col-md-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-md-2)</numIndex>
+                                        <numIndex index="1">col-md-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-md-5)</numIndex>
+                                        <numIndex index="1">col-md-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-md-7)</numIndex>
+                                        <numIndex index="1">col-md-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-md-10)</numIndex>
+                                        <numIndex index="1">col-md-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-md-11)</numIndex>
+                                        <numIndex index="1">col-md-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-md-12)</numIndex>
+                                        <numIndex index="1">col-md-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.special</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-md</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-md</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </mdCol4>
+                </el>
+            </ROOT>
+        </sDEF>
+        <smallDevices>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.smallDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <smCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-sm-3)</numIndex>
+                                        <numIndex index="1">col-sm-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-sm-4)</numIndex>
+                                        <numIndex index="1">col-sm-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-sm-6)</numIndex>
+                                        <numIndex index="1">col-sm-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-sm-8)</numIndex>
+                                        <numIndex index="1">col-sm-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-sm-9)</numIndex>
+                                        <numIndex index="1">col-sm-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-sm-1)</numIndex>
+                                        <numIndex index="1">col-sm-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-sm-2)</numIndex>
+                                        <numIndex index="1">col-sm-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-sm-5)</numIndex>
+                                        <numIndex index="1">col-sm-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-sm-7)</numIndex>
+                                        <numIndex index="1">col-sm-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-sm-10)</numIndex>
+                                        <numIndex index="1">col-sm-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-sm-11)</numIndex>
+                                        <numIndex index="1">col-sm-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-sm-12)</numIndex>
+                                        <numIndex index="1">col-sm-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-sm</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-sm</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </smCol1>
+                    <smCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-sm-3)</numIndex>
+                                        <numIndex index="1">col-sm-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-sm-4)</numIndex>
+                                        <numIndex index="1">col-sm-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-sm-6)</numIndex>
+                                        <numIndex index="1">col-sm-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-sm-8)</numIndex>
+                                        <numIndex index="1">col-sm-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-sm-9)</numIndex>
+                                        <numIndex index="1">col-sm-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-sm-1)</numIndex>
+                                        <numIndex index="1">col-sm-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-sm-2)</numIndex>
+                                        <numIndex index="1">col-sm-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-sm-5)</numIndex>
+                                        <numIndex index="1">col-sm-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-sm-7)</numIndex>
+                                        <numIndex index="1">col-sm-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-sm-10)</numIndex>
+                                        <numIndex index="1">col-sm-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-sm-11)</numIndex>
+                                        <numIndex index="1">col-sm-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-sm-12)</numIndex>
+                                        <numIndex index="1">col-sm-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-sm</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-sm</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </smCol2>
+                    <smCol3 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-sm-3)</numIndex>
+                                        <numIndex index="1">col-sm-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-sm-4)</numIndex>
+                                        <numIndex index="1">col-sm-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-sm-6)</numIndex>
+                                        <numIndex index="1">col-sm-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-sm-8)</numIndex>
+                                        <numIndex index="1">col-sm-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-sm-9)</numIndex>
+                                        <numIndex index="1">col-sm-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-sm-1)</numIndex>
+                                        <numIndex index="1">col-sm-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-sm-2)</numIndex>
+                                        <numIndex index="1">col-sm-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-sm-5)</numIndex>
+                                        <numIndex index="1">col-sm-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-sm-7)</numIndex>
+                                        <numIndex index="1">col-sm-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-sm-10)</numIndex>
+                                        <numIndex index="1">col-sm-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-sm-11)</numIndex>
+                                        <numIndex index="1">col-sm-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-sm-12)</numIndex>
+                                        <numIndex index="1">col-sm-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-sm</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-sm</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </smCol3>
+                    <smCol4 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col4</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-sm-3)</numIndex>
+                                        <numIndex index="1">col-sm-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-sm-4)</numIndex>
+                                        <numIndex index="1">col-sm-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-sm-6)</numIndex>
+                                        <numIndex index="1">col-sm-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-sm-8)</numIndex>
+                                        <numIndex index="1">col-sm-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-sm-9)</numIndex>
+                                        <numIndex index="1">col-sm-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-sm-1)</numIndex>
+                                        <numIndex index="1">col-sm-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-sm-2)</numIndex>
+                                        <numIndex index="1">col-sm-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-sm-5)</numIndex>
+                                        <numIndex index="1">col-sm-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-sm-7)</numIndex>
+                                        <numIndex index="1">col-sm-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-sm-10)</numIndex>
+                                        <numIndex index="1">col-sm-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-sm-11)</numIndex>
+                                        <numIndex index="1">col-sm-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-sm-12)</numIndex>
+                                        <numIndex index="1">col-sm-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-sm</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-sm</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </smCol4>
+                </el>
+            </ROOT>
+        </smallDevices>
+        <extraSmallDevices>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.extraSmallDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <xsCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-xs-3)</numIndex>
+                                        <numIndex index="1">col-xs-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-xs-4)</numIndex>
+                                        <numIndex index="1">col-xs-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-xs-6)</numIndex>
+                                        <numIndex index="1">col-xs-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-xs-8)</numIndex>
+                                        <numIndex index="1">col-xs-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-xs-9)</numIndex>
+                                        <numIndex index="1">col-xs-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-xs-1)</numIndex>
+                                        <numIndex index="1">col-xs-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-xs-2)</numIndex>
+                                        <numIndex index="1">col-xs-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-xs-5)</numIndex>
+                                        <numIndex index="1">col-xs-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-xs-7)</numIndex>
+                                        <numIndex index="1">col-xs-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">58.3% (col-xs-10)</numIndex>
+                                        <numIndex index="1">col-xs-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">58.3% (col-xs-11)</numIndex>
+                                        <numIndex index="1">col-xs-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">58.3% (col-xs-12)</numIndex>
+                                        <numIndex index="1">col-xs-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-xs</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-xs</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </xsCol1>
+                    <xsCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-xs-3)</numIndex>
+                                        <numIndex index="1">col-xs-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-xs-4)</numIndex>
+                                        <numIndex index="1">col-xs-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-xs-6)</numIndex>
+                                        <numIndex index="1">col-xs-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-xs-8)</numIndex>
+                                        <numIndex index="1">col-xs-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-xs-9)</numIndex>
+                                        <numIndex index="1">col-xs-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-xs-1)</numIndex>
+                                        <numIndex index="1">col-xs-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-xs-2)</numIndex>
+                                        <numIndex index="1">col-xs-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-xs-5)</numIndex>
+                                        <numIndex index="1">col-xs-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-xs-7)</numIndex>
+                                        <numIndex index="1">col-xs-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">58.3% (col-xs-10)</numIndex>
+                                        <numIndex index="1">col-xs-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">58.3% (col-xs-11)</numIndex>
+                                        <numIndex index="1">col-xs-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">58.3% (col-xs-12)</numIndex>
+                                        <numIndex index="1">col-xs-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-xs</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-xs</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </xsCol2>
+                    <xsCol3 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-xs-3)</numIndex>
+                                        <numIndex index="1">col-xs-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-xs-4)</numIndex>
+                                        <numIndex index="1">col-xs-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-xs-6)</numIndex>
+                                        <numIndex index="1">col-xs-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-xs-8)</numIndex>
+                                        <numIndex index="1">col-xs-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-xs-9)</numIndex>
+                                        <numIndex index="1">col-xs-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-xs-1)</numIndex>
+                                        <numIndex index="1">col-xs-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-xs-2)</numIndex>
+                                        <numIndex index="1">col-xs-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-xs-5)</numIndex>
+                                        <numIndex index="1">col-xs-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-xs-7)</numIndex>
+                                        <numIndex index="1">col-xs-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">58.3% (col-xs-10)</numIndex>
+                                        <numIndex index="1">col-xs-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">58.3% (col-xs-11)</numIndex>
+                                        <numIndex index="1">col-xs-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">58.3% (col-xs-12)</numIndex>
+                                        <numIndex index="1">col-xs-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-xs</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-xs</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </xsCol3>
+                    <xsCol4 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col4</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-xs-3)</numIndex>
+                                        <numIndex index="1">col-xs-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-xs-4)</numIndex>
+                                        <numIndex index="1">col-xs-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-xs-6)</numIndex>
+                                        <numIndex index="1">col-xs-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-xs-8)</numIndex>
+                                        <numIndex index="1">col-xs-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-xs-9)</numIndex>
+                                        <numIndex index="1">col-xs-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-xs-1)</numIndex>
+                                        <numIndex index="1">col-xs-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6%  (col-xs-2)</numIndex>
+                                        <numIndex index="1">col-xs-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-xs-5)</numIndex>
+                                        <numIndex index="1">col-xs-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-xs-7)</numIndex>
+                                        <numIndex index="1">col-xs-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">58.3% (col-xs-10)</numIndex>
+                                        <numIndex index="1">col-xs-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">58.3% (col-xs-11)</numIndex>
+                                        <numIndex index="1">col-xs-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">58.3% (col-xs-12)</numIndex>
+                                        <numIndex index="1">col-xs-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-xs</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-xs</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </xsCol4>
+                </el>
+            </ROOT>
+        </extraSmallDevices>
+        <largeDevices>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.largeDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <lgCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-lg-3)</numIndex>
+                                        <numIndex index="1">col-lg-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-lg-4)</numIndex>
+                                        <numIndex index="1">col-lg-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-lg-6)</numIndex>
+                                        <numIndex index="1">col-lg-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-lg-8)</numIndex>
+                                        <numIndex index="1">col-lg-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-lg-9)</numIndex>
+                                        <numIndex index="1">col-lg-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-lg-1)</numIndex>
+                                        <numIndex index="1">col-lg-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6% (col-lg-2)</numIndex>
+                                        <numIndex index="1">col-lg-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-lg-5)</numIndex>
+                                        <numIndex index="1">col-lg-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-lg-7)</numIndex>
+                                        <numIndex index="1">col-lg-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-lg-10)</numIndex>
+                                        <numIndex index="1">col-lg-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-lg-11)</numIndex>
+                                        <numIndex index="1">col-lg-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-lg-12)</numIndex>
+                                        <numIndex index="1">col-lg-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-lg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-lg</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </lgCol1>
+                    <lgCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-lg-3)</numIndex>
+                                        <numIndex index="1">col-lg-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-lg-4)</numIndex>
+                                        <numIndex index="1">col-lg-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-lg-6)</numIndex>
+                                        <numIndex index="1">col-lg-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-lg-8)</numIndex>
+                                        <numIndex index="1">col-lg-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-lg-9)</numIndex>
+                                        <numIndex index="1">col-lg-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-lg-1)</numIndex>
+                                        <numIndex index="1">col-lg-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6% (col-lg-2)</numIndex>
+                                        <numIndex index="1">col-lg-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-lg-5)</numIndex>
+                                        <numIndex index="1">col-lg-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-lg-7)</numIndex>
+                                        <numIndex index="1">col-lg-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-lg-10)</numIndex>
+                                        <numIndex index="1">col-lg-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-lg-11)</numIndex>
+                                        <numIndex index="1">col-lg-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-lg-12)</numIndex>
+                                        <numIndex index="1">col-lg-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-lg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-lg</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </lgCol2>
+                    <lgCol3 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-lg-3)</numIndex>
+                                        <numIndex index="1">col-lg-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-lg-4)</numIndex>
+                                        <numIndex index="1">col-lg-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-lg-6)</numIndex>
+                                        <numIndex index="1">col-lg-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-lg-8)</numIndex>
+                                        <numIndex index="1">col-lg-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-lg-9)</numIndex>
+                                        <numIndex index="1">col-lg-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-lg-1)</numIndex>
+                                        <numIndex index="1">col-lg-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6% (col-lg-2)</numIndex>
+                                        <numIndex index="1">col-lg-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-lg-5)</numIndex>
+                                        <numIndex index="1">col-lg-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-lg-7)</numIndex>
+                                        <numIndex index="1">col-lg-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-lg-10)</numIndex>
+                                        <numIndex index="1">col-lg-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-lg-11)</numIndex>
+                                        <numIndex index="1">col-lg-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-lg-12)</numIndex>
+                                        <numIndex index="1">col-lg-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-lg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-lg</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </lgCol3>
+                    <lgCol4 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col4</label>
+                            <config type="array">
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">25% (col-lg-3)</numIndex>
+                                        <numIndex index="1">col-lg-3</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">33% (col-lg-4)</numIndex>
+                                        <numIndex index="1">col-lg-4</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">50% (col-lg-6)</numIndex>
+                                        <numIndex index="1">col-lg-6</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">66% (col-lg-8)</numIndex>
+                                        <numIndex index="1">col-lg-8</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">75% (col-lg-9)</numIndex>
+                                        <numIndex index="1">col-lg-9</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreWidth</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">8.3% (col-lg-1)</numIndex>
+                                        <numIndex index="1">col-lg-1</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">16.6% (col-lg-2)</numIndex>
+                                        <numIndex index="1">col-lg-2</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">41.6% (col-lg-5)</numIndex>
+                                        <numIndex index="1">col-lg-5</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">58.3% (col-lg-7)</numIndex>
+                                        <numIndex index="1">col-lg-7</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">83.3% (col-lg-10)</numIndex>
+                                        <numIndex index="1">col-lg-10</numIndex>
+                                    </numIndex>
+                                    <numIndex index="12" type="array">
+                                        <numIndex index="0">91.6% (col-lg-11)</numIndex>
+                                        <numIndex index="1">col-lg-11</numIndex>
+                                    </numIndex>
+                                    <numIndex index="13" type="array">
+                                        <numIndex index="0">100% (col-lg-12)</numIndex>
+                                        <numIndex index="1">col-lg-12</numIndex>
+                                    </numIndex>
+                                    <numIndex index="14" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions</numIndex>
+                                        <numIndex index="1">--div--</numIndex>
+                                    </numIndex>
+                                    <numIndex index="15" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden</numIndex>
+                                        <numIndex index="1">hidden-lg</numIndex>
+                                    </numIndex>
+                                    <numIndex index="16" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible</numIndex>
+                                        <numIndex index="1">visible-lg</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </lgCol4>
+                </el>
+            </ROOT>
+        </largeDevices>
+        <customClasses>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.customClasses</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <col41class type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </col41class>
+                    <col42class type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </col42class>
+                    <col43class type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </col43class>
+                    <col44class type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col4</label>
+                            <config type="array">
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </col44class>
+                </el>
+            </ROOT>
+        </customClasses>
+    </sheets>
+</T3DataStructure>
