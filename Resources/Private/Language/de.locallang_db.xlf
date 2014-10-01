@@ -3,6 +3,52 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2013-07-31T17:45:59Z" product-name="bootstrap_grids">
         <header/>
         <body>
+            <trans-unit id="celayout.leftColumn" xml:space="preserve" approved="yes">
+				<source>Left column</source><target state="translated">Spalte links</target>
+            </trans-unit>
+            <trans-unit id="celayout.rightColumn" xml:space="preserve" approved="yes">
+				<source>Right column</source><target state="translated">Spalte rechts</target>
+            </trans-unit>
+            <trans-unit id="celayout.centerColumn" xml:space="preserve" approved="yes">
+				<source>Center column</source><target state="translated">Mittlere Spalte</target>
+            </trans-unit>
+            <trans-unit id="celayout.column2" xml:space="preserve" approved="yes">
+				<source>2nd column</source><target state="translated">2. Spalte</target>
+            </trans-unit>
+            <trans-unit id="celayout.column3" xml:space="preserve" approved="yes">
+				<source>3rd column</source><target state="translated">3. Spalte</target>
+            </trans-unit>
+            <trans-unit id="celayout.tabElements" xml:space="preserve" approved="yes">
+				<source>Tab elements</source><target state="translated">Tab Elemente</target>
+            </trans-unit>
+            <trans-unit id="celayout.tab1" xml:space="preserve" approved="yes">
+				<source>Tab 1</source><target state="translated">Inhalt Tab 1</target>
+            </trans-unit>
+            <trans-unit id="celayout.tab2" xml:space="preserve" approved="yes">
+				<source>Tab 2</source><target state="translated">Inhalt Tab 2</target>
+            </trans-unit>
+            <trans-unit id="celayout.tab3" xml:space="preserve" approved="yes">
+				<source>Tab 3</source><target state="translated">Inhalt Tab 3</target>
+            </trans-unit>
+            <trans-unit id="celayout.tab4" xml:space="preserve" approved="yes">
+				<source>Tab 4</source><target state="translated">Inhalt Tab 4</target>
+            </trans-unit>
+            <trans-unit id="celayout.tab5" xml:space="preserve" approved="yes">
+				<source>Tab 5</source><target state="translated">Inhalt Tab 5</target>
+            </trans-unit>
+            <trans-unit id="celayout.tab6" xml:space="preserve" approved="yes">
+				<source>Tab 6</source><target state="translated">Inhalt Tab 6</target>
+            </trans-unit>
+            <trans-unit id="celayout.accordionElements" xml:space="preserve" approved="yes">
+				<source>Accordion elements</source><target state="translated">Accordion Elemente</target>
+            </trans-unit>
+            <trans-unit id="celayout.sliderElements" xml:space="preserve" approved="yes">
+				<source>Slider elements</source><target state="translated">Slider Elemente</target>
+            </trans-unit>
+            <trans-unit id="celayout.columnElements" xml:space="preserve" approved="yes">
+				<source>Column elements</source><target state="translated">Spaltenelemente</target>
+            </trans-unit>
+
             <trans-unit id="grid.sheet.mediumDevices" xml:space="preserve" approved="yes">
 				<source>Desktop (&gt;=992px)</source>
 			<target state="translated">Desktop (&gt;=992px)</target></trans-unit>

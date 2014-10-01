@@ -1,0 +1,2 @@
+.. |img-screenshot|      image:: ../Images/Screenshot.png
+.. :align: left
