@@ -1,84 +1,41 @@
 
 /** ------------------------------------------------
-* General config
-*/
+ * General config
+ */
 # Remove 2nd column from defaultGridSeetup, colpos 101, 102 are used
 lib.gridelements.defaultGridSetup.columns.2 >
 
-
 /** ------------------------------------------------
-* Grid definitions
-*/
+ * Grid definitions
+ */
 lib.bootstrap_grids {
 
     # Column grids
     2cols < lib.gridelements.defaultGridSetup
     2cols {
-        # row wrap
         wrap = <div class="row">|</div>
-        /*
-        wrap.stdWrap.cObject = CASE
-        wrap.stdWrap.cObject {
-            key.field = flexform_rowclass2
-            default = TEXT
-            default.value = <div class="row">|</div>
-            special1 = TEXT
-            special1.value = <div class="row special">|</div>
-        }
-        */
-
         columns {
             101 < .default
             101.wrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
             101.insertData = 1
-            /*
-            101.wrap.stdWrap.cObject = CASE
-            101.wrap.stdWrap.cObject {
-                key.field = flexform_col21style
-                default = TEXT
-                default.value = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
-                default.insertData = 1
-            }
-            */
             102 < .101
             102.wrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
-            /*
-            102.wrap.stdWrap.cObject {
-                key.field = flexform_col22style
-                default.value = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
-            }
-            */
         }
     }
-
-    3cols < lib.gridelements.defaultGridSetup
+    3cols < .2cols
     3cols {
-        # row wrap
-        wrap = <div class="row">|</div>
-
         columns {
-            101 < .default
             101.wrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
-            101.insertData = 1
-            102 < .101
             102.wrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
             103 < .101
             103.wrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
         }
     }
-
-    4cols < lib.gridelements.defaultGridSetup
+    4cols < .3cols
     4cols {
-        # row wrap
-        wrap = <div class="row">|</div>
-
         columns {
-            101 < .default
             101.wrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
-            101.insertData = 1
-            102 < .101
             102.wrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
-            103 < .101
             103.wrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
             104 < .101
             104.wrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
@@ -88,14 +45,11 @@ lib.bootstrap_grids {
     # Tabs
     simpleTabs < lib.gridelements.defaultGridSetup
     simpleTabs {
-        # style wrap
         outerWrap = <div class="{field:flexform_style}">|</div>
         outerWrap.insertData = 1
 
-        prepend = COA
+        prepend = CONTENT
         prepend {
-          10 = CONTENT
-          10 {
             table = tt_content
             select {
               selectFields = header, uid, tx_gridelements_container, sorting
@@ -104,9 +58,7 @@ lib.bootstrap_grids {
               andWhere.insertData = 1
               orderBy = sorting
             }
-
             wrap = <ul class="nav nav-tabs">|</ul>
-
             renderObj = COA
             renderObj {
               5 = LOAD_REGISTER
@@ -124,7 +76,6 @@ lib.bootstrap_grids {
                 outerWrap.cObject = CASE
                 outerWrap.cObject {
                   key.data = register:TabCount
-                  #key.field = sorting
                   default = TEXT
                   default.value = <li id="tab-element-{field:uid}">|</li>
                   1 = TEXT
@@ -132,24 +83,12 @@ lib.bootstrap_grids {
                 }
               }
             }
-
-          }
         }
 
         columns {
-
             101 < .default
             101 {
                 wrap = <div class="tab-content">|</div>
-                table = tt_content
-                select {
-                    selectFields = tx_gridelements_container, sorting
-                    where = 1=1
-                    andWhere = uid={field:uid}
-                    andWhere.insertData = 1
-                    orderBy = sorting
-                }
-
                 renderObj {
                     5 = LOAD_REGISTER
                     5 {
@@ -162,13 +101,11 @@ lib.bootstrap_grids {
                     stdWrap.outerWrap.cObject = CASE
                     stdWrap.outerWrap.cObject {
                         key.data = register:TabCount2
-                        #key.field = sorting
                         default = TEXT
                         default.value = <div class="tab-pane fade" id="tab-{field:uid}">|</div>
                         1 = TEXT
                         1.value = <div class="tab-pane fade active in" id="tab-{field:uid}">|</div>
                     }
-
                     # don't show headers in tabs
                     #20 =< tt_content
                     20 < tt_content
@@ -205,30 +142,24 @@ lib.bootstrap_grids {
             20 < .10
             20.value = <li><a href="#tab2-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle2}</a></li>
             20.if.isTrue.field = flexform_tabTitle2
-
             30 < .10
             30.value = <li><a href="#tab3-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle3}</a></li>
             30.if.isTrue.field = flexform_tabTitle3
-
             40 < .10
             40.value = <li><a href="#tab4-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle4}</a></li>
             40.if.isTrue.field = flexform_tabTitle4
         }
-
         wrap = <div class="tab-content">|</div>
         columns {
-
             101 < .default
             101.wrap = <div class="tab-pane fade active in" id="tab1-{field:uid}">|</div>
             101.wrap.insertData = 1
             102 < .101
             102.wrap = <div class="tab-pane fade" id="tab2-{field:uid}">|</div>
             102.if.isTrue.field = flexform_tabTitle2
-
             103 < .101
             103.wrap = <div class="tab-pane fade" id="tab3-{field:uid}">|</div>
             103.if.isTrue.field = flexform_tabTitle3
-
             104 < .101
             104.wrap = <div class="tab-pane fade" id="tab4-{field:uid}">|</div>
             104.if.isTrue.field = flexform_tabTitle4
@@ -271,14 +202,13 @@ lib.bootstrap_grids {
         }
         outerWrap.insertData = 1
 
-
         columns {
             101 < .default
             101 {
                 renderObj {
-
                     stdWrap.outerWrap = <div class="panel panel-default">|</div>
 
+                    # thanks to Josef Körner (brandical.de) for simplification
                     5 = LOAD_REGISTER
                     5 {
                         AccordionCount.cObject = TEXT
@@ -286,32 +216,15 @@ lib.bootstrap_grids {
                         AccordionCount.cObject.wrap = |+1
                         AccordionCount.prioriCalc = intval
                     }
-
-                    10 = CONTENT
+                    10 = TEXT
                     10 {
-                        table = tt_content
-                        select {
-                            selectFields = header, uid, tx_gridelements_container
-                            where = 1=1
-                            andWhere = uid={field:uid}
-                            andWhere.insertData = 1
-                            orderBy = sorting
-                        }
-
-                        renderObj = COA
-                        renderObj {
-                            10 = TEXT
-                            10 {
-                                field = header
-                                insertData = 1
-                                wrap          = <div class="panel-heading"><a class="accordion-toggle" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" data-toggle="collapse"><h4>|</h4></a></div><div id="collapse-{field:uid}" class="panel-collapse collapse"><div class="panel-body">
-                                wrap.override = <div class="panel-heading"><a class="accordion-toggle" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" data-toggle="collapse"><h4>|</h4></a></div><div id="collapse-{field:uid}" class="panel-collapse collapse in"><div class="panel-body">
-                                wrap.override.if.value = 1
-                                wrap.override.if.equals.data = register:AccordionCount
-                            }
-                        }
+                        field = header
+                        insertData = 1
+                        wrap          = <div class="panel-heading"><a class="accordion-toggle" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" data-toggle="collapse"><h4>|</h4></a></div><div id="collapse-{field:uid}" class="panel-collapse collapse"><div class="panel-body">
+                        wrap.override = <div class="panel-heading"><a class="accordion-toggle" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" data-toggle="collapse"><h4>|</h4></a></div><div id="collapse-{field:uid}" class="panel-collapse collapse in"><div class="panel-body">
+                        wrap.override.if.value = 1
+                        wrap.override.if.equals.data = register:AccordionCount
                     }
-
                     # don't show headers in accordion
                     #20 =< tt_content
                     20 < tt_content
@@ -327,7 +240,6 @@ lib.bootstrap_grids {
                         menu.10 >
                         videoce_videocontent.10 >
                     }
-
                     30 = TEXT
                     30.wrap = |</div></div>
                 }
@@ -340,11 +252,7 @@ lib.bootstrap_grids {
     slider {
         columns {
             101 < .default
-            101 {
-                renderObj {
-                    wrap = <li>|</li>
-                }
-            }
+            101.renderObj.wrap = <li>|</li>
             101.wrap (
                 <div class="flexslider" id="flexslider{field:uid}">
                     <ul class="slides">|</ul>
@@ -376,10 +284,8 @@ lib.bootstrap_grids {
             30.insertData = 1
             30.value (
                 direction: "{field:flexform_direction}", slideshowSpeed: {field:flexform_slidespeed},
-                animation: "{field:flexform_animation}", animationSpeed: {field:flexform_animationspeed},
-                animationLoop: {field:flexform_animationloop}, useCSS: false,
-                controlNav: {field:flexform_showcontrolnav}, directionNav: {field:flexform_showdirnav},
-                pausePlay: {field:flexform_showpause}, pauseOnHover: {field:flexform_pauseonhover},
+                animation: "{field:flexform_animation}", animationSpeed: {field:flexform_animationspeed}, animationLoop: {field:flexform_animationloop}, useCSS: false,
+                controlNav: {field:flexform_showcontrolnav}, directionNav: {field:flexform_showdirnav}, pausePlay: {field:flexform_showpause}, pauseOnHover: {field:flexform_pauseonhover},
                 initDelay: {field:flexform_initdelay}, randomize: {field:flexform_randomize}, reverse: {field:flexform_reverse}
             )
             40 = TEXT
@@ -387,7 +293,6 @@ lib.bootstrap_grids {
         }
 
     }
-
 
     # simple row for content elements and usage with ext:bscolwrap
     simpleRow < lib.gridelements.defaultGridSetup
@@ -403,10 +308,9 @@ lib.bootstrap_grids {
 
 }
 
-
 /** ------------------------------------------------
-* Assign grid definitions to grid uids
-*/
+ * Assign grid definitions to grid uids
+ */
 tt_content.gridelements_pi1.20.10.setup {
     # grid/cols
     1 < lib.bootstrap_grids.2cols
@@ -431,7 +335,6 @@ tt_content.gridelements_pi1.20.10.setup {
     # e.g. for 8 25%-cols (usage with extra col-fields in content elements)
     9 < lib.bootstrap_grids.simpleRow
 }
-
 
 /** ------------------------------------------------
  * CSS and JS for flexslider (content slider grid)
