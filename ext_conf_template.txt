@@ -1,0 +1,9 @@
+
+# cat=basic; type=boolean; label=Enable the row grid element.:Useful only with custom grids or ext:bscolwrap.
+enableGridSimpleRow = 0
+
+# cat=basic; type=boolean; label=Use gridelements defined as records (as of version 1.0.x):No grids will be defined via pageTS. You have to include the additional static template for the -assignent of the rendering to the grid uids (1-9).
+useOldRecordIds = 0
+
+
+
