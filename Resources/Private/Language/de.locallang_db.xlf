@@ -1,8 +1,37 @@
 <?xml version='1.0' encoding='utf-8'?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2013-07-31T17:45:59Z" product-name="bootstrap_grids">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-02-07T00:02:05Z" product-name="bootstrap_grids">
         <header/>
         <body>
+            <trans-unit id="2cols.title" xml:space="preserve" approved="yes">
+				<source>2 columns</source><target state="translated">2 Spalten</target>
+			</trans-unit>
+            <trans-unit id="3cols.title" xml:space="preserve" approved="yes">
+				<source>3 columns</source><target state="translated">3 Spalten</target>
+			</trans-unit>
+            <trans-unit id="4cols.title" xml:space="preserve" approved="yes">
+				<source>4 columns</source><target state="translated">4 Spalten</target>
+			</trans-unit>
+            <trans-unit id="tabsSimple.title" xml:space="preserve" approved="yes">
+				<source>Tabs from content</source><target state="translated">Tabs aus dem Inhalt</target>
+			</trans-unit>
+            <trans-unit id="tabs4.title" xml:space="preserve" approved="yes">
+				<source>Tabs (4)</source><target state="translated">Tabs (4)</target>
+			</trans-unit>
+            <trans-unit id="tabs6.title" xml:space="preserve" approved="yes">
+				<source>Tabs (6)</source><target state="translated">Tabs (6)</target>
+			</trans-unit>
+            <trans-unit id="accordion.title" xml:space="preserve" approved="yes">
+				<source>Accordion from content</source><target state="translated">Accordion aus dem Inhalt</target>
+			</trans-unit>
+            <trans-unit id="slider.title" xml:space="preserve" approved="yes">
+				<source>Content slider</source><target state="translated">Slider aus dem Inhalt</target>
+			</trans-unit>
+
+            <trans-unit id="xSimpleRow.title" xml:space="preserve" approved="yes">
+				<source>Row</source><target state="translated">Zeile</target>
+			</trans-unit>
+
             <trans-unit id="celayout.leftColumn" xml:space="preserve" approved="yes">
 				<source>Left column</source><target state="translated">Spalte links</target>
             </trans-unit>
