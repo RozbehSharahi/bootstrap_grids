@@ -1,0 +1,27 @@
+
+/** ------------------------------------------------
+* Assign grid rendering to layout record uids
+*/
+tt_content.gridelements_pi1.20.10.setup {
+    # remove default named versions
+    2cols >
+    3cols >
+    4cols >
+    accordion >
+    slider >
+    tabsSimple >
+    tabs4 >
+    tabs6 >
+    xSimpleRow >
+
+    1 < lib.bootstrap_grids.2cols
+    2 < lib.bootstrap_grids.3cols
+    3 < lib.bootstrap_grids.4cols
+    4 < lib.bootstrap_grids.simpleTabs
+    5 < lib.bootstrap_grids.4tabs
+    6 < lib.bootstrap_grids.6tabs
+    7 < lib.bootstrap_grids.accordion
+    8 < lib.bootstrap_grids.slider
+
+    9 < lib.bootstrap_grids.simpleRow
+}

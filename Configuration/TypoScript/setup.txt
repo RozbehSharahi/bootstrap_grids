@@ -305,41 +305,29 @@ lib.bootstrap_grids {
             111.wrap = |
         }
     }
-
 }
+
 
 /** ------------------------------------------------
- * Assign grid definitions to grid uids
- */
+* Assign grid rendering to layout ids (names)
+*/
 tt_content.gridelements_pi1.20.10.setup {
-    # grid/cols
-    1 < lib.bootstrap_grids.2cols
-    2 < lib.bootstrap_grids.3cols
-    3 < lib.bootstrap_grids.4cols
-
-    # simple content tabs (each elem a tab)
-    4 < lib.bootstrap_grids.simpleTabs
-
-    # max 4 tabs, each a content slot, separate field for title
-    5 < lib.bootstrap_grids.4tabs
-
-    # max 6 tabs, each a content slot, separate field for title
-    6 < lib.bootstrap_grids.6tabs
-
-    # simple accordion
-    7 < lib.bootstrap_grids.accordion
-
-    # simple content slider
-    8 < lib.bootstrap_grids.slider
-
-    # e.g. for 8 25%-cols (usage with extra col-fields in content elements)
-    9 < lib.bootstrap_grids.simpleRow
+    2cols < lib.bootstrap_grids.2cols
+    3cols < lib.bootstrap_grids.3cols
+    4cols < lib.bootstrap_grids.4cols
+    accordion < lib.bootstrap_grids.accordion
+    slider < lib.bootstrap_grids.slider
+    tabsSimple < lib.bootstrap_grids.simpleTabs
+    tabs4 < lib.bootstrap_grids.4tabs
+    tabs6 < lib.bootstrap_grids.6tabs
+    xSimpleRow < lib.bootstrap_grids.simpleRow
 }
+
 
 /** ------------------------------------------------
  * CSS and JS for flexslider (content slider grid)
  */
 page {
-    includeCSS.flexslider2 = /typo3conf/ext/bootstrap_grids/Resources/Public/Flexslider2/css/flexslider.css
+    includeCSS.flexslider2 = /typo3conf/ext/bootstrap_grids/Resources/Public/Flexslider2/flexslider.css
     includeJSFooterlibs.flexslider2 = /typo3conf/ext/bootstrap_grids/Resources/Public/Flexslider2/jquery.flexslider-min.js
 }
