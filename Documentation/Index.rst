@@ -1,38 +1,26 @@
-..  Editor configuration
-...................................................
-* utf-8 with BOM as encoding
-* tab indent with 4 characters for code snippet.
-* optional: soft carriage return preferred.
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
 
-.. Includes roles, substitutions, ...
 .. include:: Includes.txt
+.. include:: Images.txt
 
 
-
-=====================
 Grids for bootstrap
-=====================
+===================
 
-:Extension key: bootstrap_grids
+:Keywords: forEditors, forAdmins, forDevelopers
 :Author: Pascal Mayer
-:Email: typo3@simple.ch
+:Email: typo3@bsdist.ch
 :Language: en
+:Rendered: |today|
 
 
-This document is published under the Open Content License
+|img-1| |img-2| Grids for Bootstrap
 
-available from http://www.opencontent.org/opl.shtml
-
-The content of this document is related to TYPO3
-
-\- a GNU/GPL CMS/Framework available from www.typo3.org
-
-
-**Table of Contents**
 
 .. toctree::
    :maxdepth: 5
 
-   Introduction/Index
-   Administration/Index
-   Configuration/Index
+   Main/Index

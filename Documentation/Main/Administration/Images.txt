@@ -3,6 +3,3 @@
 
 .. |img-import1|      image:: ../Images/Administration/Import1.png
 .. :align: left
-
-.. |img-import2|      image:: ../Images/Administration/Import2.png
-.. :align: left
