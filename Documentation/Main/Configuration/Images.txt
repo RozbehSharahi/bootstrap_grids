@@ -1,2 +1,5 @@
+.. |img-extconf|      image:: ../Images/Configuration/extconfig.png
+.. :align: left
+
 .. |img-includestatic2|      image:: ../Images/Configuration/IncludeStatic2.png
 .. :align: left
