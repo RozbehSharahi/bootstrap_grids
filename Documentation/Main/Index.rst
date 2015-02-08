@@ -9,14 +9,14 @@
 Grids for bootstrap
 ===================
 
-Extension Key: news
+Extension Key: bootstrap_grids
 
 :Language: en
 :Keywords: forEditors, forAdmins, forDevelopers
 
-Copyright 2013-2014, Pascal Mayer, <typo3@simple.ch>
+Copyright 2013-2014, Pascal Mayer <typo3@simple.ch>
 
-Copyright 2015, Pascal Mayer, <typo3@bsdist.ch>
+Copyright 2015, |author|
 
 This document is published under the Open Content License
 

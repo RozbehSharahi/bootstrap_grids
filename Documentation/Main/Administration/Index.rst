@@ -20,9 +20,11 @@ Installation
 
 |img-includestatic|
 
+Done. The grid elements should be available now.
 
-Import gridelements (old)
--------------------------
+
+Import gridelement records (old)
+--------------------------------
 
 **Not required anymore**: The gridelements are defined in pageTS and loaded automatically.
 

@@ -11,8 +11,7 @@ Grids for bootstrap
 ===================
 
 :Keywords: forEditors, forAdmins, forDevelopers
-:Author: Pascal Mayer
-:Email: typo3@bsdist.ch
+:Author: |author|
 :Language: en
 :Rendered: |today|
 

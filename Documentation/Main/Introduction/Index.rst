@@ -28,6 +28,8 @@ Grid elements included in the extension.
 Credits
 -------
 
-Special thanks goes to Daniel Corn (cundd.net). Defining the grids via pageTS brings alot of advantages.
+Special thanks goes to
 
-Another big thank you goes to Josef Körner (brandical.de) for reducing the accordion typoscript setup.
+- Daniel Corn (cundd.net): Defining the grids via pageTS brings a lot of advantages.
+
+- Josef Körner (brandical.de) for reducing the accordion typoscript setup.
