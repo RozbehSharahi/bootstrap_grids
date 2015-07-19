@@ -16,29 +16,29 @@ lib.bootstrap_grids {
         wrap = <div class="row">|</div>
         columns {
             101 < .default
-            101.wrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
-            101.insertData = 1
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
+            101.wrap >
             102 < .101
-            102.wrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
         }
     }
     3cols < .2cols
     3cols {
         columns {
-            101.wrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
-            102.wrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
             103 < .101
-            103.wrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
+            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
         }
     }
     4cols < .3cols
     4cols {
         columns {
-            101.wrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
-            102.wrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
-            103.wrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
+            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
             104 < .101
-            104.wrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
+            104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
         }
     }
 
