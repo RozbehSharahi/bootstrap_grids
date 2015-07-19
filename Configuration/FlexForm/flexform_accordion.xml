@@ -7,18 +7,18 @@
         <sDEF>
             <ROOT type="array">
                 <TCEforms>
-                    <sheetTitle>LLL:EXT:bootstrap_core/Resources/Private/Language/locallang.xlf:grid.sheet.layout</sheetTitle>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
                 </TCEforms>
                 <type>array</type>
                 <el type="array">
                     <rowclass type="array">
                         <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_core/Resources/Private/Language/locallang.xlf:grid.label.style</label>
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.style</label>
                             <config type="array">
                                 <type>select</type>
                                 <items type="array">
                                     <numIndex index="0" type="array">
-                                        <numIndex index="0">LLL:EXT:bootstrap_core/Resources/Private/Language/locallang.xlf:grid.label.none</numIndex>
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.none</numIndex>
                                         <numIndex index="1"></numIndex>
                                     </numIndex>
                                 </items>

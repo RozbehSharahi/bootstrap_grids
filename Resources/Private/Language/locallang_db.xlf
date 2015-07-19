@@ -215,6 +215,9 @@
             <trans-unit id="grid.sheet.layout" xml:space="preserve">
 				<source>Layout</source>
 			</trans-unit>
+			<trans-unit id="grid.label.style" xml:space="preserve">
+				<source>Style</source>
+			</trans-unit>
 			<trans-unit id="grid.label.tabStyle" xml:space="preserve">
 				<source>Style</source>
 			</trans-unit>
