@@ -72,7 +72,7 @@ lib.bootstrap_grids {
               10 {
                 field = header
                 insertData = 1
-                wrap = <a href="#tab-{field:uid}" data-toggle="tab">|</a>
+                wrap = <a href="#tab-{field:uid}" role="tab" data-toggle="tab">|</a>
                 outerWrap.cObject = CASE
                 outerWrap.cObject {
                   key.data = register:TabCount
