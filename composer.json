@@ -1,0 +1,19 @@
+{
+  "name": "laxap/bootstrap_grids",
+  "description": "Gridelements for bootstrap. Column grids, grids for simple accordions, tabs and content slider.",
+  "version": "1.1.4",
+  "type": "typo3-cms-extension",
+  "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "bsdist", "gridelements"],
+  "homepage": "http://www.bsdist.ch",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Pascal Mayer",
+      "email": "typo3@bsdist.ch",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.7"
+  },
+}

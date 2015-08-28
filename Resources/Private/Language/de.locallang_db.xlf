@@ -90,6 +90,9 @@
             <trans-unit id="grid.sheet.largeDevices" xml:space="preserve" approved="yes">
 				<source>Large (&gt;=1200px)</source>
 			<target state="translated">Grosse Screens (&gt;=1200px)</target></trans-unit>
+            <trans-unit id="grid.sheet.extraLargeDevices" xml:space="preserve" approved="yes">
+				<source>Large (&gt;=75em)</source>
+			<target state="translated">Grosse Screens (&gt;=1200px)</target></trans-unit>
             <trans-unit id="grid.sheet.customClasses" xml:space="preserve" approved="yes">
 				<source>Custom classes</source>
 			<target state="translated">Weitere class-Attribute</target></trans-unit>
