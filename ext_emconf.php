@@ -12,7 +12,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'author_email' => 'typo3@bsdist.ch',
 	'author_company' => '',
 	'shy' => '',
-	'version' => '1.1.4-dev',
+	'version' => '1.1.4',
 	'priority' => '',
 	'module' => '',
 	'state' => 'beta',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'lockType' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.2.0-7.4.99',
+			'typo3' => '6.2.0-7.6.99',
 			'gridelements' => '3.0.0-0.0.0',
 		),
 		'conflicts' => array(

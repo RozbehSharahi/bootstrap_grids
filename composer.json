@@ -5,5 +5,12 @@
   "description": "Gridelements for bootstrap. Column grids, grids for simple accordions, tabs and content slider.",
   "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "bsdist", "gridelements"],
   "homepage": "http://www.bsdist.ch",
-  "license": ["GPL-2.0"]
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Pascal Mayer",
+      "email": "typo3@bsdist.ch",
+      "role": "Developer"
+    }
+  ]
 }
