@@ -196,9 +196,9 @@ lib.bootstrap_grids {
         outerWrap.stdWrap.cObject {
             key.field = flexform_rowclass
             default = TEXT
-            default.value = <div class="panel-group" id="accordion-{field:uid}">|</div>
+            default.value = <div class="panel-group" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div>
             #acc = TEXT
-            #acc.value = <div class="tabs"><div class="accordion" id="accordion-{field:uid}">|</div></div>
+            #acc.value = <div class="tabs"><div class="accordion" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div></div>
         }
         outerWrap.insertData = 1
 
