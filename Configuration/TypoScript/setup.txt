@@ -17,28 +17,42 @@ lib.bootstrap_grids {
         columns {
             101 < .default
             101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
+            # override if none set (supporting drag&drop)
+            101.dataWrap.override = <div class="col-md-6">|</div>
+            101.dataWrap.override.if.isNull.field = flexform_mdCol1
             101.wrap >
             102 < .101
             102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
+            102.dataWrap.override = <div class="col-md-6">|</div>
+            102.dataWrap.override.if.isNull.field = flexform_mdCol2
         }
     }
     3cols < .2cols
     3cols {
         columns {
             101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
+            101.dataWrap.override = <div class="col-md-4">|</div>
             102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
+            102.dataWrap.override = <div class="col-md-4">|</div>
             103 < .101
             103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
+            103.dataWrap.override = <div class="col-md-4">|</div>
+            102.dataWrap.override.if.isNull.field = flexform_mdCol3
         }
     }
     4cols < .3cols
     4cols {
         columns {
             101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
+            101.dataWrap.override = <div class="col-md-3">|</div>
             102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
+            102.dataWrap.override = <div class="col-md-3">|</div>
             103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
+            103.dataWrap.override = <div class="col-md-3">|</div>
             104 < .101
             104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
+            104.dataWrap.override = <div class="col-md-3">|</div>
+            104.dataWrap.override.if.isNull.field = flexform_mdCol4
         }
     }
 
