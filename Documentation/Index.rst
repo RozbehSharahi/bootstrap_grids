@@ -10,7 +10,6 @@
 Grids for bootstrap
 ===================
 
-:Keywords: forEditors, forAdmins, forDevelopers
 :Author: |author|
 :Language: en
 :Rendered: |today|
