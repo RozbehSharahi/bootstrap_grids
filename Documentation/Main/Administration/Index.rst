@@ -16,7 +16,7 @@ Installation
 
 - Install the extension. If gridelements is not installed yet, it will be installed automatically.
 
-- Include the static templates as shown in the screenshot.
+- Include the static templates as shown in the screenshot. Keep in mind that the order of templates is important!
 
 |img-includestatic|
 
