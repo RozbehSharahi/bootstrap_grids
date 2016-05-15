@@ -287,20 +287,19 @@ lib.bootstrap_grids {
         )
         append {
             10 = TEXT
-            10.value = $('#flexslider{field:uid}').flexslider(
-            10.insertData = 1
+            10.dataWrap = $('#flexslider{field:uid}').flexslider( |
 
             20 = TEXT
             20.value = {
 
             30 = TEXT
-            30.wrap = |
             30.insertData = 1
             30.value (
-                direction: "{field:flexform_direction}", slideshowSpeed: {field:flexform_slidespeed},
-                animation: "{field:flexform_animation}", animationSpeed: {field:flexform_animationspeed}, animationLoop: {field:flexform_animationloop}, useCSS: false,
-                controlNav: {field:flexform_showcontrolnav}, directionNav: {field:flexform_showdirnav}, pausePlay: {field:flexform_showpause}, pauseOnHover: {field:flexform_pauseonhover},
-                initDelay: {field:flexform_initdelay}, randomize: {field:flexform_randomize}, reverse: {field:flexform_reverse}
+
+                      direction: "{field:flexform_direction}", slideshowSpeed: {field:flexform_slidespeed},
+                      animation: "{field:flexform_animation}", animationSpeed: {field:flexform_animationspeed}, animationLoop: {field:flexform_animationloop}, useCSS: false,
+                      controlNav: {field:flexform_showcontrolnav}, directionNav: {field:flexform_showdirnav}, pausePlay: {field:flexform_showpause}, pauseOnHover: {field:flexform_pauseonhover},
+                      initDelay: {field:flexform_initdelay}, randomize: {field:flexform_randomize}, reverse: {field:flexform_reverse}
             )
             40 = TEXT
             40.value = });
