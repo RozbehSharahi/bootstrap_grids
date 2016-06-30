@@ -304,7 +304,118 @@ lib.bootstrap_grids {
             40 = TEXT
             40.value = });
         }
+    }
 
+    # Carousel
+    carousel < lib.gridelements.defaultGridSetup
+    carousel {
+        columns {
+            101 < .default
+            101 {
+                renderObj {
+                    5 = LOAD_REGISTER
+                    5 {
+                        caruselCount {
+                            cObject = TEXT
+                            cObject {
+                                data = register:caruselCount
+                                wrap = |+1
+                            }
+                            prioriCalc = intval
+                        }
+                    }
+                    stdWrap.insertData = 1
+                    stdWrap.outerWrap.cObject = CASE
+                    stdWrap.outerWrap.cObject {
+                        key.data = register:caruselCount
+                        default = TEXT
+                        default.value = <div class="item">|</div>
+                        1 = TEXT
+                        1.value = <div class="item active">|</div>
+                    }
+                }
+
+                wrap = <div class="carousel-inner" role="listbox">|</div>
+            }
+        }
+
+        prepend = COA
+        prepend {
+            10 = TEXT
+            10 {
+                value = <div id="carousel{field:uid}" class="carousel slide style{field:flexform_style}" data-ride="carousel" data-interval="{field:flexform_slidespeed}" data-wrap="{field:flexform_wrap}" data-keyboard="{field:flexform_keyboard}">
+                insertData = 1
+            }
+
+            20 = CONTENT
+            20 {
+                table = tt_content
+                select {
+                    selectFields = header, uid, tx_gridelements_container, sorting
+                    where = 1=1
+                    andWhere = tx_gridelements_container={field:uid}
+                    andWhere.insertData = 1
+                    orderBy = sorting
+                }
+                wrap = <ol class="carousel-indicators">|</ol>
+                renderObj = COA
+                renderObj {
+                    5 = LOAD_REGISTER
+                    5.caruselCount2 {
+                        cObject = TEXT
+                        cObject.data = register:caruselCount2
+                        prioriCalc = intval
+                    }
+                    10 = TEXT
+                    10 {
+                        data = register:caruselCount2
+                        insertData = 1
+                        outerWrap.cObject = CASE
+                        outerWrap.cObject {
+                            key.data = register:caruselCount2
+                            default = TEXT
+                            default.value = <li data-target="#carousel{field:tx_gridelements_container}" data-slide-to="|"></li>
+                            0 = TEXT
+                            0.value = <li data-target="#carousel{field:tx_gridelements_container}" data-slide-to="|" class="active"></li>
+                        }
+                    }
+                    15 = LOAD_REGISTER
+                    15.caruselCount2 {
+                        cObject = TEXT
+                        cObject.data = register:caruselCount2
+                        cObject.wrap = |+1
+                        prioriCalc = intval
+                    }
+                }
+            }
+        }
+
+        append = COA
+        append {
+            30 = TEXT
+            30 {
+                stdWrap {
+                    wrap (
+                        <a class="left carousel-control" href="#carousel{field:uid}" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel{field:uid}" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    )
+                    insertData = 1
+                    if {
+                        value = true
+                        equals.field = flexform_showdirnav
+                    }
+                }
+            }
+
+            40 = TEXT
+            40.value = </div>
+        }
     }
 
     # simple row for content elements and usage with ext:bscolwrap
@@ -330,6 +441,7 @@ tt_content.gridelements_pi1.20.10.setup {
     4cols < lib.bootstrap_grids.4cols
     accordion < lib.bootstrap_grids.accordion
     slider < lib.bootstrap_grids.slider
+    carousel < lib.bootstrap_grids.carousel
     tabsSimple < lib.bootstrap_grids.simpleTabs
     tabs4 < lib.bootstrap_grids.4tabs
     tabs6 < lib.bootstrap_grids.6tabs

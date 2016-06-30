@@ -51,6 +51,12 @@
             <trans-unit id="slider.description" xml:space="preserve">
 				<source>Each content element within the grid represents a slider element.</source>
 			</trans-unit>
+	        <trans-unit id="carousel.title" xml:space="preserve">
+				<source>Content carousel</source>
+			</trans-unit>
+            <trans-unit id="carousel.description" xml:space="preserve">
+				<source>Each content element within the grid represents a carousel element.</source>
+			</trans-unit>
 
             <trans-unit id="xSimpleRow.title" xml:space="preserve">
 				<source>Row</source>
@@ -100,6 +106,9 @@
             </trans-unit>
             <trans-unit id="celayout.sliderElements" xml:space="preserve">
 				<source>Slider elements</source>
+            </trans-unit>
+	        <trans-unit id="celayout.carouselElements" xml:space="preserve">
+				<source>Carousel elements</source>
             </trans-unit>
             <trans-unit id="celayout.columnElements" xml:space="preserve">
 				<source>Column elements</source>
@@ -214,6 +223,14 @@
 			<trans-unit id="grid.slider.reverse" xml:space="preserve">
 				<source>Reverse order</source>
 			</trans-unit>
+
+	        <trans-unit id="grid.carousel.wrap" xml:space="preserve">
+				<source>Cycle continuously</source>
+			</trans-unit>
+	        <trans-unit id="grid.carousel.keyboard" xml:space="preserve">
+				<source>React on keyboard events</source>
+			</trans-unit>
+
 
             <trans-unit id="grid.sheet.layout" xml:space="preserve">
 				<source>Layout</source>
