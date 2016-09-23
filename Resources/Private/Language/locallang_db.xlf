@@ -123,6 +123,9 @@
             <trans-unit id="grid.sheet.customClasses" xml:space="preserve">
 				<source>Custom classes</source>
 			</trans-unit>
+            <trans-unit id="grid.sheet.rowAttributes" xml:space="preserve">
+				<source>Row attributes</source>
+			</trans-unit>
             <trans-unit id="grid.label.col1" xml:space="preserve">
 				<source>Column 1</source>
 			</trans-unit>
@@ -134,6 +137,18 @@
 			</trans-unit>
             <trans-unit id="grid.label.col4" xml:space="preserve">
 				<source>Column 4</source>
+			</trans-unit>
+            <trans-unit id="grid.label.id" xml:space="preserve">
+				<source>Id</source>
+			</trans-unit>
+            <trans-unit id="grid.label.class" xml:space="preserve">
+				<source>Class</source>
+			</trans-unit>
+            <trans-unit id="grid.label.additionalAttributes" xml:space="preserve">
+				<source>Additional attributes</source>
+			</trans-unit>
+            <trans-unit id="grid.label.additionalWrap" xml:space="preserve">
+				<source>Additional wrap</source>
 			</trans-unit>
             <trans-unit id="grid.label.moreWidth" xml:space="preserve">
 				<source>More width</source>
