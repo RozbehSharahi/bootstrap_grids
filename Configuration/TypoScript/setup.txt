@@ -1,4 +1,3 @@
-
 /** ------------------------------------------------
  * General config
  */
@@ -10,330 +9,345 @@ lib.gridelements.defaultGridSetup.columns.2 >
  */
 lib.bootstrap_grids {
 
-    # Column grids
-    2cols < lib.gridelements.defaultGridSetup
-    2cols {
-        wrap = <div class="row">|</div>
-        columns {
-            101 < .default
-            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
-            # override if none set (supporting drag&drop)
-            101.dataWrap.override = <div class="col-md-6">|</div>
-            101.dataWrap.override.if.isNull.field = flexform_mdCol1
-            101.wrap >
-            102 < .101
-            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
-            102.dataWrap.override = <div class="col-md-6">|</div>
-            102.dataWrap.override.if.isNull.field = flexform_mdCol2
-        }
-    }
-    3cols < .2cols
-    3cols {
-        columns {
-            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
-            101.dataWrap.override = <div class="col-md-4">|</div>
-            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
-            102.dataWrap.override = <div class="col-md-4">|</div>
-            103 < .101
-            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
-            103.dataWrap.override = <div class="col-md-4">|</div>
-            102.dataWrap.override.if.isNull.field = flexform_mdCol3
-        }
-    }
-    4cols < .3cols
-    4cols {
-        columns {
-            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
-            101.dataWrap.override = <div class="col-md-3">|</div>
-            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
-            102.dataWrap.override = <div class="col-md-3">|</div>
-            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
-            103.dataWrap.override = <div class="col-md-3">|</div>
-            104 < .101
-            104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
-            104.dataWrap.override = <div class="col-md-3">|</div>
-            104.dataWrap.override.if.isNull.field = flexform_mdCol4
-        }
-    }
+	# Column grids
+	1col < lib.gridelements.defaultGridSetup
+	1col {
+		wrap = <div class="row">|</div>
+		columns {
+			101 < .default
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col1class}">|</div>
+			# override if none set (supporting drag&drop)
+			101.dataWrap.override = <div class="col-md-12">|</div>
+			101.dataWrap.override.if.isNull.field = flexform_mdCol1
+			101.wrap >
+		}
+	}
+	2cols < .1col
+	2cols {
+		columns {
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
+			101.dataWrap.override = <div class="col-md-6">|</div>
+			102 < .101
+			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
+			102.dataWrap.override = <div class="col-md-6">|</div>
+			102.dataWrap.override.if.isNull.field = flexform_mdCol2
+		}
+	}
+	3cols < .2cols
+	3cols {
+		columns {
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
+			101.dataWrap.override = <div class="col-md-4">|</div>
+			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
+			102.dataWrap.override = <div class="col-md-4">|</div>
+			103 < .101
+			103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
+			103.dataWrap.override = <div class="col-md-4">|</div>
+			102.dataWrap.override.if.isNull.field = flexform_mdCol3
+		}
+	}
+	4cols < .3cols
+	4cols {
+		columns {
+			101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
+			101.dataWrap.override = <div class="col-md-3">|</div>
+			102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
+			102.dataWrap.override = <div class="col-md-3">|</div>
+			103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
+			103.dataWrap.override = <div class="col-md-3">|</div>
+			104 < .101
+			104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
+			104.dataWrap.override = <div class="col-md-3">|</div>
+			104.dataWrap.override.if.isNull.field = flexform_mdCol4
+		}
+	}
 
-    # Tabs
-    simpleTabs < lib.gridelements.defaultGridSetup
-    simpleTabs {
-        outerWrap = <div class="{field:flexform_style}">|</div>
-        outerWrap.insertData = 1
+	# Tabs
+	simpleTabs < lib.gridelements.defaultGridSetup
+	simpleTabs {
+		outerWrap = <div class="{field:flexform_style}">|</div>
+		outerWrap.insertData = 1
 
-        prepend = CONTENT
-        prepend {
-            table = tt_content
-            select {
-              selectFields = header, uid, tx_gridelements_container, sorting
-              where = 1=1
-              andWhere = tx_gridelements_container={field:uid}
-              andWhere.insertData = 1
-              orderBy = sorting
-            }
-            wrap = <ul class="nav nav-tabs">|</ul>
-            renderObj = COA
-            renderObj {
-              5 = LOAD_REGISTER
-              5 {
-                TabCount.cObject = TEXT
-                TabCount.cObject.data = register:TabCount
-                TabCount.cObject.wrap = |+1
-                TabCount.prioriCalc = intval
-              }
-              10 = TEXT
-              10 {
-                field = header
-                insertData = 1
-                wrap = <a href="#tab-{field:uid}" role="tab" data-toggle="tab">|</a>
-                outerWrap.cObject = CASE
-                outerWrap.cObject {
-                  key.data = register:TabCount
-                  default = TEXT
-                  default.value = <li id="tab-element-{field:uid}">|</li>
-                  1 = TEXT
-                  1.value = <li class="active" id="tab-element-{field:uid}">|</li>
-                }
-              }
-            }
-        }
+		prepend = CONTENT
+		prepend {
+			table = tt_content
+			select {
+				selectFields = header, uid, tx_gridelements_container, sorting
+				where = 1=1
+				andWhere = tx_gridelements_container={field:uid}
+				andWhere.insertData = 1
+				orderBy = sorting
+			}
+			wrap = <ul class="nav nav-tabs">|</ul>
+			renderObj = COA
+			renderObj {
+				5 = LOAD_REGISTER
+				5 {
+					TabCount.cObject = TEXT
+					TabCount.cObject.data = register:TabCount
+					TabCount.cObject.wrap = |+1
+					TabCount.prioriCalc = intval
+				}
+				10 = TEXT
+				10 {
+					field = header
+					insertData = 1
+					wrap = <a href="#tab-{field:uid}" role="tab" data-toggle="tab">|</a>
+					outerWrap.cObject = CASE
+					outerWrap.cObject {
+						key.data = register:TabCount
+						default = TEXT
+						default.value = <li id="tab-element-{field:uid}">|</li>
+						1 = TEXT
+						1.value = <li class="active" id="tab-element-{field:uid}">|</li>
+					}
+				}
+			}
+		}
 
-        columns {
-            101 < .default
-            101 {
-                wrap = <div class="tab-content">|</div>
-                renderObj {
-                    5 = LOAD_REGISTER
-                    5 {
-                        TabCount2.cObject = TEXT
-                        TabCount2.cObject.data = register:TabCount2
-                        TabCount2.cObject.wrap = |+1
-                        TabCount2.prioriCalc = intval
-                    }
-                    stdWrap.insertData = 1
-                    stdWrap.outerWrap.cObject = CASE
-                    stdWrap.outerWrap.cObject {
-                        key.data = register:TabCount2
-                        default = TEXT
-                        default.value = <div class="tab-pane fade" id="tab-{field:uid}">|</div>
-                        1 = TEXT
-                        1.value = <div class="tab-pane fade active in" id="tab-{field:uid}">|</div>
-                    }
-                    # don't show headers in tabs
-                    #20 =< tt_content
-                    20 < tt_content
-                    20 {
-                        text.10 >
-                        image.10 >
-                        textpic.10 >
-                        uploads.10 >
-                        table.10 >
-                        multimedia.10 >
-                        media.10 >
-                        mailform.10 >
-                        menu.10 >
-                        videoce_videocontent.10 >
-                    }
-                }
-            }
-        }
+		columns {
+			101 < .default
+			101 {
+				wrap = <div class="tab-content">|</div>
+				renderObj {
+					5 = LOAD_REGISTER
+					5 {
+						TabCount2.cObject = TEXT
+						TabCount2.cObject.data = register:TabCount2
+						TabCount2.cObject.wrap = |+1
+						TabCount2.prioriCalc = intval
+					}
+					stdWrap.insertData = 1
+					stdWrap.outerWrap.cObject = CASE
+					stdWrap.outerWrap.cObject {
+						key.data = register:TabCount2
+						default = TEXT
+						default.value = <div class="tab-pane fade" id="tab-{field:uid}">|</div>
+						1 = TEXT
+						1.value = <div class="tab-pane fade active in" id="tab-{field:uid}">|</div>
+					}
+					# don't show headers in tabs
+					#20 =< tt_content
+					20 < tt_content
+					20 {
+						text.10 >
+						image.10 >
+						textpic.10 >
+						uploads.10 >
+						table.10 >
+						multimedia.10 >
+						media.10 >
+						mailform.10 >
+						menu.10 >
+						videoce_videocontent.10 >
+					}
+				}
+			}
+		}
+	}
 
-    }
+	4tabs < lib.gridelements.defaultGridSetup
+	4tabs {
+		# style wrap
+		outerWrap = <div class="{field:flexform_style}">|</div>
+		outerWrap.insertData = 1
 
-    4tabs < lib.gridelements.defaultGridSetup
-    4tabs {
-        # style wrap
-        outerWrap = <div class="{field:flexform_style}">|</div>
-        outerWrap.insertData = 1
+		prepend = COA
+		prepend.wrap = <ul class="nav nav-tabs" role="tablist">|</ul>
+		prepend {
+			10 = TEXT
+			10.value = <li class="active"><a href="#tab1-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle1}</a></li>
+			10.insertData = 1
+			20 < .10
+			20.value = <li><a href="#tab2-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle2}</a></li>
+			20.if.isTrue.field = flexform_tabTitle2
+			30 < .10
+			30.value = <li><a href="#tab3-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle3}</a></li>
+			30.if.isTrue.field = flexform_tabTitle3
+			40 < .10
+			40.value = <li><a href="#tab4-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle4}</a></li>
+			40.if.isTrue.field = flexform_tabTitle4
+		}
+		wrap = <div class="tab-content">|</div>
+		columns {
+			101 < .default
+			101.wrap = <div class="tab-pane fade active in" id="tab1-{field:uid}">|</div>
+			101.wrap.insertData = 1
+			102 < .101
+			102.wrap = <div class="tab-pane fade" id="tab2-{field:uid}">|</div>
+			102.if.isTrue.field = flexform_tabTitle2
+			103 < .101
+			103.wrap = <div class="tab-pane fade" id="tab3-{field:uid}">|</div>
+			103.if.isTrue.field = flexform_tabTitle3
+			104 < .101
+			104.wrap = <div class="tab-pane fade" id="tab4-{field:uid}">|</div>
+			104.if.isTrue.field = flexform_tabTitle4
+		}
+	}
 
-        prepend = COA
-        prepend.wrap = <ul class="nav nav-tabs" role="tablist">|</ul>
-        prepend {
-            10 = TEXT
-            10.value = <li class="active"><a href="#tab1-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle1}</a></li>
-            10.insertData = 1
-            20 < .10
-            20.value = <li><a href="#tab2-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle2}</a></li>
-            20.if.isTrue.field = flexform_tabTitle2
-            30 < .10
-            30.value = <li><a href="#tab3-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle3}</a></li>
-            30.if.isTrue.field = flexform_tabTitle3
-            40 < .10
-            40.value = <li><a href="#tab4-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle4}</a></li>
-            40.if.isTrue.field = flexform_tabTitle4
-        }
-        wrap = <div class="tab-content">|</div>
-        columns {
-            101 < .default
-            101.wrap = <div class="tab-pane fade active in" id="tab1-{field:uid}">|</div>
-            101.wrap.insertData = 1
-            102 < .101
-            102.wrap = <div class="tab-pane fade" id="tab2-{field:uid}">|</div>
-            102.if.isTrue.field = flexform_tabTitle2
-            103 < .101
-            103.wrap = <div class="tab-pane fade" id="tab3-{field:uid}">|</div>
-            103.if.isTrue.field = flexform_tabTitle3
-            104 < .101
-            104.wrap = <div class="tab-pane fade" id="tab4-{field:uid}">|</div>
-            104.if.isTrue.field = flexform_tabTitle4
-        }
-    }
+	6tabs < .4tabs
+	6tabs {
+		prepend {
+			50 < .10
+			50.value = <li><a href="#tab5-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle5}</a></li>
+			50.if.isTrue.field = flexform_tabTitle5
 
-    6tabs < .4tabs
-    6tabs {
-        prepend {
-            50 < .10
-            50.value = <li><a href="#tab5-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle5}</a></li>
-            50.if.isTrue.field = flexform_tabTitle5
+			60 < .10
+			60.value = <li><a href="#tab6-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle6}</a></li>
+			60.if.isTrue.field = flexform_tabTitle6
+		}
+		columns {
+			105 < .101
+			105.wrap = <div class="tab-pane fade" id="tab5-{field:uid}">|</div>
+			105.if.isTrue.field = flexform_tabTitle5
 
-            60 < .10
-            60.value = <li><a href="#tab6-{field:uid}" role="tab" data-toggle="tab">{field:flexform_tabTitle6}</a></li>
-            60.if.isTrue.field = flexform_tabTitle6
-        }
-        columns {
-            105 < .101
-            105.wrap = <div class="tab-pane fade" id="tab5-{field:uid}">|</div>
-            105.if.isTrue.field = flexform_tabTitle5
+			106 < .101
+			106.wrap = <div class="tab-pane fade" id="tab6-{field:uid}">|</div>
+			106.if.isTrue.field = flexform_tabTitle6
+		}
+	}
 
-            106 < .101
-            106.wrap = <div class="tab-pane fade" id="tab6-{field:uid}">|</div>
-            106.if.isTrue.field = flexform_tabTitle6
-        }
-    }
+	# Accordion
+	accordion  < lib.gridelements.defaultGridSetup
+	accordion {
+		# wrap around all
+		outerWrap.stdWrap.cObject = CASE
+		outerWrap.stdWrap.cObject {
+			key.field = flexform_rowclass
+			default = TEXT
+			default.value = <div class="panel-group" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div>
+			#acc = TEXT
+			#acc.value = <div class="tabs"><div class="accordion" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div></div>
+		}
+		outerWrap.insertData = 1
 
-    # Accordion
-    accordion  < lib.gridelements.defaultGridSetup
-    accordion {
-        # wrap around all
-        outerWrap.stdWrap.cObject = CASE
-        outerWrap.stdWrap.cObject {
-            key.field = flexform_rowclass
-            default = TEXT
-            default.value = <div class="panel-group" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div>
-            #acc = TEXT
-            #acc.value = <div class="tabs"><div class="accordion" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div></div>
-        }
-        outerWrap.insertData = 1
+		columns {
+			101 < .default
+			101 {
+				renderObj {
+					stdWrap.outerWrap = <div class="panel panel-default">|</div>
 
-        columns {
-            101 < .default
-            101 {
-                renderObj {
-                    stdWrap.outerWrap = <div class="panel panel-default">|</div>
+					# thanks to Josef Körner (brandical.de) for simplification
+					5 = LOAD_REGISTER
+					5 {
+						AccordionCount.cObject = TEXT
+						AccordionCount.cObject.data = register:AccordionCount
+						AccordionCount.cObject.wrap = |+1
+						AccordionCount.prioriCalc = intval
+					}
+					10 = TEXT
+					10 {
+						field = header
+						insertData = 1
+						wrap          = <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" aria-expanded="false" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a></h4></div><div id="collapse-{field:uid}" class="panel-collapse collapse" role="tabpanel"><div class="panel-body">
+						wrap.override = <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="accordion-toggle">|</a></h4></div><div id="collapse-{field:uid}" class="panel-collapse collapse in" role="tabpanel"><div class="panel-body">
+						wrap.override.if.value = 1
+						wrap.override.if.equals.data = register:AccordionCount
+					}
+					# don't show headers in accordion
+					#20 =< tt_content
+					20 < tt_content
+					20 {
+						text.10 >
+						image.10 >
+						textpic.10 >
+						uploads.10 >
+						table.10 >
+						multimedia.10 >
+						media.10 >
+						mailform.10 >
+						menu.10 >
+						videoce_videocontent.10 >
+					}
+					30 = TEXT
+					30.wrap = |</div></div>
+				}
+			}
+		}
+	}
 
-                    # thanks to Josef Körner (brandical.de) for simplification
-                    5 = LOAD_REGISTER
-                    5 {
-                        AccordionCount.cObject = TEXT
-                        AccordionCount.cObject.data = register:AccordionCount
-                        AccordionCount.cObject.wrap = |+1
-                        AccordionCount.prioriCalc = intval
-                    }
-                    10 = TEXT
-                    10 {
-                        field = header
-                        insertData = 1
-                        wrap          = <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" aria-expanded="false" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a></h4></div><div id="collapse-{field:uid}" class="panel-collapse collapse" role="tabpanel"><div class="panel-body">
-                        wrap.override = <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="accordion-toggle">|</a></h4></div><div id="collapse-{field:uid}" class="panel-collapse collapse in" role="tabpanel"><div class="panel-body">
-                        wrap.override.if.value = 1
-                        wrap.override.if.equals.data = register:AccordionCount
-                    }
-                    # don't show headers in accordion
-                    #20 =< tt_content
-                    20 < tt_content
-                    20 {
-                        text.10 >
-                        image.10 >
-                        textpic.10 >
-                        uploads.10 >
-                        table.10 >
-                        multimedia.10 >
-                        media.10 >
-                        mailform.10 >
-                        menu.10 >
-                        videoce_videocontent.10 >
-                    }
-                    30 = TEXT
-                    30.wrap = |</div></div>
-                }
-            }
-        }
-    }
+	# Slider
+	slider < lib.gridelements.defaultGridSetup
+	slider {
+		columns {
+			101 < .default
+			101.renderObj.wrap = <li>|</li>
+			101.wrap (
+				<div class="flexslider" id="flexslider{field:uid}">
+					<ul class="slides">|</ul>
+				</div>
+			)
+			101.insertData = 1
+		}
 
-    # Slider
-    slider < lib.gridelements.defaultGridSetup
-    slider {
-        columns {
-            101 < .default
-            101.renderObj.wrap = <li>|</li>
-            101.wrap (
-                <div class="flexslider" id="flexslider{field:uid}">
-                    <ul class="slides">|</ul>
-                </div>
-            )
-            101.insertData = 1
-        }
+		append = COA
+		append.wrap (
+			<script>
+			(function($) {
+				$(document).ready(function() {
+				|
+				});
+			})(jQuery);
+			</script>
+		)
+		append {
+			10 = TEXT
+			10.dataWrap = $('#flexslider{field:uid}').flexslider(|
 
-        append = COA
-        append.wrap (
-                <script>
-                ( function($) {
-                    $(document).ready(function() {
-                    |
-                    });
-                }) (jQuery);
-                </script>
-        )
-        append {
-            10 = TEXT
-            10.dataWrap = $('#flexslider{field:uid}').flexslider( |
+			20 = TEXT
+			20.value = {
 
-            20 = TEXT
-            20.value = {
+			30 = TEXT
+			30.insertData = 1
+			30.value (
+				direction: "{field:flexform_direction}",
+				slideshowSpeed: {field:flexform_slidespeed},
+				animation: "{field:flexform_animation}",
+				animationSpeed: {field:flexform_animationspeed},
+				animationLoop: {field:flexform_animationloop},
+				useCSS: false,
+				controlNav: {field:flexform_showcontrolnav},
+				directionNav: {field:flexform_showdirnav},
+				pausePlay: {field:flexform_showpause},
+				pauseOnHover: {field:flexform_pauseonhover},
+				initDelay: {field:flexform_initdelay},
+				randomize: {field:flexform_randomize},
+				reverse: {field:flexform_reverse}
+			)
+			40 = TEXT
+			40.value = });
+		}
 
-            30 = TEXT
-            30.insertData = 1
-            30.value (
+	}
 
-                      direction: "{field:flexform_direction}", slideshowSpeed: {field:flexform_slidespeed},
-                      animation: "{field:flexform_animation}", animationSpeed: {field:flexform_animationspeed}, animationLoop: {field:flexform_animationloop}, useCSS: false,
-                      controlNav: {field:flexform_showcontrolnav}, directionNav: {field:flexform_showdirnav}, pausePlay: {field:flexform_showpause}, pauseOnHover: {field:flexform_pauseonhover},
-                      initDelay: {field:flexform_initdelay}, randomize: {field:flexform_randomize}, reverse: {field:flexform_reverse}
-            )
-            40 = TEXT
-            40.value = });
-        }
-
-    }
-
-    # simple row for content elements and usage with ext:bscolwrap
-    simpleRow < lib.gridelements.defaultGridSetup
-    simpleRow {
-        # row wrap
-        wrap = <div class="row">|</div>
-        columns {
-            # special 111, used as check for conditional fields
-            111 < .default
-            111.wrap = |
-        }
-    }
+	# simple row for content elements and usage with ext:bscolwrap
+	simpleRow < lib.gridelements.defaultGridSetup
+	simpleRow {
+		# row wrap
+		wrap = <div class="row">|</div>
+		columns {
+			# special 111, used as check for conditional fields
+			111 < .default
+			111.wrap = |
+		}
+	}
 }
 
 
 /** ------------------------------------------------
-* Assign grid rendering to layout ids (names)
-*/
+ * Assign grid rendering to layout ids (names)
+ */
 tt_content.gridelements_pi1.20.10.setup {
-    2cols < lib.bootstrap_grids.2cols
-    3cols < lib.bootstrap_grids.3cols
-    4cols < lib.bootstrap_grids.4cols
-    accordion < lib.bootstrap_grids.accordion
-    slider < lib.bootstrap_grids.slider
-    tabsSimple < lib.bootstrap_grids.simpleTabs
-    tabs4 < lib.bootstrap_grids.4tabs
-    tabs6 < lib.bootstrap_grids.6tabs
-    xSimpleRow < lib.bootstrap_grids.simpleRow
+	1col < lib.website_grids.1col
+	2cols < lib.bootstrap_grids.2cols
+	3cols < lib.bootstrap_grids.3cols
+	4cols < lib.bootstrap_grids.4cols
+	accordion < lib.bootstrap_grids.accordion
+	slider < lib.bootstrap_grids.slider
+	tabsSimple < lib.bootstrap_grids.simpleTabs
+	tabs4 < lib.bootstrap_grids.4tabs
+	tabs6 < lib.bootstrap_grids.6tabs
+	xSimpleRow < lib.bootstrap_grids.simpleRow
 }
 
 
@@ -341,6 +355,6 @@ tt_content.gridelements_pi1.20.10.setup {
  * CSS and JS for flexslider (content slider grid)
  */
 page {
-    includeCSS.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/flexslider.css
-    includeJSFooterlibs.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/jquery.flexslider-min.js
+	includeCSS.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/flexslider.css
+	includeJSFooterlibs.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/jquery.flexslider-min.js
 }
