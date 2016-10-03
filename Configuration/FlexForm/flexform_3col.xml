@@ -1047,18 +1047,10 @@
                                 <config type="array">
                                     <type>input</type>
                                     <eval>trim</eval>
+                                    <placeholder>data-foo="bar"</placeholder>
                                 </config>
                             </TCEforms>
                         </additionalAttributes>
-                        <additionalWrap type="array">
-                            <TCEforms type="array">
-                                <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.additionalWrap</label>
-                                <config type="array">
-                                    <type>input</type>
-                                    <eval>trim</eval>
-                                </config>
-                            </TCEforms>
-                        </additionalWrap>
                     </el>
                 </TCEforms>
             </ROOT>

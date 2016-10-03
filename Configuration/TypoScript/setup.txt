@@ -13,10 +13,7 @@ lib.bootstrap_grids {
     # Column grids
     2cols < lib.gridelements.defaultGridSetup
     2cols {
-        orderedStdWrap {
-            1.dataWrap = {field:flexform_additionalWrap}
-            2.dataWrap = <div class="row {field:flexform_class}" id="{field:flexform_id}" {field:flexform_additionalAttributes}>|</div>
-        }
+		dataWrap = <div class="row {field:flexform_class}" id="{field:flexform_id}" {field:flexform_additionalAttributes}>|</div>
         columns {
             101 < .default
             101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
