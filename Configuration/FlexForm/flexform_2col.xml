@@ -23,7 +23,7 @@
                                     </numIndex>
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset</numIndex>
-                                        <numIndex index="1"> </numIndex>
+                                        <numIndex index="1"></numIndex>
                                     </numIndex>
                                     <numIndex index="2" type="array">
                                         <numIndex index="0">25% (col-md-3)</numIndex>
