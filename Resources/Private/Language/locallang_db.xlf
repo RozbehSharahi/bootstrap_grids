@@ -106,19 +106,19 @@
             </trans-unit>
 
             <trans-unit id="grid.sheet.mediumDevices" xml:space="preserve">
-				<source>Desktop (&gt;=992px)</source>
+				<source>Desktop</source>
 			</trans-unit>
             <trans-unit id="grid.sheet.smallDevices" xml:space="preserve">
-				<source>Small devices (&gt;=768px)</source>
+				<source>Small devices</source>
 			</trans-unit>
             <trans-unit id="grid.sheet.extraSmallDevices" xml:space="preserve">
-				<source>Extra small (&lt;768px)</source>
+				<source>Extra small</source>
 			</trans-unit>
             <trans-unit id="grid.sheet.largeDevices" xml:space="preserve">
-				<source>Large (&gt;=1200px)</source>
+				<source>Large</source>
 			</trans-unit>
             <trans-unit id="grid.sheet.extraLargeDevices" xml:space="preserve">
-				<source>Extra Large (&gt;=75em)</source>
+				<source>Extra Large</source>
 			</trans-unit>
             <trans-unit id="grid.sheet.customClasses" xml:space="preserve">
 				<source>Custom classes</source>
