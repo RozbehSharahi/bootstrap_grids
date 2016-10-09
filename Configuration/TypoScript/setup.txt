@@ -67,9 +67,8 @@ lib.bootstrap_grids {
             table = tt_content
             select {
               selectFields = header, uid, tx_gridelements_container, sorting
-              where = 1=1
-              andWhere = tx_gridelements_container={field:uid}
-              andWhere.insertData = 1
+              where = tx_gridelements_container={field:uid}
+              where.insertData = 1
               orderBy = sorting
             }
             wrap = <ul class="nav nav-tabs">|</ul>
