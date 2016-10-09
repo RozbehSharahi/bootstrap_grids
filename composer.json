@@ -12,5 +12,10 @@
       "email": "typo3@bsdist.ch",
       "role": "Developer"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "Laxap\\BootstrapGrids\\": "Classes/"
+    }
+  }
 }
