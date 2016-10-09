@@ -1,0 +1,2 @@
+.. |img-extconf|      image:: ../Images/Configuration/extconfig.png
+.. :align: left

@@ -9,6 +9,17 @@
 Changes
 =======
 
+**Version 1.3.0**
+
+2-/3-/4-columns grid
+
+- itemProcFunc for select items
+
+Re-added
+
+- Optional row gridelement
+
+
 **Version 1.2.0**
 
 2-/3-/4-columns grid

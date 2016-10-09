@@ -31,5 +31,5 @@ The content of this document is related to TYPO3
 
    Introduction/Index
    Installation/Index
+   Configuration/Index
    Changes/Index
-   Issues/Index
