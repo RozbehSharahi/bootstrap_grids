@@ -696,5 +696,43 @@
                 </el>
             </ROOT>
         </customClasses>
+        <rowAttributes>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.rowAttributes</sheetTitle>
+                    <type>array</type>
+                    <el type="array">
+                        <id type="array">
+                            <TCEforms type="array">
+                                <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.id</label>
+                                <config type="array">
+                                    <type>input</type>
+                                    <eval>trim</eval>
+                                </config>
+                            </TCEforms>
+                        </id>
+                        <class type="array">
+                            <TCEforms type="array">
+                                <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.class</label>
+                                <config type="array">
+                                    <type>input</type>
+                                    <eval>trim</eval>
+                                </config>
+                            </TCEforms>
+                        </class>
+                        <additionalAttributes type="array">
+                            <TCEforms type="array">
+                                <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.additionalAttributes</label>
+                                <config type="array">
+                                    <type>input</type>
+                                    <eval>trim</eval>
+                                    <placeholder>data-foo="bar"</placeholder>
+                                </config>
+                            </TCEforms>
+                        </additionalAttributes>
+                    </el>
+                </TCEforms>
+            </ROOT>
+        </rowAttributes>
     </sheets>
 </T3DataStructure>

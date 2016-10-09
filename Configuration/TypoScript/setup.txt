@@ -2,7 +2,7 @@
 /** ------------------------------------------------
  * General config
  */
-# Remove 2nd column from defaultGridSeetup, colpos 101, 102 are used
+# Remove 2nd column from defaultGridSetup, colpos 101, 102 are used
 lib.gridelements.defaultGridSetup.columns.2 >
 
 /** ------------------------------------------------
@@ -13,7 +13,7 @@ lib.bootstrap_grids {
     # Column grids
     2cols < lib.gridelements.defaultGridSetup
     2cols {
-        wrap = <div class="row">|</div>
+		dataWrap = <div class="row {field:flexform_class}" id="{field:flexform_id}" {field:flexform_additionalAttributes}>|</div>
         columns {
             101 < .default
             101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
