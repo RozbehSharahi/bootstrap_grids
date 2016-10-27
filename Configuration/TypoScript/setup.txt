@@ -341,5 +341,5 @@ tt_content.gridelements_pi1.20.10.setup {
  */
 page {
     includeCSS.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/flexslider.css
-    includeJSFooterlibs.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/jquery.flexslider-min.js
+    includeJSFooter.flexslider2 = EXT:bootstrap_grids/Resources/Public/Flexslider2/jquery.flexslider-min.js
 }
