@@ -3,14 +3,14 @@
   "type": "typo3-cms-extension",
   "description": "Gridelements for bootstrap. Column grids, grids for simple accordions, tabs and content slider.",
   "homepage": "http://www.bsdist.ch",
-  "license": ["GPL-2.0"],
+  "license": "GPL-2.0",
   "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "bsdist", "gridelements"],
   "support": {
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
   "autoload": {
     "psr-4": {
-      "Laxap\\BootstrapGrids\\": "Classes/"
+      "Laxap\\BootstrapGrids\\": "Classes"
     }
   }
 }
