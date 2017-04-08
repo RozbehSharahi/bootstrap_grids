@@ -1,16 +1,20 @@
 <?php
-if (!defined ('TYPO3_MODE')) die ('Access denied.');
+if (!defined('TYPO3_MODE')) { die('Access denied.'); }
 
-// --- Get extension configuration ---
-$extConf = array();
-if ( strlen($_EXTCONF) ) {
-	$extConf = unserialize($_EXTCONF);
-}
+call_user_func(
+    function ($extConfString) {
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/tsconfig.ts">');
+        // Add pageTS config
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/tsconfig.ts">');
 
-// Only if enabled
-if ( isset($extConf['enableGridSimpleRow']) && $extConf['enableGridSimpleRow'] ) {
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/simpleRow/tsconfig.ts">');
-}
+        // Get ext configuration
+        strlen($extConfString)?$extConf = unserialize($extConfString):$extConf = array();
+
+        // Only if enabled
+        if ( isset($extConf['enableGridSimpleRow']) && $extConf['enableGridSimpleRow'] ) {
+            \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/simpleRow/tsconfig.ts">');
+        }
+
+    },$_EXTCONF
+);
 ?>
