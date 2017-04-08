@@ -13,8 +13,7 @@ tx_gridelements {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:2cols.title
             # string; "LLL:" can be used.
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:2cols.description
-            # string; "EXT:" can be used
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/gridlayout_col2.gif
+            iconIdentifier = tx-bootstrapgrids-col2
             # integer; Colored frame. 0, 1 = red, 2 = green, 3 = blue
             frame = 3
             # boolean;
@@ -46,7 +45,7 @@ tx_gridelements {
         3cols {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:3cols.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:3cols.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/gridlayout_col3.gif
+            iconIdentifier = tx-bootstrapgrids-col3
             frame = 3
             topLevelLayout = 0
             config {
@@ -75,7 +74,7 @@ tx_gridelements {
         4cols {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:4cols.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:4cols.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/gridlayout_col4.gif
+            iconIdentifier = tx-bootstrapgrids-col4
             frame = 3
             topLevelLayout = 0
             config {
@@ -106,7 +105,7 @@ tx_gridelements {
         tabsSimple {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:tabsSimple.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:tabsSimple.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_simpletabs.png
+            iconIdentifier = tx-bootstrapgrids-simpletabs
             frame = 2
             topLevelLayout = 0
             config {
@@ -123,7 +122,7 @@ tx_gridelements {
         tabs4 {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:tabs4.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:tabs4.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs4.png
+            iconIdentifier = tx-bootstrapgrids-tabs4
             frame = 2
             topLevelLayout = 0
             config {
@@ -154,7 +153,7 @@ tx_gridelements {
         tabs6 {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:tabs6.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:tabs6.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs6.png
+            iconIdentifier = tx-bootstrapgrids-tabs6
             frame = 2
             topLevelLayout = 0
             config {
@@ -193,7 +192,7 @@ tx_gridelements {
         accordion {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_accordion.png
+            iconIdentifier = tx-bootstrapgrids-accordion
             frame = 2
             topLevelLayout = 0
             config {
@@ -210,7 +209,7 @@ tx_gridelements {
         slider {
             title = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:slider.title
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:slider.description
-            icon = EXT:bootstrap_grids/Resources/Public/Icons/grid_slider.png
+            iconIdentifier = tx-bootstrapgrids-slider
             frame = 1
             topLevelLayout = 0
             config {
