@@ -138,6 +138,24 @@ lib.bootstrap_grids {
             }
         }
 
+        # Reset tab counts
+        append = COA
+        append {
+            5 = LOAD_REGISTER
+            5 {
+                TabCount.cObject = TEXT
+                TabCount.cObject.data = register:TabCount
+                TabCount.cObject.wrap = |*0
+                TabCount.prioriCalc = intval
+            }
+            10 = LOAD_REGISTER
+            10 {
+                TabCount2.cObject = TEXT
+                TabCount2.cObject.data = register:TabCount2
+                TabCount2.cObject.wrap = |*0
+                TabCount2.prioriCalc = intval
+            }
+        }
     }
 
     4tabs < lib.gridelements.defaultGridSetup
@@ -256,6 +274,18 @@ lib.bootstrap_grids {
                     30 = TEXT
                     30.wrap = |</div></div>
                 }
+            }
+        }
+
+        # Reset accordion count
+        append = COA
+        append {
+            5 = LOAD_REGISTER
+            5 {
+                AccordionCount.cObject = TEXT
+                AccordionCount.cObject.data = register:AccordionCount
+                AccordionCount.cObject.wrap = |*0
+                AccordionCount.prioriCalc = intval
             }
         }
     }
