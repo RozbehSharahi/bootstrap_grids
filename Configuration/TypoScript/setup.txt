@@ -14,6 +14,106 @@ lib.bootstrap_grids {
     2cols < lib.gridelements.defaultGridSetup
     2cols {
         wrap = <div class="row">|</div>
+        outerWrap.cObject = CASE
+        outerWrap.cObject {
+            key.field = frame_class
+            default = COA
+            default {
+                10 = TEXT
+                10 {
+                    cObject = CASE
+                    cObject {
+                        key.field = CType
+                        default = TEXT
+                        default {
+                            value = <div id="c{field:uid}"
+                        }
+                        div = TEXT
+                        div {
+                            value = <div
+                        }
+                    }
+                    insertData = 1
+                }
+                20 = COA
+                20 {
+                    # Create default class for content
+                    10 = TEXT
+                    10 {
+                        value = frame frame-default
+                        required = 1
+                        noTrimWrap = || |
+                    }
+                    # Create class for space before content
+                    20 = TEXT
+                    20 {
+                        field = space_before_class
+                        required = 1
+                        noTrimWrap = |frame-space-before-| |
+                    }
+                    # Create class for space after content
+                    30 = TEXT
+                    30 {
+                        field = space_after_class
+                        required = 1
+                        noTrimWrap = |frame-space-after-| |
+                    }
+                    stdWrap {
+                        trim = 1
+                        noTrimWrap = | class="| frame-type-bootstrap_grids"|
+                        required = 1
+                    }
+                }
+                30 = TEXT
+                30 {
+                    cObject = CASE
+                    cObject {
+                        key.field = CType
+
+                        default = TEXT
+                        default {
+                            value = >|</div>
+                        }
+                    }
+                }
+            }
+            ruler-before =< lib.bootstrap_grids.2cols.outerWrap.cObject.default
+            ruler-before.20.10.value = frame frame-ruler-before
+            ruler-after =< lib.bootstrap_grids.2cols.outerWrap.cObject.default
+            ruler-after.20.10.value = frame frame-ruler-after
+            indent =< lib.bootstrap_grids.2cols.outerWrap.cObject.default
+            indent.20.10.value = frame frame-indent
+            indent-left =< lib.bootstrap_grids.2cols.outerWrap.cObject.default
+            indent-left.20.10.value = frame frame-indent-left
+            indent-right =< lib.bootstrap_grids.2cols.outerWrap.cObject.default
+            indent-right.20.10.value = frame frame-indent-right
+            none = COA
+            none {
+                10 = TEXT
+                10 {
+                    value = <a id="c{field:uid}"></a>
+                    insertData = 1
+                }
+                # Create div with class for space before content
+                20 = TEXT
+                20 {
+                    field = space_before_class
+                    required = 1
+                    wrap = <div class="frame-space-before-|"></div>
+                }
+                30 = TEXT
+                30 {
+                    value = |
+                }
+                # Create div with class for space after content
+                40 = TEXT
+                40 {
+                    field = space_after_class
+                    required = 1
+                    wrap = <div class="frame-space-after-|"></div>
+                }
+            }
+        }
         columns {
             101 < .default
             101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
