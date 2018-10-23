@@ -24,27 +24,27 @@ call_user_func(
         $iconRegistry->registerIcon(
             'tx-bootstrapgrids-simpletabs',
             \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_simpletabs.png']
+            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_simpletabs.gif']
         );
         $iconRegistry->registerIcon(
             'tx-bootstrapgrids-tabs4',
             \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs4.png']
+            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs4.gif']
         );
         $iconRegistry->registerIcon(
             'tx-bootstrapgrids-tabs6',
             \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs6.png']
+            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_tabs6.gif']
         );
         $iconRegistry->registerIcon(
             'tx-bootstrapgrids-accordion',
             \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_accordion.png']
+            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_accordion.gif']
         );
         $iconRegistry->registerIcon(
             'tx-bootstrapgrids-slider',
             \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_slider.png']
+            ['source' => 'EXT:bootstrap_grids/Resources/Public/Icons/grid_slider.gif']
         );
 
         // Add pageTS config
