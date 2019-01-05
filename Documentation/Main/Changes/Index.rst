@@ -9,6 +9,13 @@
 Changes
 =======
 
+**Version 2.0.0**
+
+- Switch to bootstrap v4
+
+- Slider grid element and flexslider script removed
+
+
 **Version 1.3.0**
 
 2-/3-/4-columns grid

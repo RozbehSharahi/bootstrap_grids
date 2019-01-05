@@ -4,66 +4,6 @@
         <langDisable>1</langDisable>
     </meta>
     <sheets>
-        <sDEF>
-            <ROOT type="array">
-                <TCEforms>
-                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.mediumDevices</sheetTitle>
-                </TCEforms>
-                <type>array</type>
-                <el type="array">
-                    <mdCol1 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
-                            <config type="array">
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
-                            </config>
-                        </TCEforms>
-                    </mdCol1>
-                    <mdCol2 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
-                            <config type="array">
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
-                            </config>
-                        </TCEforms>
-                    </mdCol2>
-                </el>
-            </ROOT>
-        </sDEF>
-        <smallDevices>
-            <ROOT type="array">
-                <TCEforms>
-                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.smallDevices</sheetTitle>
-                </TCEforms>
-                <type>array</type>
-                <el type="array">
-                    <smCol1 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
-                            <config type="array">
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
-                            </config>
-                        </TCEforms>
-                    </smCol1>
-                    <smCol2 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
-                            <config type="array">
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
-                            </config>
-                        </TCEforms>
-                    </smCol2>
-                </el>
-            </ROOT>
-        </smallDevices>
         <extraSmallDevices>
             <ROOT type="array">
                 <TCEforms>
@@ -94,6 +34,66 @@
                 </el>
             </ROOT>
         </extraSmallDevices>
+        <smallDevices>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.smallDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <smCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </smCol1>
+                    <smCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </smCol2>
+                </el>
+            </ROOT>
+        </smallDevices>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.mediumDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <mdCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </mdCol1>
+                    <mdCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </mdCol2>
+                </el>
+            </ROOT>
+        </sDEF>
         <largeDevices>
             <ROOT type="array">
                 <TCEforms>
@@ -124,6 +124,36 @@
                 </el>
             </ROOT>
         </largeDevices>
+        <extraLargeDevices>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.extraLargeDevices</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <xlCol1 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col1</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </xlCol1>
+                    <xlCol2 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col2</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getTwoColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </xlCol2>
+                </el>
+            </ROOT>
+        </extraLargeDevices>
         <customClasses>
             <ROOT>
                 <TCEforms>
@@ -152,5 +182,86 @@
                 </el>
             </ROOT>
         </customClasses>
+        <rowClasses>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.rowClasses</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <rowValign type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.rowValign</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.none</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowValign.alignItemsStart</numIndex>
+                                        <numIndex index="1">align-items-start</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowValign.alignItemsCenter</numIndex>
+                                        <numIndex index="1">align-items-center</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowValign.alignItemsEnd</numIndex>
+                                        <numIndex index="1">align-items-end</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowValign>
+                    <rowHalign type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.rowHalign</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.none</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowHalign.justifyContentStart</numIndex>
+                                        <numIndex index="1">justify-content-start</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowHalign.justifyContentCenter</numIndex>
+                                        <numIndex index="1">justify-content-center</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowHalign.justifyContentEnd</numIndex>
+                                        <numIndex index="1">justify-content-end</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowHalign.justifyContentAround</numIndex>
+                                        <numIndex index="1">justify-content-around</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.rowHalign.justifyContentBetween</numIndex>
+                                        <numIndex index="1">justify-content-between</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </rowHalign>
+                    <rowCustom type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.rowCustom</label>
+                            <config type="array">
+                                <type>input</type>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </rowCustom>
+                </el>
+            </ROOT>
+        </rowClasses>
     </sheets>
 </T3DataStructure>

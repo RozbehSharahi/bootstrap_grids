@@ -6,12 +6,12 @@
 
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'Grids for bootstrap',
-	'description' => 'Gridelements for bootstrap. Column grids, grids for simple accordions, tabs and content slider.',
+	'description' => 'Gridelements for bootstrap v4. Column grids, tabs and accordion.',
 	'category' => 'misc',
 	'author' => 'Pascal Mayer',
 	'author_email' => 'typo3@lascap.ch',
 	'author_company' => '',
-	'version' => '1.4.1',
+	'version' => '2.0.0',
 	'state' => 'stable',
 	'uploadfolder' => '0',
 	'createDirs' => '',
