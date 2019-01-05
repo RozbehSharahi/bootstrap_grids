@@ -24,9 +24,6 @@
             <trans-unit id="accordion.title" xml:space="preserve" approved="yes">
 				<source>Accordion from content</source><target state="translated">Accordion aus dem Inhalt</target>
 			</trans-unit>
-            <trans-unit id="slider.title" xml:space="preserve" approved="yes">
-				<source>Content slider</source><target state="translated">Slider aus dem Inhalt</target>
-			</trans-unit>
 
             <trans-unit id="xSimpleRow.title" xml:space="preserve" approved="yes">
 				<source>Row</source><target state="translated">Zeile</target>
@@ -71,9 +68,6 @@
             <trans-unit id="celayout.accordionElements" xml:space="preserve" approved="yes">
 				<source>Accordion elements</source><target state="translated">Accordion Elemente</target>
             </trans-unit>
-            <trans-unit id="celayout.sliderElements" xml:space="preserve" approved="yes">
-				<source>Slider elements</source><target state="translated">Slider Elemente</target>
-            </trans-unit>
             <trans-unit id="celayout.columnElements" xml:space="preserve" approved="yes">
 				<source>Column elements</source><target state="translated">Spaltenelemente</target>
             </trans-unit>
@@ -91,7 +85,7 @@
 				<source>Large</source>
 			<target state="translated">Grosse Screens</target></trans-unit>
             <trans-unit id="grid.sheet.extraLargeDevices" xml:space="preserve" approved="yes">
-				<source>Large</source>
+				<source>Extra Large</source>
 			<target state="translated">Grosse Screens</target></trans-unit>
             <trans-unit id="grid.sheet.customClasses" xml:space="preserve" approved="yes">
 				<source>Custom classes</source>
@@ -136,57 +130,6 @@
 			<trans-unit id="grid.sheet.options" xml:space="preserve" approved="yes">
 				<source>Options</source>
 			<target state="translated">Optionen</target></trans-unit>
-			<trans-unit id="grid.slider.direction" xml:space="preserve" approved="yes">
-				<source>Direction</source>
-			<target state="translated">Richtung</target></trans-unit>
-			<trans-unit id="grid.slider.direction.1" xml:space="preserve" approved="yes">
-				<source>vertical</source>
-			<target state="translated">vertikal</target></trans-unit>
-			<trans-unit id="grid.slider.direction.2" xml:space="preserve" approved="yes">
-				<source>horizontal</source>
-			<target state="translated">horizontal</target></trans-unit>
-			<trans-unit id="grid.slider.speed" xml:space="preserve" approved="yes">
-				<source>Slideshow speed</source>
-			<target state="translated">Geschwindigkeit (in ms)</target></trans-unit>
-			<trans-unit id="grid.slider.animation" xml:space="preserve" approved="yes">
-				<source>Animation</source>
-			<target state="translated">Animation</target></trans-unit>
-			<trans-unit id="grid.slider.animation.1" xml:space="preserve" approved="yes">
-				<source>fade</source>
-			<target state="translated">ausblenden</target></trans-unit>
-			<trans-unit id="grid.slider.animation.2" xml:space="preserve" approved="yes">
-				<source>slide</source>
-			<target state="translated">slide</target></trans-unit>
-			<trans-unit id="grid.slider.animationspeed" xml:space="preserve" approved="yes">
-				<source>Animation speed</source>
-			<target state="translated">Dauer der Animation (in ms)</target></trans-unit>
-			<trans-unit id="grid.slider.style" xml:space="preserve" approved="yes">
-				<source>Style</source>
-			<target state="translated">Stil</target></trans-unit>
-			<trans-unit id="grid.slider.showcontrolnav" xml:space="preserve" approved="yes">
-				<source>Show control navigation</source>
-			<target state="translated">Links für jedes Slide anzeigen</target></trans-unit>
-			<trans-unit id="grid.slider.showdirnav" xml:space="preserve" approved="yes">
-				<source>Show direction navigation</source>
-			<target state="translated">Zurück/vorwärts anzeigen</target></trans-unit>
-			<trans-unit id="grid.slider.showpause" xml:space="preserve" approved="yes">
-				<source>Show pause button</source>
-			<target state="translated">Play/Pause anzeigen</target></trans-unit>
-			<trans-unit id="grid.slider.pauseonhover" xml:space="preserve" approved="yes">
-				<source>Pause on hover</source>
-			<target state="translated">Pausieren wenn Maus über dem Slider</target></trans-unit>
-			<trans-unit id="grid.slider.initdelay" xml:space="preserve" approved="yes">
-				<source>Init delay</source>
-			<target state="translated">Initiale Verzögerung (in ms)</target></trans-unit>
-			<trans-unit id="grid.slider.randomize" xml:space="preserve" approved="yes">
-				<source>Randomize</source>
-			<target state="translated">Slides mischen vor der Anzeige</target></trans-unit>
-			<trans-unit id="grid.slider.animationloop" xml:space="preserve" approved="yes">
-				<source>Loop</source>
-			<target state="translated">Endlosschleife</target></trans-unit>
-			<trans-unit id="grid.slider.reverse" xml:space="preserve" approved="yes">
-				<source>Reverse order</source>
-			<target state="translated">Reihenfolge rückwärts</target></trans-unit>
 
             <trans-unit id="grid.sheet.layout" xml:space="preserve" approved="yes">
 				<source>Layout</source>

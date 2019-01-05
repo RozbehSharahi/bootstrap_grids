@@ -45,12 +45,6 @@
             <trans-unit id="accordion.description" xml:space="preserve">
 				<source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
 			</trans-unit>
-            <trans-unit id="slider.title" xml:space="preserve">
-				<source>Content slider</source>
-			</trans-unit>
-            <trans-unit id="slider.description" xml:space="preserve">
-				<source>Each content element within the grid represents a slider element.</source>
-			</trans-unit>
 
             <trans-unit id="xSimpleRow.title" xml:space="preserve">
 				<source>Row</source>
@@ -97,9 +91,6 @@
             </trans-unit>
             <trans-unit id="celayout.accordionElements" xml:space="preserve">
 				<source>Accordion elements</source>
-            </trans-unit>
-            <trans-unit id="celayout.sliderElements" xml:space="preserve">
-				<source>Slider elements</source>
             </trans-unit>
             <trans-unit id="celayout.columnElements" xml:space="preserve">
 				<source>Column elements</source>
@@ -153,6 +144,15 @@
             <trans-unit id="grid.label.visible" xml:space="preserve">
 				<source>visible</source>
 			</trans-unit>
+            <trans-unit id="grid.label.autoLayout" xml:space="preserve">
+				<source>Auto layout (col)</source>
+			</trans-unit>
+            <trans-unit id="grid.label.variableWidth" xml:space="preserve">
+				<source>Variable width (col-*-auto}</source>
+			</trans-unit>
+            <trans-unit id="grid.label.rowCustom" xml:space="preserve">
+				<source>Custom row classes</source>
+			</trans-unit>
 
             <trans-unit id="grid.sheet.animation" xml:space="preserve">
 				<source>Animation</source>
@@ -162,57 +162,6 @@
 			</trans-unit>
 			<trans-unit id="grid.sheet.options" xml:space="preserve">
 				<source>Options</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.direction" xml:space="preserve">
-				<source>Direction</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.direction.1" xml:space="preserve">
-				<source>vertical</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.direction.2" xml:space="preserve">
-				<source>horizontal</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.speed" xml:space="preserve">
-				<source>Slideshow speed</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.animation" xml:space="preserve">
-				<source>Animation</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.animation.1" xml:space="preserve">
-				<source>fade</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.animation.2" xml:space="preserve">
-				<source>slide</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.animationspeed" xml:space="preserve">
-				<source>Animation speed</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.style" xml:space="preserve">
-				<source>Style</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.showcontrolnav" xml:space="preserve">
-				<source>Show control navigation</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.showdirnav" xml:space="preserve">
-				<source>Show direction navigation</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.showpause" xml:space="preserve">
-				<source>Show pause button</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.pauseonhover" xml:space="preserve">
-				<source>Pause on hover</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.initdelay" xml:space="preserve">
-				<source>Init delay</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.randomize" xml:space="preserve">
-				<source>Randomize</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.animationloop" xml:space="preserve">
-				<source>Loop</source>
-			</trans-unit>
-			<trans-unit id="grid.slider.reverse" xml:space="preserve">
-				<source>Reverse order</source>
 			</trans-unit>
 
             <trans-unit id="grid.sheet.layout" xml:space="preserve">
@@ -253,6 +202,40 @@
 			</trans-unit>
 			<trans-unit id="grid.label.tabTitle8" xml:space="preserve">
 				<source>Title 8</source>
+			</trans-unit>
+
+            <trans-unit id="grid.sheet.rowClasses" xml:space="preserve">
+				<source>Row classes</source>
+			</trans-unit>
+            <trans-unit id="grid.label.rowValign" xml:space="preserve">
+				<source>Vertical alignment</source>
+			</trans-unit>
+            <trans-unit id="grid.rowValign.alignItemsStart" xml:space="preserve">
+				<source>align-items-start</source>
+			</trans-unit>
+            <trans-unit id="grid.rowValign.alignItemsCenter" xml:space="preserve">
+				<source>align-items-center</source>
+			</trans-unit>
+            <trans-unit id="grid.rowValign.alignItemsEnd" xml:space="preserve">
+				<source>align-items-end</source>
+			</trans-unit>
+            <trans-unit id="grid.label.rowHalign" xml:space="preserve">
+				<source>Horiztontal alignment</source>
+			</trans-unit>
+            <trans-unit id="grid.rowHalign.justifyContentStart" xml:space="preserve">
+				<source>justify-content-start</source>
+			</trans-unit>
+            <trans-unit id="grid.rowHalign.justifyContentCenter" xml:space="preserve">
+				<source>justify-content-center</source>
+			</trans-unit>
+            <trans-unit id="grid.rowHalign.justifyContentEnd" xml:space="preserve">
+				<source>justify-content-end</source>
+			</trans-unit>
+            <trans-unit id="grid.rowHalign.justifyContentAround" xml:space="preserve">
+				<source>justify-content-around</source>
+			</trans-unit>
+            <trans-unit id="grid.rowHalign.justifyContentBetween" xml:space="preserve">
+				<source>justify-content-between</source>
 			</trans-unit>
 
             <trans-unit id="grid.label.none" xml:space="preserve">
