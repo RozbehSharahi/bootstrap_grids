@@ -15,7 +15,7 @@ Grids for bootstrap
 
 Copyright 2013-2014, Pascal Mayer <typo3@simple.ch>
 
-Copyright 2015-2016, |author|
+Copyright 2015-2019, |author|
 
 This document is published under the Open Content License
 

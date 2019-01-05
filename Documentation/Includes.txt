@@ -3,7 +3,7 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. |author| replace:: Pascal Mayer <typo3@bsdist.ch>
+.. |author| replace:: Pascal Mayer <typo3@lascap.ch>
 
 
 .. ==================================================
