@@ -19,8 +19,8 @@ $EM_CONF[$_EXTKEY] = [
 	'clearCacheOnLoad' => 1,
 	'constraints' => [
 		'depends' => [
-			'typo3' => '8.7.0-9.5.99',
-			'gridelements' => '8.0.0-9.9.99',
+			'typo3' => '8.7.0-10.4.99',
+			'gridelements' => '8.0.0-10.4.99',
 		],
 		'conflicts' => [
 		],

@@ -8,7 +8,7 @@
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
   "require": {
-    "typo3-ter/gridelements" : "8.0 - 9.9"
+    "gridelements/gridelements" : ">=8.0 < 11"
   },
   "autoload": {
     "psr-4": {
