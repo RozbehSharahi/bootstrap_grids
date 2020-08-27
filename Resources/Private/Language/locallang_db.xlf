@@ -148,7 +148,7 @@
 				<source>Auto layout (col)</source>
 			</trans-unit>
             <trans-unit id="grid.label.variableWidth" xml:space="preserve">
-				<source>Variable width (col-*-auto}</source>
+				<source>Variable width</source>
 			</trans-unit>
             <trans-unit id="grid.label.rowCustom" xml:space="preserve">
 				<source>Custom row classes</source>
@@ -211,31 +211,31 @@
 				<source>Vertical alignment</source>
 			</trans-unit>
             <trans-unit id="grid.rowValign.alignItemsStart" xml:space="preserve">
-				<source>align-items-start</source>
+				<source>Start</source>
 			</trans-unit>
             <trans-unit id="grid.rowValign.alignItemsCenter" xml:space="preserve">
-				<source>align-items-center</source>
+				<source>Center</source>
 			</trans-unit>
             <trans-unit id="grid.rowValign.alignItemsEnd" xml:space="preserve">
-				<source>align-items-end</source>
+				<source>End</source>
 			</trans-unit>
             <trans-unit id="grid.label.rowHalign" xml:space="preserve">
 				<source>Horiztontal alignment</source>
 			</trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentStart" xml:space="preserve">
-				<source>justify-content-start</source>
+				<source>Start</source>
 			</trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentCenter" xml:space="preserve">
-				<source>justify-content-center</source>
+				<source>Center</source>
 			</trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentEnd" xml:space="preserve">
-				<source>justify-content-end</source>
+				<source>End</source>
 			</trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentAround" xml:space="preserve">
-				<source>justify-content-around</source>
+				<source>Around</source>
 			</trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentBetween" xml:space="preserve">
-				<source>justify-content-between</source>
+				<source>Between</source>
 			</trans-unit>
 
             <trans-unit id="grid.label.none" xml:space="preserve">
