@@ -8,11 +8,11 @@
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
   "require": {
-    "gridelementsteam/gridelements" : ">=8.0 <11.0"
+    "gridelementsteam/gridelements" : "^10"
   },
   "autoload": {
     "psr-4": {
-      "Laxap\\BootstrapGrids\\": "Classes"
+      "Laxap\\BootstrapGrids\\": "Classes/"
     }
   }
 }

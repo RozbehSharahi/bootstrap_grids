@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
 	'author' => 'Pascal Mayer',
 	'author_email' => 'typo3@lascap.ch',
 	'author_company' => '',
-	'version' => '2.0.1',
+	'version' => '2.1.0',
 	'state' => 'stable',
 	'uploadfolder' => '0',
 	'createDirs' => '',
@@ -19,14 +19,14 @@ $EM_CONF[$_EXTKEY] = [
 	'clearCacheOnLoad' => 1,
 	'constraints' => [
 		'depends' => [
-			'typo3' => '8.7.0-10.4.99',
-			'gridelements' => '8.0.0-10.99.99',
+			'typo3' => '10.4.0-10.4.99',
+			'gridelements' => '10.0.0-10.99.99',
 		],
-		'conflicts' => [
-		],
+		'conflicts' => [],
+        'suggests' => [],
 	],
     'autoload' => [
-        'psr-4' => ['Laxap\\BootstrapGrids\\' => 'Classes']
+        'psr-4' => ['Laxap\\BootstrapGrids\\' => 'Classes/']
     ],
 ];
 
