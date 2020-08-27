@@ -1,6 +1,0 @@
-
-# cat=basic; type=boolean; label=Enable the row grid element.:Useful only with custom grids or ext:bscolwrap.
-enableGridSimpleRow = 0
-
-
-
