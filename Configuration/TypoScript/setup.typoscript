@@ -1,13 +1,8 @@
-
-/** ------------------------------------------------
- * General config
- */
 # Remove 2nd column from defaultGridSeetup, colpos 101, 102 are used
 lib.gridelements.defaultGridSetup.columns.2 >
 
-/** ------------------------------------------------
- * Grid definitions
- */
+# Grid definitions
+#
 lib.bootstrap_grids {
 
     # Column grids
@@ -294,9 +289,8 @@ lib.bootstrap_grids {
 }
 
 
-/** ------------------------------------------------
-* Assign grid rendering to layout ids (names)
-*/
+# Assign grid rendering to layout ids (names)
+#
 tt_content.gridelements_pi1.20.10.setup {
     2cols < lib.bootstrap_grids.2cols
     3cols < lib.bootstrap_grids.3cols
