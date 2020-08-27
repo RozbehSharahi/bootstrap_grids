@@ -74,7 +74,7 @@
 
             <trans-unit id="grid.sheet.mediumDevices" xml:space="preserve" approved="yes">
 				<source>Desktop</source>
-			<target state="translated">Desktop</target></trans-unit>
+			<target state="translated">Full HD</target></trans-unit>
             <trans-unit id="grid.sheet.smallDevices" xml:space="preserve" approved="yes">
 				<source>Small devices</source>
 			<target state="translated">Tablets</target></trans-unit>
@@ -83,10 +83,10 @@
 			<target state="translated">Mobilgeräte</target></trans-unit>
             <trans-unit id="grid.sheet.largeDevices" xml:space="preserve" approved="yes">
 				<source>Large</source>
-			<target state="translated">WQHD(2,56K)</target></trans-unit>
+			<target state="translated">WQHD (2,56K)</target></trans-unit>
             <trans-unit id="grid.sheet.extraLargeDevices" xml:space="preserve" approved="yes">
 				<source>Extra Large</source>
-			<target state="translated">UltraHD(4K)</target></trans-unit>
+			<target state="translated">UltraHD (4K)</target></trans-unit>
             <trans-unit id="grid.sheet.customClasses" xml:space="preserve" approved="yes">
 				<source>Custom classes</source>
 			<target state="translated">Weitere class-Attribute</target></trans-unit>
