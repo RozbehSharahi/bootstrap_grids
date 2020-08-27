@@ -3,5 +3,10 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     'bootstrap_grids',
     'Configuration/TypoScript/',
-    'Grids for Bootstrap'
+    'Grids for Bootstrap (deprecated)'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    'bootstrap_grids',
+    'Configuration/TypoScript/DataProcessingLibContentElement/',
+    'Grids for Bootstrap (recommended, w/DataProcessing)'
 );
