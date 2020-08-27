@@ -2,9 +2,10 @@
   "name": "laxap/bootstrap-grids",
   "type": "typo3-cms-extension",
   "description": "Gridelements for bootstrap v4. Column grids, tabs and accordion.",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "version": "2.2.0",
-  "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "bsdist", "gridelements"],
+  "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "gridelements"],
+  "homepage": "https://extensions.typo3.org/extension/bootstrap_grids/",
   "support": {
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
@@ -14,12 +15,11 @@
     "gridelementsteam/gridelements": "^10"
   },
   "replace": {
-    "laxap/bootstrap-grids": "self.version",
     "typo3-ter/bootstrap-grids": "self.version"
   },
   "autoload": {
     "psr-4": {
-      "Laxap\\BootstrapGrids\\": "Classes/"
+      "Laxap\\BootstrapGrids\\": "Classes"
     }
   }
 }
