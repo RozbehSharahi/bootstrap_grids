@@ -45,6 +45,12 @@
             <trans-unit id="accordion.description" xml:space="preserve">
 				<source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
 			</trans-unit>
+			<trans-unit id="accordion.firstOpened" xml:space="preserve">
+				<source>First item open by default</source>
+			</trans-unit>
+			<trans-unit id="accordion.allClosed" xml:space="preserve">
+				<source>Display all closed by default</source>
+			</trans-unit>
 
             <trans-unit id="xSimpleRow.title" xml:space="preserve">
 				<source>Row</source>
