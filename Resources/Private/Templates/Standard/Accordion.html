@@ -8,15 +8,26 @@
             <f:for each="{children}" as="columns" key="rowNumber">
                 <f:if condition="{columns.101}">
                     <f:for each="{columns.101}" as="child" iteration="iteration">
+                        <f:variable name="isCollapsed">0</f:variable>
+                        <f:if condition="{iteration.index}"><f:variable name="isCollapsed">1</f:variable></f:if>
+                        <f:if condition="{data.flexform_rowclass}"><f:variable name="isCollapsed">1</f:variable></f:if>
                         <div class="card">
                             <div class="card-header" id="heading-c{child.data.uid}">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link {f:if(condition:iteration.index,then:'',else:'collapsed')}" data-toggle="collapse" data-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}" data-target="#collapse-{child.data.uid}" aria-expanded="false" aria-controls="collapse-{child.data.uid}">
+                                    <button class="btn btn-link {f:if(condition:isCollapsed,then:'collapsed',else:'')}"
+                                            data-toggle="collapse"
+                                            data-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}"
+                                            data-target="#collapse-{child.data.uid}"
+                                            aria-expanded="false"
+                                            aria-controls="collapse-{child.data.uid}">
                                         {child.data.header}
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapse-{child.data.uid}" class="collapse {f:if(condition:iteration.index,then:'',else:'show')}" aria-labelledby="heading-c{child.data.uid}" data-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
+                            <div id="collapse-{child.data.uid}"
+                                 class="collapse {f:if(condition:isCollapsed,then:'',else:'show')}"
+                                 aria-labelledby="heading-c{child.data.uid}"
+                                 data-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
                                 <div class="card-body">
                                     <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
                                 </div>

@@ -24,6 +24,14 @@
             <trans-unit id="accordion.title" xml:space="preserve" approved="yes">
 				<source>Accordion from content</source><target state="translated">Accordion aus dem Inhalt</target>
 			</trans-unit>
+			<trans-unit id="accordion.firstOpened" xml:space="preserve">
+				<source>First item open by default</source>
+				<target state="translated">Erstes Element geöffnet</target>
+			</trans-unit>
+			<trans-unit id="accordion.allClosed" xml:space="preserve">
+				<source>Display all closed by default</source>
+				<target state="translated">Alle Elemente geschlossen</target>
+			</trans-unit>
 
             <trans-unit id="xSimpleRow.title" xml:space="preserve" approved="yes">
 				<source>Row</source><target state="translated">Zeile</target>
