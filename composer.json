@@ -10,7 +10,7 @@
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
   "require": {
-    "php": "^7.4",
+    "php": "^8.0 || ^8.1",
     "typo3/cms-core": "^11.5",
     "gridelementsteam/gridelements": "^11.0.0-dev"
   },
