@@ -20,7 +20,7 @@ $EM_CONF[$_EXTKEY] = [
 	'constraints' => [
 		'depends' => [
 			'typo3' => '10.4.0-11.5.99',
-			'gridelements' => '9.0.0-11.99.99',
+			'gridelements' => '10.0.0-11.99.99',
 		],
 		'conflicts' => [],
         'suggests' => [],
@@ -29,5 +29,3 @@ $EM_CONF[$_EXTKEY] = [
         'psr-4' => ['Laxap\\BootstrapGrids\\' => 'Classes']
     ],
 ];
-
-?>
