@@ -2,7 +2,7 @@
 if (!defined('TYPO3_MODE')) { die('Access denied.'); }
 
 call_user_func(
-    function ($extConfString) {
+    function () {
 
         // register icons
         $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
@@ -45,6 +45,6 @@ call_user_func(
         // Add pageTS config
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/pageTs/tsconfig.ts">');
 
-    },$_EXTCONF
+    }
 );
 ?>

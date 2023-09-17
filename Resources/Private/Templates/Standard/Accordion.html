@@ -1,23 +1,21 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-bs-namespace-typo3-fluid="true">
 
 <f:layout name="Default"/>
 
 <f:section name="Main">
     <f:if condition="{children}">
-        <div id="accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
+        <div id="accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}" class="accordion">
             <f:for each="{children}" as="columns" key="rowNumber">
                 <f:if condition="{columns.101}">
                     <f:for each="{columns.101}" as="child" iteration="iteration">
-                        <div class="card">
-                            <div class="card-header" id="heading-c{child.data.uid}">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link {f:if(condition:iteration.index,then:'',else:'collapsed')}" data-toggle="collapse" data-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}" data-target="#collapse-{child.data.uid}" aria-expanded="false" aria-controls="collapse-{child.data.uid}">
-                                        {child.data.header}
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse-{child.data.uid}" class="collapse {f:if(condition:iteration.index,then:'',else:'show')}" aria-labelledby="heading-c{child.data.uid}" data-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
-                                <div class="card-body">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordion-button-c{child.data.uid}">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{child.data.uid}" aria-expanded="true" aria-controls="#collapse-{child.data.uid}">
+                                    {child.data.header}
+                                </button>
+                            </h2>
+                            <div id="collapse-{child.data.uid}" class="accordion-collapse collapse" aria-labelledby="heading-c{child.data.uid}" data-bs-parent="#accordion-{f:if(condition:data._LOCALIZED_UID, then:data._LOCALIZED_UID, else:data.uid)}">
+                                <div class="accordion-body">
                                     <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
                                 </div>
                             </div>

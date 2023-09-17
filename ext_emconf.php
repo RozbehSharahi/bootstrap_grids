@@ -6,12 +6,12 @@
 
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'Grids for bootstrap',
-	'description' => 'Gridelements for bootstrap v4. Column grids, tabs and accordion.',
+	'description' => 'Gridelements for bootstrap v5. Column grids, tabs and accordion.',
 	'category' => 'misc',
 	'author' => 'Pascal Mayer',
 	'author_email' => 'typo3@lascap.ch',
 	'author_company' => '',
-	'version' => '2.2.0',
+	'version' => '3.0.0',
 	'state' => 'stable',
 	'uploadfolder' => '0',
 	'createDirs' => '',
@@ -19,8 +19,8 @@ $EM_CONF[$_EXTKEY] = [
 	'clearCacheOnLoad' => 1,
 	'constraints' => [
 		'depends' => [
-			'typo3' => '10.4.0-10.4.99',
-			'gridelements' => '10.0.0-10.99.99',
+			'typo3' => '10.4.0-11.5.99',
+			'gridelements' => '10.0.0-11.99.99',
 		],
 		'conflicts' => [],
         'suggests' => [],
@@ -29,5 +29,3 @@ $EM_CONF[$_EXTKEY] = [
         'psr-4' => ['Laxap\\BootstrapGrids\\' => 'Classes']
     ],
 ];
-
-?>
