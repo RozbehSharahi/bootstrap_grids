@@ -1,9 +1,6 @@
 <?php
 
-/***************************************************************
- * Extension Manager/Repository config file for ext: "bootstrap_grids"
- ***************************************************************/
-
+/** @var $_EXTKEY */
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'Grids for bootstrap',
 	'description' => 'Gridelements for bootstrap v5. Column grids, tabs and accordion.',

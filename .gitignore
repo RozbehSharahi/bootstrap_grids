@@ -1,2 +1,6 @@
-#Editos
 .idea
+/composer.lock
+/vendor
+/public
+/var
+/config

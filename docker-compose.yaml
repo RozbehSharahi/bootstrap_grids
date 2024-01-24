@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  app:
+    user: 1001:1001
+    build:
+      context: .
+      dockerfile: Docker/php8-apache/Dockerfile
+      args:
+        - APACHE_DOCUMENT_ROOT=/var/www/html/public/
+        - HOST_USER_ID=1001
+    environment:
+      - XDEBUG_MODE=debug
+      - XDEBUG_CONFIG=client_host=host.docker.internal client_port=9003
+      - XDEBUG_SESSION=1
+      - PHP_IDE_CONFIG=serverName=bootstrap_grids
+      - TYPO3_CONTEXT=Development/Docker
+    volumes:
+      - './:/var/www/html'
+    ports:
+      - '8080:80'
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
