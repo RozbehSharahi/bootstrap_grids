@@ -257,7 +257,7 @@ lib.bootstrap_grids {
                         videoce_videocontent.10 >
                     }
                     30 = TEXT
-                    30.wrap = |</div></div></div>
+                    30.wrap = |</div></div>
                 }
             }
         }
