@@ -52,4 +52,11 @@ if (!defined('TYPO3_MODE')) {
     // Add pageTS config
     ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/pageTs/tsconfig.ts">');
 
+    if(getenv('TYPO3_CONTEXT') === 'Development/BootstrapGrids/Docker') {
+        ExtensionManagementUtility::addTypoScript(
+            'bootstrap_grids',
+            'setup',
+            "@import 'EXT:bootstrap_grids/Configuration/TypoScript/Contribution/setup.typoscript'",
+        );
+    }
 })();

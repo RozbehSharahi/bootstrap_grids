@@ -12,7 +12,7 @@ services:
       - XDEBUG_CONFIG=client_host=host.docker.internal client_port=9003
       - XDEBUG_SESSION=1
       - PHP_IDE_CONFIG=serverName=bootstrap_grids
-      - TYPO3_CONTEXT=Development/Docker
+      - TYPO3_CONTEXT=Development/BootstrapGrids/Docker
     volumes:
       - '../:/var/www/html'
     ports:
