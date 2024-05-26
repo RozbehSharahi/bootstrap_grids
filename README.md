@@ -2,6 +2,8 @@
 
 Predefined gridelements for bootstrap: Column grids, grids for simple accordions, tabs.
 
-## More information
+## Contribution
 
-Please follow the documentation found at http://docs.typo3.org/typo3cms/extensions/bootstrap_grids/
+```shell
+.docker/bin/start
+```
