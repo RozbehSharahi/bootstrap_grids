@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+if [ -f .docker/bin/.env ]; then
+    source .docker/bin/.env
+fi
+
+export CONTEXT=${CONTEXT:-php8.1}
+
+echo "Context was: $CONTEXT"
+
+docker compose -f .docker/docker-compose.base.yml -f .docker/docker-compose."$CONTEXT".yml "$@"
