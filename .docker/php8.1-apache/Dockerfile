@@ -1,10 +1,11 @@
-FROM php:7.4.15-apache
+FROM php:8.1-apache
 
-ARG HOST_USER_ID
+ARG USER_ID
+ARG GROUP_ID
 
-RUN usermod --non-unique --uid $HOST_USER_ID www-data
+RUN usermod --non-unique --uid $USER_ID www-data
+RUN groupmod --gid $GROUP_ID www-data
 RUN a2enmod rewrite
-RUN chown -R www-data:root /var/www
 
 ARG APACHE_DOCUMENT_ROOT
 ENV APACHE_DOCUMENT_ROOT $APACHE_DOCUMENT_ROOT
@@ -33,10 +34,16 @@ RUN apt-get update && apt-get install -y iputils-ping && apt-get install -y teln
 
 RUN apt-get install -y libzip-dev zip && docker-php-ext-install zip
 
-RUN apt-get update && apt-get install curl && curl -sL https://deb.nodesource.com/setup_14.x | bash
-RUN apt-get install nodejs
-RUN npm install --global yarn
-
 RUN apt-get install -y libjpeg-dev libpng-dev libfreetype6-dev libwebp-dev
 RUN docker-php-ext-configure gd --with-jpeg --with-freetype
 RUN docker-php-ext-install gd
+
+RUN apt-get update && apt-get install -y \
+    imagemagick libmagickwand-dev --no-install-recommends \
+    && pecl install imagick \
+    && docker-php-ext-enable imagick
+
+WORKDIR /var/www/html
+COPY --chown=www-data:www-data . .
+
+USER www-data

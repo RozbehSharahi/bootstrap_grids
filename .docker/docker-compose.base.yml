@@ -1,21 +1,20 @@
-version: '3.7'
 services:
   app:
-    user: 1001:1001
+    command: bash -c "cp -rn .docker/templates/v11/* . && composer install && apache2-foreground"
     build:
-      context: .
-      dockerfile: Docker/php8-apache/Dockerfile
+      context: ..
       args:
         - APACHE_DOCUMENT_ROOT=/var/www/html/public/
-        - HOST_USER_ID=1001
+        - USER_ID=${USER_ID:-1000}
+        - GROUP_ID=${GROUP_ID:-1000}
     environment:
-      - XDEBUG_MODE=debug
+      - XDEBUG_MODE=${XDEBUG_MODE:-debug}
       - XDEBUG_CONFIG=client_host=host.docker.internal client_port=9003
       - XDEBUG_SESSION=1
       - PHP_IDE_CONFIG=serverName=bootstrap_grids
       - TYPO3_CONTEXT=Development/Docker
     volumes:
-      - './:/var/www/html'
+      - '../:/var/www/html'
     ports:
       - '8080:80'
     extra_hosts:

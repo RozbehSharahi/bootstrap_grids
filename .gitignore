@@ -4,3 +4,7 @@
 /public
 /var
 /config
+/.docker/bin/.env
+/.docker/.env
+/database
+/database/database.v12.sql

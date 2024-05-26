@@ -1,0 +1,5 @@
+services:
+  app:
+    build:
+      dockerfile: .docker/php8.1-apache/Dockerfile
+
