@@ -1,0 +1,78 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+    <f:if condition="{children}">
+        <div class="{data.flexform_style}">
+            <f:spaceless>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" id="nav-c{data.uid}-tab1" data-toggle="tab" href="#nav-c{data.uid}-c1" role="tab" aria-controls="nav-c{data.uid}-c1" aria-selected="true">{data.flexform_tabTitle1}</a></li>
+                    <f:if condition="{data.flexform_tabTitle2}">
+                        <li class="nav-item"><a class="nav-link" id="nav-c{data.uid}-tab2" data-toggle="tab" href="#nav-c{data.uid}-c2" role="tab" aria-controls="nav-c{data.uid}-c2">{data.flexform_tabTitle2}</a></li>
+                    </f:if>
+                    <f:if condition="{data.flexform_tabTitle3}">
+                        <li class="nav-item"><a class="nav-link" id="nav-c{data.uid}-tab3" data-toggle="tab" href="#nav-c{data.uid}-c3" role="tab" aria-controls="nav-c{data.uid}-c3">{data.flexform_tabTitle3}</a></li>
+                    </f:if>
+                    <f:if condition="{data.flexform_tabTitle4}">
+                        <li class="nav-item"><a class="nav-link" id="nav-c{data.uid}-tab4" data-toggle="tab" href="#nav-c{data.uid}-c4" role="tab" aria-controls="nav-c{data.uid}-c4">{data.flexform_tabTitle4}</a></li>
+                    </f:if>
+                    <f:if condition="{data.flexform_tabTitle5}">
+                        <li class="nav-item"><a class="nav-link" id="nav-c{data.uid}-tab5" data-toggle="tab" href="#nav-c{data.uid}-c5" role="tab" aria-controls="nav-c{data.uid}-c5">{data.flexform_tabTitle5}</a></li>
+                    </f:if>
+                    <f:if condition="{data.flexform_tabTitle6}">
+                        <li class="nav-item"><a class="nav-link" id="nav-c{data.uid}-tab6" data-toggle="tab" href="#nav-c{data.uid}-c6" role="tab" aria-controls="nav-c{data.uid}-c6">{data.flexform_tabTitle6}</a></li>
+                    </f:if>
+                </ul>
+            </f:spaceless>
+            <div class="tab-content">
+                <f:for each="{children}" as="columns" key="rowNumber">
+                    <div class="tab-pane fade show active" id="nav-c{data.uid}-c1" role="tabpanel" aria-labelledby="nav-c{data.uid}-tab1">
+                        <f:if condition="{columns.101}">
+                            <f:for each="{columns.101}" as="child">
+                                <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+                            </f:for>
+                        </f:if>
+                    </div>
+                    <f:if condition="{columns.102}">
+                        <div class="tab-pane fade" id="nav-c{data.uid}-c2" role="tabpanel" aria-labelledby="nav-c{data.uid}-tab2">
+                            <f:for each="{columns.102}" as="child">
+                                <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                    <f:if condition="{columns.103}">
+                        <div class="tab-pane fade" id="nav-c{data.uid}-c3" role="tabpanel" aria-labelledby="nav-c{data.uid}-tab3">
+                            <f:for each="{columns.103}" as="child">
+                                <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                    <f:if condition="{columns.104}">
+                        <div class="tab-pane fade" id="nav-c{data.uid}-c4" role="tabpanel" aria-labelledby="nav-c{data.uid}-tab4">
+                            <f:for each="{columns.104}" as="child">
+                                <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                    <f:if condition="{columns.105}">
+                        <div class="tab-pane fade" id="nav-c{data.uid}-c5" role="tabpanel" aria-labelledby="nav-c{data.uid}-tab5">
+                            <f:for each="{columns.105}" as="child">
+                                <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                    <f:if condition="{columns.106}">
+                        <div class="tab-pane fade" id="nav-c{data.uid}-c6" role="tabpanel" aria-labelledby="nav-c{data.uid}-tab6">
+                            <f:for each="{columns.106}" as="child">
+                                <f:render partial="Child" arguments="{data: child.data, children: child.children, options: options, settings: settings}"/>
+                            </f:for>
+                        </div>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+    </f:if>
+</f:section>
+
+</html>
