@@ -48,7 +48,7 @@ defined('TYPO3') or die();
     );
 
     // Add pageTS config
-    ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/pageTs/tsconfig.ts">');
+    ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/Backend/setup.typoscript">');
 
     if(getenv('TYPO3_CONTEXT') === 'Development/BootstrapGrids/Docker') {
         ExtensionManagementUtility::addTypoScript(
