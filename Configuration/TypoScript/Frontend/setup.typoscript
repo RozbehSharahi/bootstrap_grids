@@ -1,4 +1,3 @@
-
 tt_content.gridelements_pi1 {
     templateRootPaths {
         10 = EXT:bootstrap_grids/Resources/Private/Templates/
