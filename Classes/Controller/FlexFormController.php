@@ -21,7 +21,7 @@ class FlexFormController {
      * @return array
      */
     public function getTwoColumnOptions($config) {
-        return \Laxap\BootstrapGrids\Controller\FlexFormController::getColumnOptions($config);
+        return self::getColumnOptions($config);
     }
 
     /**
@@ -29,7 +29,7 @@ class FlexFormController {
      * @return array
      */
     public function getThreeColumnOptions($config) {
-        return \Laxap\BootstrapGrids\Controller\FlexFormController::getColumnOptions($config);
+        return self::getColumnOptions($config);
     }
 
     /**
@@ -37,7 +37,7 @@ class FlexFormController {
      * @return array
      */
     public function getFourColumnOptions($config) {
-        return \Laxap\BootstrapGrids\Controller\FlexFormController::getColumnOptions($config);
+        return self::getColumnOptions($config);
     }
 
     /**
