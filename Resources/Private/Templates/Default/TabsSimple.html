@@ -9,7 +9,7 @@
                 <f:if condition="{columns.101}">
                     <div class="nav nav-tabs" role="tablist">
                     <f:for each="{columns.101}" as="child" iteration="iteration">
-                        <a class="nav-item nav-link {f:if(condition:iteration.index, then:'', else:'active')}" id="nav-c{child.data.uid}-tab" data-toggle="tab" href="#nav-c{child.data.uid}" role="tab" aria-controls="nav-c{child.data.uid}">
+                        <a class="nav-item nav-link {f:if(condition:iteration.index, then:'', else:'active')}" id="nav-c{child.data.uid}-tab" data-bs-toggle="tab" href="#nav-c{child.data.uid}" role="tab" aria-controls="nav-c{child.data.uid}">
                             {child.data.header}
                         </a>
                     </f:for>
