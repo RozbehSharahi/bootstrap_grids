@@ -101,7 +101,6 @@ class FlexFormController {
                     array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden', 'd-md-none'));
                 break;
 
-
             // large
             case 'lgCol':
                 $optionList = array(

@@ -8,11 +8,10 @@
             <f:for each="{children}" as="columns" key="rowNumber">
                 <f:if condition="{columns.101}">
                     <f:for each="{columns.101}" as="child" iteration="iteration">
-
-                      <f:variable name="collapse">1</f:variable>
-                      <f:if condition="{iteration.index}==0 && {data.pi_flexform_content.rowclass}=='first-opened'">
-                        <f:variable name="collapse">0</f:variable>
-                      </f:if>
+                        <f:variable name="collapse">1</f:variable>
+                        <f:if condition="{iteration.index}==0 && {data.pi_flexform_content.rowclass}=='first-opened'">
+                          <f:variable name="collapse">0</f:variable>
+                        </f:if>
 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="accordion-button-c{child.data.uid}">

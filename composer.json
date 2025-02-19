@@ -33,7 +33,7 @@
   },
   "extra": {
     "typo3/cms": {
-        "extension-key": "bootstrap_grids"
+      "extension-key": "bootstrap_grids"
     }
 },
   "config": {
