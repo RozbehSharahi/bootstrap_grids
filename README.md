@@ -40,3 +40,15 @@ Entering the container
 ```shell
 .docker/bin/cli
 ```
+
+Run composer commands in container (e.g. `./docker/bin/composer install`)
+
+```shell
+.docker/bin/composer [command]
+```
+
+Run `vendor/bin/typo3` commands in container (e.g. `./docker/bin/typo3 cache:flush`)
+
+```shell
+.docker/bin/typo3 [command]
+```
