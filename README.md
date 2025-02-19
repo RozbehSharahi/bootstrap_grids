@@ -21,7 +21,7 @@ The paths of TypoScript files have changed. Please ensure you reselect the templ
 
 ## Contribution
 
-You will need docker installed for easy contribution and dev-setup.
+You will need Docker installed for easy contribution and dev-setup.
 
 To start dev environment
 
@@ -35,20 +35,26 @@ To stop dev environment
 .docker/bin/stop
 ```
 
-Entering the container
+Enter the dev environment container
 
 ```shell
 .docker/bin/cli
 ```
 
-Run composer commands in container (e.g. `./docker/bin/composer install`)
+Run `composer` commands (e.g. `./docker/bin/composer install`)
 
 ```shell
 .docker/bin/composer [command]
 ```
 
-Run `vendor/bin/typo3` commands in container (e.g. `./docker/bin/typo3 cache:flush`)
+Run `vendor/bin/typo3` commands (e.g. `.docker/bin/typo3 cache:flush`)
 
 ```shell
 .docker/bin/typo3 [command]
+```
+
+Run `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)
+
+```shell
+.docker/bin/compose [command]
 ```
