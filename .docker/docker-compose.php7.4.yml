@@ -1,5 +1,0 @@
-services:
-  app:
-    build:
-      dockerfile: .docker/php7.4-apache/Dockerfile
-
