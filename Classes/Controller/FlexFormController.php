@@ -16,35 +16,19 @@ namespace Laxap\BootstrapGrids\Controller;
 
 class FlexFormController {
 
-    /**
-     * @param array $config
-     * @return array
-     */
-    public function getTwoColumnOptions($config) {
+    public function getTwoColumnOptions(array $config): array {
         return self::getColumnOptions($config);
     }
 
-    /**
-     * @param array $config
-     * @return array
-     */
-    public function getThreeColumnOptions($config) {
+    public function getThreeColumnOptions(array $config): array {
         return self::getColumnOptions($config);
     }
 
-    /**
-     * @param array $config
-     * @return array
-     */
-    public function getFourColumnOptions($config) {
+    public function getFourColumnOptions(array $config): array {
         return self::getColumnOptions($config);
     }
 
-    /**
-     * @param array $config
-     * @return array
-     */
-    public static function getColumnOptions($config) {
+    public static function getColumnOptions(array $config): array {
         // mdCol, smCol, xsCol or lgCol
         $fieldName = $config['field'];
         $columnType = substr($fieldName, 0, -1);
@@ -165,6 +149,4 @@ class FlexFormController {
         $config['items'] = array_merge($config['items'], $optionList);
         return $config;
     }
-
-
 }
