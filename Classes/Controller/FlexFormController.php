@@ -118,7 +118,7 @@ class FlexFormController {
                 break;
 
 
-            // extra large
+            // large
             case 'lgCol':
                 $optionList = array(
                     array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.notset', ' '),
