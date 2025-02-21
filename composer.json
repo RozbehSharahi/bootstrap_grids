@@ -15,7 +15,6 @@
     "gridelementsteam/gridelements": "^10 || ^11"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
     "typo3/cms-install": "^10 || ^11",
     "typo3/cms-setup": "^10 || ^11",
     "typo3/cms-tstemplate": "^10 || ^11",
