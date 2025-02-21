@@ -5,329 +5,329 @@
         <header/>
         <body>
             <trans-unit id="2cols.title" xml:space="preserve">
-				<source>2 columns</source>
+                <source>2 columns</source>
                 <target>2 Spalten</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="2cols.description" xml:space="preserve">
-				<source>Inserts a 2-columns grid for content. The width of each column may be set for different screen sizes.</source>
+                <source>Inserts a 2-columns grid for content. The width of each column may be set for different screen sizes.</source>
                 <target>Fügt ein 2-Spalten Grid für Inhalt ein. Die Breite einer jeder Spalte kann für unterschiedliche Bildschirmgrößen gesetzt werden.</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="3cols.title" xml:space="preserve">
-				<source>3 columns</source>
+                <source>3 columns</source>
                 <target>3 Spalten</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="3cols.description" xml:space="preserve">
-				<source>Inserts a 3-columns grid for content.</source>
+                <source>Inserts a 3-columns grid for content.</source>
                 <target>Fügt ein 3-Spalten Grid für Inhalt ein. </target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="4cols.title" xml:space="preserve">
-				<source>4 columns</source>
+                <source>4 columns</source>
                 <target>4 Spalten</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="4cols.description" xml:space="preserve">
-				<source>Inserts a 4-columns grid for content.</source>
+                <source>Inserts a 4-columns grid for content.</source>
                 <target>Fügt ein 4-Spalten Grid für Inhalt ein. </target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="tabsSimple.title" xml:space="preserve">
-				<source>Tabs from content</source>
+                <source>Tabs from content</source>
                 <target>Tabs aus dem Inhalt</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="tabsSimple.description" xml:space="preserve">
-				<source>Each content element within the grid represents a tab. The title fields are used as tab titles.</source>
+                <source>Each content element within the grid represents a tab. The title fields are used as tab titles.</source>
                 <target>Jedes Inhaltelement innerhalb der Grids repräsentiert einen Tab. Die Titel-Felder werden als Tab-Titel verwendet.</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="tabs4.title" xml:space="preserve">
-				<source>Tabs (4)</source>
+                <source>Tabs (4)</source>
                 <target>Tabs (4)</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="tabs4.description" xml:space="preserve">
-				<source>For multiple content elements in one tab. 4 or less tabs.</source>
+                <source>For multiple content elements in one tab. 4 or less tabs.</source>
                 <target>Für mehrfache Inhaltselemente in einem Tab. 4 oder weniger Tabs.</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="tabs6.title" xml:space="preserve">
-				<source>Tabs (6)</source>
+                <source>Tabs (6)</source>
                 <target>Tabs (6)</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="tabs6.description" xml:space="preserve">
-				<source>For multiple content elements in one tab. 6 or less tabs.</source>
+                <source>For multiple content elements in one tab. 6 or less tabs.</source>
                 <target>Für mehrfache Inhaltselemente in einem Tab. 6 oder weniger Tabs.</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="accordion.title" xml:space="preserve">
-				<source>Accordion from content</source>
+                <source>Accordion from content</source>
                 <target>Acordion aus dem Inhalt</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="accordion.description" xml:space="preserve">
-				<source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
+                <source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
                 <target>Jedes Inhaltselement innerhalb des Grids stellt eine Accordion-Element dar. Die Titel-Felder werden als Accordion Leisten-Titel verwendet.</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="accordion.firstOpened" xml:space="preserve">
-				<source>First item open by default</source>
+                <source>First item open by default</source>
                 <target>Standardmäßig das erste Element geöffnet</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="accordion.allClosed" xml:space="preserve">
-				<source>Display all closed by default</source>
+                <source>Display all closed by default</source>
                 <target>Alle geschlossen zeigen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="xSimpleRow.title" xml:space="preserve">
-				<source>Row</source>
+                <source>Row</source>
                 <target>Zeile</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="xSimpleRow.description" xml:space="preserve">
-				<source>For use with responsive column width.</source>
+                <source>For use with responsive column width.</source>
                 <target>Verwenden mit Repsonsive Spalte.</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.leftColumn" xml:space="preserve">
-				<source>Left column</source>
+                <source>Left column</source>
                 <target>Linke Spalte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.rightColumn" xml:space="preserve">
-				<source>Right column</source>
+                <source>Right column</source>
                 <target>Rechte Spalte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.centerColumn" xml:space="preserve">
-				<source>Center column</source>
+                <source>Center column</source>
                 <target>Mittel Spalte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.column2" xml:space="preserve">
-				<source>2nd column</source>
+                <source>2nd column</source>
                 <target>2. Spalte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.column3" xml:space="preserve">
-				<source>3rd column</source>
+                <source>3rd column</source>
                 <target>3. Spalte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tabElements" xml:space="preserve">
-				<source>Tab elements</source>
+                <source>Tab elements</source>
                 <target>Tab Element</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tab1" xml:space="preserve">
-				<source>Tab 1</source>
+                <source>Tab 1</source>
                 <target>Tab 1</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tab2" xml:space="preserve">
-				<source>Tab 2</source>
+                <source>Tab 2</source>
                 <target>Tab 2</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tab3" xml:space="preserve">
-				<source>Tab 3</source>
+                <source>Tab 3</source>
                 <target>Tab 3</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tab4" xml:space="preserve">
-				<source>Tab 4</source>
+                <source>Tab 4</source>
                 <target>Tab 4</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tab5" xml:space="preserve">
-				<source>Tab 5</source>
+                <source>Tab 5</source>
                 <target>Tab 5</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.tab6" xml:space="preserve">
-				<source>Tab 6</source>
+                <source>Tab 6</source>
                 <target>Tab 6</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.accordionElements" xml:space="preserve">
-				<source>Accordion elements</source>
+                <source>Accordion elements</source>
                 <target>Accordion Elemente</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="celayout.columnElements" xml:space="preserve">
-				<source>Column elements</source>
+                <source>Column elements</source>
                 <target>Spalten Elemente</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.mediumDevices" xml:space="preserve">
-				<source>Desktop</source>
+                <source>Desktop</source>
                 <target>Desktop</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.smallDevices" xml:space="preserve">
-				<source>Small devices</source>
+                <source>Small devices</source>
                 <target>Kleine Geräte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.extraSmallDevices" xml:space="preserve">
-				<source>Extra small</source>
+                <source>Extra small</source>
                 <target>Extra klein</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.largeDevices" xml:space="preserve">
-				<source>Large</source>
+                <source>Large</source>
                 <target>Groß</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.extraLargeDevices" xml:space="preserve">
-				<source>Extra Large</source>
+                <source>Extra Large</source>
                 <target>Extra groß</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.customClasses" xml:space="preserve">
-				<source>Custom classes</source>
+                <source>Custom classes</source>
                 <target>Custom Klassen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.col1" xml:space="preserve">
-				<source>Column 1</source>
+                <source>Column 1</source>
                 <target>Spalte 1</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.col2" xml:space="preserve">
-				<source>Column 2</source>
+                <source>Column 2</source>
                 <target>Spalte 2</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.col3" xml:space="preserve">
-				<source>Column 3</source>
+                <source>Column 3</source>
                 <target>Spalte 3</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.col4" xml:space="preserve">
-				<source>Column 4</source>
+                <source>Column 4</source>
                 <target>Spalte 4</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.moreWidth" xml:space="preserve">
-				<source>More width</source>
+                <source>More width</source>
                 <target>Breite erhöhen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.notset" xml:space="preserve">
-				<source>not set</source>
+                <source>not set</source>
                 <target>nicht gesetzt</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.moreOptions" xml:space="preserve">
-				<source>More options</source>
+                <source>More options</source>
                 <target>Mehr Optionen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.special" xml:space="preserve">
-				<source>Special</source>
+                <source>Special</source>
                 <target>Spezial</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.hidden" xml:space="preserve">
-				<source>hidden</source>
+                <source>hidden</source>
                 <target>versteckt</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.visible" xml:space="preserve">
-				<source>visible</source>
+                <source>visible</source>
                 <target>sichtbar</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.autoLayout" xml:space="preserve">
-				<source>Auto layout (col)</source>
+                <source>Auto layout (col)</source>
                 <target>Auto Layout (Spalten)</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.variableWidth" xml:space="preserve">
-				<source>Variable width</source>
+                <source>Variable width</source>
                 <target>Variable Breite</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.rowCustom" xml:space="preserve">
-				<source>Custom row classes</source>
+                <source>Custom row classes</source>
                 <target>Custom Spalten Klassen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.animation" xml:space="preserve">
-				<source>Animation</source>
+                <source>Animation</source>
                 <target>Animation</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.controls" xml:space="preserve">
-				<source>Controls</source>
+                <source>Controls</source>
                 <target>Steuerelemente</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.options" xml:space="preserve">
-				<source>Options</source>
+                <source>Options</source>
                 <target>Optionen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.layout" xml:space="preserve">
-				<source>Layout</source>
+                <source>Layout</source>
                 <target>Layout</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.style" xml:space="preserve">
-				<source>Style</source>
+                <source>Style</source>
                 <target>Stil</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabStyle" xml:space="preserve">
-				<source>Style</source>
+                <source>Style</source>
                 <target>Stil</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabStyle.0" xml:space="preserve">
-				<source>Style 1</source>
+                <source>Style 1</source>
                 <target>Stil 1</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabStyle.1" xml:space="preserve">
-				<source>Style 2</source>
+                <source>Style 2</source>
                 <target>Stil 2</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle1" xml:space="preserve">
-				<source>Title 1</source>
+                <source>Title 1</source>
                 <target>Titel 1</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle2" xml:space="preserve">
-				<source>Title 2</source>
+                <source>Title 2</source>
                 <target>Titel 2</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle3" xml:space="preserve">
-				<source>Title 3</source>
+                <source>Title 3</source>
                 <target>Titel 3</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle4" xml:space="preserve">
-				<source>Title 4</source>
+                <source>Title 4</source>
                 <target>Titel 3</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle5" xml:space="preserve">
-				<source>Title 5</source>
+                <source>Title 5</source>
                 <target>Titel 5</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle6" xml:space="preserve">
-				<source>Title 6</source>
+                <source>Title 6</source>
                 <target>Titel 6</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle7" xml:space="preserve">
-				<source>Title 7</source>
+                <source>Title 7</source>
                 <target>Titel 7</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.tabTitle8" xml:space="preserve">
-				<source>Title 8</source>
+                <source>Title 8</source>
                 <target>Titel 8</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.sheet.rowClasses" xml:space="preserve">
-				<source>Row classes</source>
+                <source>Row classes</source>
                 <target>Spalten Klassen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.rowValign" xml:space="preserve">
-				<source>Vertical alignment</source>
+                <source>Vertical alignment</source>
                 <target>Vertikale Auirichtung</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowValign.alignItemsStart" xml:space="preserve">
-				<source>Start</source>
+                <source>Start</source>
                 <target>Start</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowValign.alignItemsCenter" xml:space="preserve">
-				<source>Center</source>
+                <source>Center</source>
                 <target>Mitte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowValign.alignItemsEnd" xml:space="preserve">
-				<source>End</source>
+                <source>End</source>
                 <target>Ende</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.rowHalign" xml:space="preserve">
-				<source>Horiztontal alignment</source>
+                <source>Horiztontal alignment</source>
                 <target>Horizontale Ausrichtung</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentStart" xml:space="preserve">
-				<source>Start</source>
+                <source>Start</source>
                 <target>Start</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentCenter" xml:space="preserve">
-				<source>Center</source>
+                <source>Center</source>
                 <target>Mitte</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentEnd" xml:space="preserve">
-				<source>End</source>
+                <source>End</source>
                 <target>Ende</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentAround" xml:space="preserve">
-				<source>Around</source>
+                <source>Around</source>
                 <target>Umlaufend</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.rowHalign.justifyContentBetween" xml:space="preserve">
-				<source>Between</source>
+                <source>Between</source>
                 <target>Dazwischen</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.none" xml:space="preserve">
-				<source>none</source>
+                <source>none</source>
                 <target>kein</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.yes" xml:space="preserve">
-				<source>yes</source>
+                <source>yes</source>
                 <target>ja</target>
-			</trans-unit>
+            </trans-unit>
             <trans-unit id="grid.label.no" xml:space="preserve">
-				<source>no</source>
+                <source>no</source>
                 <target>nein</target>
-			</trans-unit>
+            </trans-unit>
         </body>
     </file>
 </xliff>
