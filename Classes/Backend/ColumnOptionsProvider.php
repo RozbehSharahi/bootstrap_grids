@@ -45,7 +45,7 @@ class ColumnOptionsProvider
                     ['91.7%', 'col-11'],
                     ['100%', 'col-12'],
                     [$this->getLangKey('grid.label.moreOptions'), '--div--'],
-                    [$this->getLangKey('grid.label.notset'), ' '],
+                    [$this->getLangKey('grid.label.notset'), '---'],
                     [$this->getLangKey('grid.label.variableWidth'), 'col-auto']
                 ];
                 break;
