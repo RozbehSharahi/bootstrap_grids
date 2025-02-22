@@ -17,7 +17,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xsCol1>
@@ -27,7 +27,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xsCol2>
@@ -37,7 +37,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xsCol3>
@@ -47,7 +47,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xsCol4>
@@ -67,7 +67,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </smCol1>
@@ -77,7 +77,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </smCol2>
@@ -87,7 +87,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </smCol3>
@@ -97,7 +97,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </smCol4>
@@ -117,7 +117,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </mdCol1>
@@ -127,7 +127,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </mdCol2>
@@ -137,7 +137,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </mdCol3>
@@ -147,7 +147,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </mdCol4>
@@ -167,7 +167,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol1>
@@ -177,7 +177,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol2>
@@ -187,7 +187,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol3>
@@ -197,7 +197,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </lgCol4>
@@ -217,7 +217,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xlCol1>
@@ -227,7 +227,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xlCol2>
@@ -237,7 +237,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xlCol3>
@@ -247,7 +247,7 @@
                             <config type="array">
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Backend\ColumnOptionsProvider->getFourColumnOptions</itemsProcFunc>
                             </config>
                         </TCEforms>
                     </xlCol4>
