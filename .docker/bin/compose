@@ -8,9 +8,6 @@ if [[ -f .docker/bin/.env ]]; then
   set +a
 fi
 
-# Default to php8.1 if the CONTEXT environment variable is not set (copy .env.dist to .env to set CONTEXT)
-export CONTEXT=${CONTEXT:-php8.1}
-
 echo "Context was: $CONTEXT"
 
 docker compose -f .docker/docker-compose.base.yml -f .docker/docker-compose."$CONTEXT".yml "$@"
