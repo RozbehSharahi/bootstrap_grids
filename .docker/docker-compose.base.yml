@@ -1,6 +1,8 @@
 services:
   app:
-    command: bash -c "cp -rn .docker/templates/v11/* . && composer install && apache2-foreground"
+    env_file:
+      - bin/.env
+    command: bash -c "cp -rn .docker/templates/v${TYPO3:-12}/* . && composer install && apache2-foreground"
     build:
       context: ..
       args:
