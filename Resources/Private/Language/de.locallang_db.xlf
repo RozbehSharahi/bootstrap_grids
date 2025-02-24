@@ -17,16 +17,16 @@
                 <target>3 Spalten</target>
             </trans-unit>
             <trans-unit id="3cols.description" xml:space="preserve">
-                <source>Inserts a 3-columns grid for content.</source>
-                <target>Fügt ein 3-Spalten Grid für Inhalt ein. </target>
+                <source>Inserts a 3-columns grid for content. The width of each column may be set for different screen sizes.</source>
+                <target>Fügt ein 3-Spalten Grid für Inhalt ein. Die Breite einer jeder Spalte kann für unterschiedliche Bildschirmgrößen gesetzt werden.</target>
             </trans-unit>
             <trans-unit id="4cols.title" xml:space="preserve">
                 <source>4 columns</source>
                 <target>4 Spalten</target>
             </trans-unit>
             <trans-unit id="4cols.description" xml:space="preserve">
-                <source>Inserts a 4-columns grid for content.</source>
-                <target>Fügt ein 4-Spalten Grid für Inhalt ein. </target>
+                <source>Inserts a 4-columns grid for content. The width of each column may be set for different screen sizes.</source>
+                <target>Fügt ein 4-Spalten Grid für Inhalt ein. Die Breite einer jeder Spalte kann für unterschiedliche Bildschirmgrößen gesetzt werden.</target>
             </trans-unit>
             <trans-unit id="tabsSimple.title" xml:space="preserve">
                 <source>Tabs from content</source>
@@ -42,7 +42,7 @@
             </trans-unit>
             <trans-unit id="tabs4.description" xml:space="preserve">
                 <source>For multiple content elements in one tab. 4 or less tabs.</source>
-                <target>Für mehrfache Inhaltselemente in einem Tab. 4 oder weniger Tabs.</target>
+                <target>Für mehrfache Inhaltselemente in einem Tab. Bis zu 4 Tabs.</target>
             </trans-unit>
             <trans-unit id="tabs6.title" xml:space="preserve">
                 <source>Tabs (6)</source>
@@ -50,7 +50,7 @@
             </trans-unit>
             <trans-unit id="tabs6.description" xml:space="preserve">
                 <source>For multiple content elements in one tab. 6 or less tabs.</source>
-                <target>Für mehrfache Inhaltselemente in einem Tab. 6 oder weniger Tabs.</target>
+                <target>Für mehrfache Inhaltselemente in einem Tab. Bis zu 6 Tabs.</target>
             </trans-unit>
             <trans-unit id="accordion.title" xml:space="preserve">
                 <source>Accordion from content</source>
@@ -74,7 +74,7 @@
             </trans-unit>
             <trans-unit id="xSimpleRow.description" xml:space="preserve">
                 <source>For use with responsive column width.</source>
-                <target>Verwenden mit Repsonsive Spalte.</target>
+                <target>Verwenden mit Repsonsive Spalten Breite.</target>
             </trans-unit>
             <trans-unit id="celayout.leftColumn" xml:space="preserve">
                 <source>Left column</source>
@@ -98,7 +98,7 @@
             </trans-unit>
             <trans-unit id="celayout.tabElements" xml:space="preserve">
                 <source>Tab elements</source>
-                <target>Tab Element</target>
+                <target>Tab Elemente</target>
             </trans-unit>
             <trans-unit id="celayout.tab1" xml:space="preserve">
                 <source>Tab 1</source>
@@ -254,7 +254,7 @@
             </trans-unit>
             <trans-unit id="grid.label.tabTitle4" xml:space="preserve">
                 <source>Title 4</source>
-                <target>Titel 3</target>
+                <target>Titel 4</target>
             </trans-unit>
             <trans-unit id="grid.label.tabTitle5" xml:space="preserve">
                 <source>Title 5</source>
@@ -278,7 +278,7 @@
             </trans-unit>
             <trans-unit id="grid.label.rowValign" xml:space="preserve">
                 <source>Vertical alignment</source>
-                <target>Vertikale Auirichtung</target>
+                <target>Vertikale Ausrichtung</target>
             </trans-unit>
             <trans-unit id="grid.rowValign.alignItemsStart" xml:space="preserve">
                 <source>Start</source>
