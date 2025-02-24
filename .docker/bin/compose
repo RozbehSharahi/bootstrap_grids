@@ -2,8 +2,10 @@
 
 set -e
 
-if [ -f .docker/bin/.env ]; then
-    source .docker/bin/.env
+if [[ -f .docker/bin/.env ]]; then
+  set -a # Automatically export all variables to the shell
+  source .docker/bin/.env
+  set +a
 fi
 
 # Default to php8.1 if the CONTEXT environment variable is not set (copy .env.dist to .env to set CONTEXT)
