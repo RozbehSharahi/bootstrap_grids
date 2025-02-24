@@ -2,7 +2,6 @@
 return [
     'BE' => [
         'debug' => true,
-        'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '<set-in-.env>',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -37,6 +36,9 @@ return [
             'nestingInListModule' => '0',
             'overlayShortcutTranslation' => '0',
         ],
+        'scheduler' => [
+            'maxLifetime' => '1440',
+        ],
     ],
     'FE' => [
         'cacheHash' => [
@@ -56,7 +58,6 @@ return [
         'processor_effects' => true,
         'processor_enabled' => true,
         'processor_path' => '/usr/bin/',
-        'processor_path_lzw' => '/usr/bin/',
     ],
     'LOG' => [
         'TYPO3' => [
@@ -94,12 +95,6 @@ return [
                     ],
                 ],
                 'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => true,
-                    ],
-                ],
-                'pagesection' => [
                     'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
                     'options' => [
                         'compression' => true,
