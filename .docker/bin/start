@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ ! -f ".env" ]]; then
+    echo "Creating file '.env' since it didn't exist: cp .docker/bin/.env.dist .docker/bin/.env"
+    cp .docker/bin/.env.dist .docker/bin/.env
+else
+    echo "File '.env' exists so no need to copy from '.env.dist'"
+fi
+
 .docker/bin/compose up -d --build
