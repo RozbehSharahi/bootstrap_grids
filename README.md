@@ -1,8 +1,10 @@
 # TYPO3 Extension "bootstrap_grids"
 
-Predefined gridelements for bootstrap: Column grids, grids for simple accordions, tabs.
+Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for simple accordions, tabs.
 
-## Note for TYPO12
+
+
+## Note for TYPO3 12
 
 At the time of writing, TYPO3 12 compatibility is a work-in-progress but will be released very soon. In the meantime, it
 is possible to use the `main` branch as a dependency to install it for TYPO3 12.
@@ -15,13 +17,15 @@ is possible to use the `main` branch as a dependency to install it for TYPO3 12.
 }
 ```
 
-## Note for update to v5
+## Updating to `bootstrap_grids` v5
 
 The paths of TypoScript files have changed. Please ensure you reselect the template in your `sys_template` record.
 
 ## Contribution
 
-You will need Docker installed for easy contribution and dev-setup.
+You will need Docker installed for easy contribution and dev setup. Copy the `.docker/bin/.env.dist` environment variables file to `.docker/bin/.env` and adjust the values.
+
+### Docker scripts
 
 To start dev environment
 
