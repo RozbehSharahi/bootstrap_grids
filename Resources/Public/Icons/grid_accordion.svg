@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: #4072bf;
+      }
+
+      .st2 {
+        fill: #b9b9b9;
+      }
+
+      .st3 {
+        fill: #999;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M1,1h14v14H1V1Z"/>
+  <path class="st3" d="M1,1v14h14V1H1ZM2,2h12v12H2V2Z"/>
+  <path class="st2" d="M3,8h10v1H3v-1ZM3,10h10v1H3v-1ZM3,12h10v1H3v-1Z"/>
+  <path class="st2" d="M3,3h10v4H3V3Z"/>
+  <path class="st1" d="M12,3h1v1h-1v-1ZM12,8h1v1h-1v-1ZM12,10h1v1h-1v-1ZM12,12h1v1h-1v-1Z"/>
+  <path class="st1" d="M11,3h1v1h-1v-1ZM11,8h1v1h-1v-1ZM11,10h1v1h-1v-1ZM11,12h1v1h-1v-1Z"/>
+</svg>
