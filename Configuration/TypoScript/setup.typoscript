@@ -1,0 +1,8 @@
+# Only include this TypoScript if the context matches (using # as the delimiter)
+[applicationContext matches "#^Development/BootstrapGrids/Docker#"]
+    # Enable errors to be displayed in the frontend
+    # NOTE: To get rid of the error message not only the actual error needs to be fixed, but the cache must be cleared for this page.
+    config.contentObjectExceptionHandler = 0
+
+    @import 'EXT:bootstrap_grids/Configuration/TypoScript/Contribution/setup.typoscript'
+[end]
