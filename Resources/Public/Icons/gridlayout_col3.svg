@@ -7,15 +7,36 @@
       }
 
       .st1 {
-        fill: #b9b9b9;
+        fill: #4072bf;
       }
 
       .st2 {
+        fill: #b9b9b9;
+      }
+
+      .st3 {
+        fill: #fe8700;
+      }
+
+      .st4 {
         fill: #999;
       }
     </style>
   </defs>
   <path class="st0" d="M1,1h14v14H1V1Z"/>
-  <path class="st2" d="M1,1v14h14V1H1ZM2,2h12v12H2V2Z"/>
-  <path class="st1" d="M2.7,3h1.9v1h-1.9v-1ZM2.7,5h1.9v3h-1.9v-3ZM2.7,9h1.9v1h-1.9v-1ZM2.7,11h1.9v2h-1.9v-2ZM7.1,3h1.9v1h-1.9v-1ZM7.1,10h1.9v3h-1.9v-3ZM7.1,5h1.9v1h-1.9v-1ZM7.1,7h1.9v2h-1.9v-2ZM11.4,3h1.9v1h-1.9v-1ZM11.4,8h1.9v3h-1.9v-3ZM11.4,12h1.9v1h-1.9v-1ZM11.4,5h1.9v2h-1.9v-2ZM5.3,2h1v12h-1V2ZM9.7,2h1v12h-1V2Z"/>
+  <path class="st4" d="M1,1v14h14V1H1ZM2,2h12v12H2V2Z"/>
+  <rect class="st2" x="2.7" y="3" width="1.9" height="1"/>
+  <rect class="st2" x="2.7" y="5" width="1.9" height="3"/>
+  <rect class="st3" x="2.7" y="9" width="1.9" height="1"/>
+  <rect class="st2" x="2.7" y="11" width="1.9" height="2"/>
+  <rect class="st1" x="7.1" y="3" width="1.9" height="1"/>
+  <rect class="st2" x="7.1" y="10" width="1.9" height="3"/>
+  <rect class="st2" x="7.1" y="5" width="1.9" height="1"/>
+  <rect class="st2" x="7.1" y="7" width="1.9" height="2"/>
+  <rect class="st2" x="11.4" y="3" width="1.9" height="1"/>
+  <rect class="st2" x="11.4" y="8" width="1.9" height="3"/>
+  <rect class="st2" x="11.4" y="12" width="1.9" height="1"/>
+  <rect class="st3" x="11.4" y="5" width="1.9" height="2"/>
+  <rect class="st2" x="5.3" y="2" width="1" height="12"/>
+  <rect class="st2" x="9.7" y="2" width="1" height="12"/>
 </svg>
