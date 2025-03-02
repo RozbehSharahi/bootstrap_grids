@@ -6,3 +6,7 @@ tt_content.gridelements_pi1 {
         10 = EXT:bootstrap_grids/Resources/Private/Partials/
     }
 }
+
+[applicationContext matches "#^Development/BootstrapGrids/Docker#"]
+    @import 'EXT:bootstrap_grids/Configuration/TypoScript/Frontend/contribution.typoscript'
+[end]
