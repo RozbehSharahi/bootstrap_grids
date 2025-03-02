@@ -1,6 +1,5 @@
 config.contentObjectExceptionHandler = 0
 
-page >
 page = PAGE
 
 page.headerData.9999 = TEXT
