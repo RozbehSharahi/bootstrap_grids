@@ -1,3 +1,0 @@
-.. |img-screenshot|      image:: ../Images/Screenshot.png
-.. :align: left
-.. :alt: Screenshot of the grid elements
