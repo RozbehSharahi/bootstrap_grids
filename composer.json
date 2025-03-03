@@ -1,7 +1,7 @@
 {
   "name": "laxap/bootstrap-grids",
   "type": "typo3-cms-extension",
-  "description": "Gridelements for bootstrap v5. Column grids, tabs and accordion.",
+  "description": "Predefined gridelements Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.",
   "license": "GPL-2.0-or-later",
   "version": "5.0.0",
   "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "gridelements"],

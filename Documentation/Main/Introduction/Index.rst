@@ -14,7 +14,7 @@ Introduction
 What does it do?
 ----------------
 
-Provides predefined gridelements based on bootstrap components.
+Provides predefined gridelements Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.
 
 
 Screenshot
