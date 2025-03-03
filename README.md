@@ -26,5 +26,5 @@ copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your
 
 ## Special thanks
 
-- [Daniel Corn](cundd.net): Defining the grids via pageTS brings a lot of advantages.
-- [Josef Körner](brandical.de): For reducing the accordion TypoScript setup.
+- [Daniel Corn](https://www.cundd.net): Defining the grids via pageTS brings a lot of advantages.
+- [Josef Körner](https://www.brandical.de): For reducing the accordion TypoScript setup.
