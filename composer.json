@@ -6,6 +6,18 @@
   "version": "5.0.0",
   "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "gridelements"],
   "homepage": "https://extensions.typo3.org/extension/bootstrap_grids/",
+  "authors": [
+    {
+      "name": "Pascal Mayer",
+      "role": "Original author and maintainer until August 2023",
+      "email": "typo3@simple.ch"
+    },
+    {
+      "name": "Rozbeh Chiryai Sharahi",
+      "role": "Maintainer starting Auguest 2023",
+      "email": "rozbeh.sharahi+bootstrap_grids@gmail.com"
+    }
+  ],
   "support": {
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
