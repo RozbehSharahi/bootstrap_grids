@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+.docker/bin/stop
+
+rm -rf ./config
+rm -rf ./database
+rm -rf ./public
+rm -rf ./var
+rm -rf ./vendor
+rm -rf ./composer.lock
