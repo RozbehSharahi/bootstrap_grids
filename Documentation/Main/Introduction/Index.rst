@@ -32,4 +32,4 @@ Special thanks goes to
 
 - Daniel Corn (cundd.net): Defining the grids via pageTS brings a lot of advantages.
 
-- Josef Körner (brandical.de) for reducing the accordion typoscript setup.
+- Josef Körner (brandical.de) for reducing the accordion TypoScript setup.
