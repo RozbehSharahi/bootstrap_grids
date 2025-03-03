@@ -1,10 +1,9 @@
 services:
   app:
-    env_file:
-      - bin/.env
     command: bash -c "cp -rn .docker/templates/v${TYPO3:-12}/* . && composer install && apache2-foreground"
     build:
       context: ..
+      dockerfile: .docker/php${PHP:-8.1}-apache/Dockerfile
       args:
         - APACHE_DOCUMENT_ROOT=/var/www/html/public/
         - USER_ID=${USER_ID:-1000}

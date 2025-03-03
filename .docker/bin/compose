@@ -2,17 +2,19 @@
 
 set -e
 
-if [[ -f .docker/bin/.env ]]; then
-  set -a # Automatically export all variables to the shell
-  source .docker/bin/.env
-  set +a
+if [[ ! -f ".docker/.env" ]]; then
+    echo "Creating file '.env' since it didn't exist: cp .docker/bin/.env.dist .docker/bin/.env"
+    cp .docker/.env.dist .docker/.env
 fi
+
+set -a
+source .docker/.env
+set +a
 
 echo "
 Environment...
   $(if [[ ${TYPO3} ]] ;    then echo 'TYPO3:   ' ${TYPO3}; else echo 'TYPO3: Not set'; fi)
   $(if [[ ${PHP} ]] ;      then echo 'PHP:     ' ${PHP};   else echo 'PHP: Not set'; fi)
-  $(if [[ ${PASSWORD} ]] ; then echo 'PASSWORD: ********'; else echo 'PASSWORD: Not set'; fi)
 "
 
-docker compose -f .docker/docker-compose.base.yml -f .docker/docker-compose.php"${PHP:-8.1}".yml "$@"
+docker compose -f .docker/docker-compose.base.yml "$@"
