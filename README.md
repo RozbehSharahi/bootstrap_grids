@@ -26,57 +26,13 @@ copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your
 
 ### Docker scripts
 
-To start dev environment
-
-```shell
-.docker/bin/start
-```
-
-To stop dev environment
-
-```shell
-.docker/bin/stop
-```
-
-Enter the dev environment container
-
-```shell
-.docker/bin/cli
-```
-
-Runs `composer` commands (e.g. `./docker/bin/composer install`)
-
-```shell
-.docker/bin/composer [command]
-```
-
-Runs `vendor/bin/typo3` commands (e.g. `.docker/bin/typo3 cache:flush`)
-
-```shell
-.docker/bin/typo3 [command]
-```
-
-Runs `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)
-
-```shell
-.docker/bin/compose [command]
-```
-
-Runs `.docker/bin/compose logs -f`
-
-```shell
-.docker/bin/logs
-```
-
-Does a `docker compose down --remove-orphans` and then cleans up environment to remove all auto-generated files and reset the database
-
-```shell
-.docker/bin/clean
-```
-
-Cleanup environment to remove all auto-generated files and reset the database to its initial state using the starting 
-point in `.docker/templates/database/database.sqlite`.
-
-```shell
-.docker/bin/clean && .docker/bin/start
-```
+| Command                                  | Description                                                                                                                                                                                                                   |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `.docker/bin/start`                      | To start dev environment                                                                                                                                                                                                      |
+| `.docker/bin/stop`                       | To stop dev environment                                                                                                                                                                                                       |
+| `.docker/bin/clean`                      | Does `docker compose down --remove-orphans` and cleans up environment removing all auto-generated files and resets the database to its initial state using the starting point in `.docker/templates/database/database.sqlite` |
+| `.docker/bin/logs`                       | Runs `.docker/bin/compose logs -f`                                                                                                                                                                                            |
+| `.docker/bin/cli`                        | Enter the dev environment container                                                                                                                                                                                           |
+| `.docker/bin/composer [command]`         | Runs `composer` commands (e.g. `./docker/bin/composer install`)                                                                                                                                                               |
+| `.docker/bin/typo3 [command]`            | Runs `vendor/bin/typo3` commands (e.g. `.docker/bin/typo3 cache:flush`)                                                                                                                                                       |
+| `.docker/bin/compose [command]`          | Runs `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)                                                                                                                                                    |
