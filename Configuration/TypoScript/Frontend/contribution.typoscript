@@ -25,9 +25,9 @@ page.200 {
     10.data = site:websiteTitle
     10.wrap (
         <div class="py-5">
-            <div class="row align-items-center g-5 py-5">
-                <div class="col-4 col-lg-3 col-xl-2">
-                    <img src="/_assets/6666cd76f96956469e7be39d750cc7d9/Icons/ext_icon.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Grid icon" loading="lazy">
+            <div class="row align-items-center text-center text-md-start g-5 py-5">
+                <div class="col-4 col-lg-3 col-xl-2 mx-auto">
+                    <img src="/_assets/6666cd76f96956469e7be39d750cc7d9/Icons/ext_icon.svg" class="d-block mx-auto img-fluid" alt="Bootstrap Grid icon" loading="lazy">
                 </div>
                 <div class="col-12 col-md-8 col-lg-9 col-xl-10">
                     <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">|</h1>
