@@ -22,11 +22,11 @@ page.200 {
     wrap = <div class="container">|</div>
 
     10 = TEXT
-    10.value = <h1 style="margin: 1em 0">Test environment</h1>
+    10.value = <h1 class="my-3">Test environment</h1>
 
     20 = CONTENT
     20 {
-        wrap = <div style="display: flex; flex-direction: column; gap: 2em">|</div>
+        wrap = <div class="row gy-4">|</div>
         table = tt_content
         select {
             orderBy = sorting
