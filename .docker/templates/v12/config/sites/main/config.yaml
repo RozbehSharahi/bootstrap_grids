@@ -10,7 +10,7 @@ languages:
     locale: en_US.UTF-8
     iso-639-1: en
     navigationTitle: English
-    hreflang: en-us
+    hreflang: en-US
     direction: ltr
     flag: us
 rootPageId: 1
