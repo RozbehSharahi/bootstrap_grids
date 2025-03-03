@@ -32,11 +32,11 @@ page.200 {
                 <div class="col-12 col-md-8 col-lg-9 col-xl-10">
                     <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">|</h1>
                     <div class="lead mb-4">
-                        <div class="d-none d-sm-block d-md-none">You are at breakpoint size <code>sm</code></div>
-                        <div class="d-none d-md-block d-lg-none">You are at breakpoint size <code>md</code></div>
-                        <div class="d-none d-lg-block d-xl-none">You are at breakpoint size <code>lg</code></div>
-                        <div class="d-none d-xl-block d-xxl-none">You are at breakpoint size <code>xl</code></div>
-                        <div class="d-none d-xxl-block">You are at breakpoint size <code>xxl</code></div>
+                        <div class="d-none d-sm-block d-md-none">You are at breakpoint <code>sm</code></div>
+                        <div class="d-none d-md-block d-lg-none">You are at breakpoint <code>md</code></div>
+                        <div class="d-none d-lg-block d-xl-none">You are at breakpoint <code>lg</code></div>
+                        <div class="d-none d-xl-block d-xxl-none">You are at breakpoint <code>xl</code></div>
+                        <div class="d-none d-xxl-block">You are at breakpoint <code>xxl</code></div>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                       <a href="https://github.com/RozbehSharahi/bootstrap_grids" class="btn btn-primary btn-lg px-4 me-md-2">GitHub</a>
