@@ -2,6 +2,11 @@ config.contentObjectExceptionHandler = 0
 
 page = PAGE
 
+page.headerData.10 = TEXT
+page.headerData.10.value (
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+)
+
 page.headerData.9999 = TEXT
 page.headerData.9999.value (
     <link
