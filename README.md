@@ -5,12 +5,12 @@ Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for 
 ## Note for TYPO3 12
 
 At the time of writing, TYPO3 12 compatibility is a work-in-progress but will be released very soon. In the meantime, it
-is possible to use the `main` branch as a dependency to install it for TYPO3 12.
+is possible to use the `master` branch as a dependency to install it for TYPO3 12.
 
 ```json
 {
   "require": {
-    "laxap/bootstrap-grids": "dev-main"
+    "laxap/bootstrap-grids": "dev-master"
   }
 }
 ```
@@ -60,4 +60,11 @@ Run `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)
 
 ```shell
 .docker/bin/compose [command]
+```
+
+Cleanup environment to remove all auto-generated files and reset the database to its initial state using the starting 
+point in `.docker/templates/database/database.sqlite`.
+
+```shell
+.docker/bin/clean && .docker/bin/start
 ```
