@@ -1,3 +1,0 @@
-.. |img-extconf|      image:: ../Images/Configuration/extconfig.png
-.. :align: left
-.. :alt: Extension Configuration

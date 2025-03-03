@@ -1,3 +1,0 @@
-.. |img-includestatic|      image:: ../Images/Administration/IncludeStatic.png
-.. :align: left
-.. :alt: Include static
