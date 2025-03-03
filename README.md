@@ -2,8 +2,6 @@
 
 Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for simple accordions, tabs.
 
-
-
 ## Note for TYPO3 12
 
 At the time of writing, TYPO3 12 compatibility is a work-in-progress but will be released very soon. In the meantime, it
@@ -23,7 +21,8 @@ The paths of TypoScript files have changed. Please ensure you reselect the templ
 
 ## Contribution
 
-You will need Docker installed for easy contribution and dev setup. Copy the `.docker/bin/.env.dist` environment variables file to `.docker/bin/.env` and adjust the values.
+You will need Docker installed for easy contribution and dev setup. `.docker/.env.dist` file will automatically be
+copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your needs. 
 
 ### Docker scripts
 

@@ -1,4 +1,0 @@
-services:
-  app:
-    build:
-      dockerfile: .docker/php8.3-apache/Dockerfile
