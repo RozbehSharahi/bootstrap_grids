@@ -23,3 +23,8 @@ copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your
 | `.docker/bin/composer [command]`         | Runs `composer` commands (e.g. `./docker/bin/composer install`)                                                                                                                                                               |
 | `.docker/bin/typo3 [command]`            | Runs `vendor/bin/typo3` commands (e.g. `.docker/bin/typo3 cache:flush`)                                                                                                                                                       |
 | `.docker/bin/compose [command]`          | Runs `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)                                                                                                                                                    |
+
+## Special thanks
+
+- [Daniel Corn](cundd.net): Defining the grids via pageTS brings a lot of advantages.
+- [Josef Körner](brandical.de): For reducing the accordion TypoScript setup.
