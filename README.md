@@ -6,8 +6,8 @@ Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for 
 ## Installation
 
 1. Install the extension via composer: `composer require laxap/bootstrap-grids`.
-2. ![Include static TypoScript template](Documentation/Images/IncludeStatic.png)
-3. 
+2. Include the [static TypoScript templates](Documentation/Images/IncludeStatic.png). Both `bootstrap_grids` and `gridelements` templates are required.
+3. Use one of the [predefined grids](Documentation/Images/Screenshot.png) on your website.
 
 ## Updating to `bootstrap_grids` v5
 
