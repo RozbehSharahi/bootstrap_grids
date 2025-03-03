@@ -12,6 +12,8 @@ Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for 
 
 Use one of the [predefined grids](Documentation/Images/Screenshot.png) on your website.
 
+NOTE: When using Tabs From Content Elements, you need to [set the title of the tab to `Hidden`](Documentation/Images/TabsFromContentHidden.png). If you don't then the tab title will also display as a heading tag in the content area.
+
 ## Updating to `bootstrap_grids` v5
 
 The paths of TypoScript files have changed. Please ensure you reselect the template in your `sys_template` record.
