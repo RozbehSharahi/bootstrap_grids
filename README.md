@@ -1,6 +1,6 @@
 # TYPO3 Extension "bootstrap_grids"
 
-Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for simple accordions, tabs.
+Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.
 
 ## Note for TYPO3 12
 
