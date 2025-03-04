@@ -35,9 +35,14 @@ RUN apt-get update \
     && docker-php-ext-install intl pdo pdo_mysql mysqli \
     && docker-php-ext-configure gd --with-jpeg --with-freetype \
     && docker-php-ext-install gd zip \
-    && pecl install xdebug imagick \
-    && docker-php-ext-enable xdebug imagick \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug \
     && rm -rf /var/lib/apt/lists/*
+
+# Install imagick using the mlocati helper script (alternative approach)
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+RUN chmod +x /usr/local/bin/install-php-extensions && \
+    install-php-extensions imagick
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer \
