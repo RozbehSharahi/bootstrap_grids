@@ -16,7 +16,6 @@ services:
       - TYPO3_CONTEXT=Development/BootstrapGrids/Docker
     volumes:
       - '../:/var/www/html'
-      - './php.ini:/usr/local/etc/php/conf.d/custom.ini'
     ports:
       - '8080:80'
     extra_hosts:
