@@ -4,6 +4,8 @@ ARG USER_ID
 ARG GROUP_ID
 ARG APACHE_DOCUMENT_ROOT
 
+COPY --chown=www-data:www-data .docker/php.ini /usr/local/etc/php/conf.d/custom.ini
+
 ENV APACHE_DOCUMENT_ROOT=${APACHE_DOCUMENT_ROOT}
 
 # Configure www-data user and Apache
