@@ -1,4 +1,4 @@
-# TYPO3 Extension "bootstrap_grids"
+# TYPO3 extension "bootstrap_grids"
 
 Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.
 
@@ -24,8 +24,19 @@ The paths of TypoScript files have changed. Please ensure you reselect the templ
 
 ## Contribution
 
-You will need Docker installed for easy contribution and dev setup. `.docker/.env.dist` file will automatically be
-copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your needs. 
+We would love your help! We have Docker set up with helper scripts to make contributions easy.
+
+### Development setup
+
+1. Install [Docker](https://www.docker.com/)
+2. Fork the [boostrap_grids repository](https://github.com/laxap/bootstrap_grids.git)
+3. Clone the forked repository (e.g. `git clone https://github.com/your_username/bootstrap_grids.git`), change into the directory, then checkout a branch or create desired branch.
+4. Run `.docker/bin/start`
+7. Login at http://localhost:8080/typo3 with username `admin` and password `Pass123!`. 
+
+_NOTE: The file `.docker/.env.dist` will automatically be copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your needs._
+
+![Development Site For Bootstrap Grids](Documentation/Images/DevelopmentSiteForBootstrapGrids.png)
 
 ### Docker scripts
 
@@ -45,6 +56,7 @@ copied to `.docker/.env` on start up. Feel free to adjust `.docker/.env` to your
 ### Version 5.0.0
 
 - UPDATED: Switched to Bootstrap 5
+- UPDATED: Enhanced Docker experience for easier development
 
 ### Version 3.0.0
 
