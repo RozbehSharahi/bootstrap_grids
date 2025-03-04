@@ -34,7 +34,15 @@
     "typo3/cms-fluid": "^12",
     "typo3/cms-fluid-styled-content": "^12",
     "typo3/cms-filelist": "^12",
-    "typo3/cms-lowlevel": "^12"
+    "typo3/cms-lowlevel": "^12",
+    "helhum/typo3-console": "^8.2"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/typo3 install:extensionsetupifpossible",
+      "vendor/bin/typo3 install:fixfolderstructure",
+      "vendor/bin/typo3 cache:flush"
+    ]
   },
   "replace": {
     "typo3-ter/bootstrap-grids": "self.version"
