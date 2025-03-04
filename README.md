@@ -12,7 +12,11 @@ Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for 
 
 Use one of the [predefined grids](Documentation/Images/Screenshot.png) on your website.
 
-_NOTE: When using "Tabs From Content Elements" and "Accordion From Content", you need to [set the header Type to Hidden](Documentation/Images/TabsFromContentHidden.png). If you don't then the accordion/tab title will also display as a heading tag in the content area._
+![predefined grids](Documentation/Images/Screenshot.png)
+
+_NOTE: When using "Tabs From Content Elements" and "Accordion From Content", you need to [set the header Type to Hidden](Documentation/Images/HeaderTypeHidden.png). If you don't then the accordion/tab title will also display as a heading tag in the content area._
+
+![set the header Type to Hidden](Documentation/Images/HeaderTypeHidden.png)
 
 ## Updating to `bootstrap_grids` v5
 
