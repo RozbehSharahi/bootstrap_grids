@@ -35,7 +35,7 @@ RUN apt-get update \
     && docker-php-ext-install intl pdo pdo_mysql mysqli \
     && docker-php-ext-configure gd --with-jpeg --with-freetype \
     && docker-php-ext-install gd zip \
-    && pecl install xdebug \
+    && pecl install xdebug-3.4.0 \
     && docker-php-ext-enable xdebug \
     && rm -rf /var/lib/apt/lists/*
 

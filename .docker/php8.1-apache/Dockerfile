@@ -4,6 +4,8 @@ ARG USER_ID
 ARG GROUP_ID
 ARG APACHE_DOCUMENT_ROOT
 
+COPY --chown=www-data:www-data .docker/php.ini /usr/local/etc/php/conf.d/custom.ini
+
 ENV APACHE_DOCUMENT_ROOT=${APACHE_DOCUMENT_ROOT}
 
 # Configure www-data user and Apache
@@ -35,7 +37,7 @@ RUN apt-get update \
     && docker-php-ext-install intl pdo pdo_mysql mysqli \
     && docker-php-ext-configure gd --with-jpeg --with-freetype \
     && docker-php-ext-install gd zip \
-    && pecl install xdebug imagick \
+    && pecl install xdebug-3.4.0 imagick \
     && docker-php-ext-enable xdebug imagick \
     && rm -rf /var/lib/apt/lists/*
 
