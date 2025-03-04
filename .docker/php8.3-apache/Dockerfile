@@ -4,6 +4,8 @@ ARG USER_ID
 ARG GROUP_ID
 ARG APACHE_DOCUMENT_ROOT
 
+COPY --chown=www-data:www-data .docker/php.ini /usr/local/etc/php/conf.d/custom.ini
+
 ENV APACHE_DOCUMENT_ROOT=${APACHE_DOCUMENT_ROOT}
 
 # Configure www-data user and Apache
@@ -39,10 +41,16 @@ RUN apt-get update \
     && docker-php-ext-enable xdebug \
     && rm -rf /var/lib/apt/lists/*
 
-# Install imagick using the mlocati helper script (alternative approach)
-ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
-RUN chmod +x /usr/local/bin/install-php-extensions && \
-    install-php-extensions imagick
+RUN git clone https://github.com/Imagick/imagick.git --depth 1 /tmp/imagick && \
+    cd /tmp/imagick && \
+    git fetch origin master && \
+    git switch master && \
+    cd /tmp/imagick && \
+    phpize && \
+    ./configure && \
+    make && \
+    make install && \
+    docker-php-ext-enable imagick
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer \
