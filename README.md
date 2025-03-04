@@ -32,8 +32,9 @@ We would love your help! We have Docker set up with helper scripts to make contr
 1. Install [Docker](https://www.docker.com/).
 2. Fork the [boostrap_grids repository](https://github.com/laxap/bootstrap_grids.git).
 3. Clone the forked repository (e.g. `git clone https://github.com/your_username/bootstrap_grids.git`), change into the directory, then checkout a branch or create desired branch.
-4. Optional: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
-4. Run `.docker/bin/start`.
+4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
+5. Run `.docker/bin/start`.
+6. OPTIONAL: Start Xdebug if you need to debug PHP code.
 7. Login to http://localhost:8080/typo3 with username `admin` and password `Pass123!`.
 
 _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/start`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, you can delete the container and those copied files by doing `.docker/bin/clean` or by doing it manually._
