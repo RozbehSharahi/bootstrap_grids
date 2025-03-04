@@ -25,7 +25,7 @@
                 <source>Tabs From Content</source>
             </trans-unit>
             <trans-unit id="tabsSimple.description" xml:space="preserve">
-                <source>Each content element within the grid represents a tab. The title fields are used as tab titles.</source>
+                <source>Each content element within the grid represents a tab. The title fields are used as tab titles (set "Type" to "Hidden" if you don't want title to show in content).</source>
             </trans-unit>
             <trans-unit id="tabs4.title" xml:space="preserve">
                 <source>Tabs (4)</source>
@@ -43,7 +43,7 @@
                 <source>Accordion From Content</source>
             </trans-unit>
             <trans-unit id="accordion.description" xml:space="preserve">
-                <source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles.</source>
+                <source>Each content element within the grid represents an accordion element. The title fields are used as accordion bar titles (set "Type" to "Hidden" if you don't want title to show in content).</source>
             </trans-unit>
 
             <trans-unit id="accordion.firstOpened" xml:space="preserve">
