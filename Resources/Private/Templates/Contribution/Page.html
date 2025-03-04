@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+
+
+<div class="py-5">
+  <div class="row align-items-center text-center text-md-start g-5 py-5">
+    <div class="col-4 col-lg-3 col-xl-2 mx-auto">
+      <f:image
+              src="EXT:bootstrap_grids/Resources/Public/Icons/Extension.svg"
+              class="d-block img-fluid w-100"
+              alt="Bootstrap Grid icon" loading="lazy"/>
+    </div>
+    <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{siteTitle}</h1>
+      <div class="lead mb-4">
+        <div class="d-none d-sm-block d-md-none">You are at breakpoint <code>sm</code></div>
+        <div class="d-none d-md-block d-lg-none">You are at breakpoint <code>md</code></div>
+        <div class="d-none d-lg-block d-xl-none">You are at breakpoint <code>lg</code></div>
+        <div class="d-none d-xl-block d-xxl-none">You are at breakpoint <code>xl</code></div>
+        <div class="d-none d-xxl-block">You are at breakpoint <code>xxl</code></div>
+      </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="https://github.com/RozbehSharahi/bootstrap_grids"
+           class="btn btn-primary btn-lg px-4 me-md-2">GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{content->f:format.raw()}
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</html>
