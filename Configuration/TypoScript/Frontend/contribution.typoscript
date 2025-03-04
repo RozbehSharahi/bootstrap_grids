@@ -48,7 +48,7 @@ page.200 {
 
     20 = CONTENT
     20 {
-        wrap = <div class="row gy-4">|</div>
+        wrap = <div class="row gy-4 mb-5">|</div>
         table = tt_content
         select {
             orderBy = sorting
