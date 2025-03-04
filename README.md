@@ -2,7 +2,6 @@
 
 Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.
 
-
 ## Installation
 
 1. Install the extension via composer: `composer require laxap/bootstrap-grids`. If `gridelements` is not installed, it will be installed automatically since it's a requirement.
