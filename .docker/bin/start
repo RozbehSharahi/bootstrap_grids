@@ -3,3 +3,4 @@
 set -e
 
 .docker/bin/compose up -d --build
+.docker/bin/composer install
