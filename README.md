@@ -58,31 +58,7 @@ _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is co
 
 ## Change log
 
-### Version 5.0.0
-
-- UPDATED: Switched to Bootstrap 5
-- UPDATED: Enhanced Docker experience for easier development
-
-### Version 3.0.0
-
-- REMOVED: Optional row gridelement
-
-### Version 2.0.0
-
-- UPDATED: Switched to Bootstrap 4
-- REMOVED: Slider grid element and flexslider script
-
-### Version 1.3.0
-
-- ADDED: 2-/3-/4-columns grid `itemProcFunc` for select items
-- ADDED: Optional row gridelement
-
-### Version 1.2.0
-
-- ADDED: Backend, drag & drop support: default col-md-6/4/3 classes are used for the column divs in the frontend if a gridelement is dragged into the page without editing it.
-- UPDATED: Changed from empty to a blank character for the 2-/3-/4-columns grid the `not set` option value of the desktop column classes (first tab).
-- REMOVED: Optional support for old record based grid definitions removed
-- REMOVED: Optional row gridelement
+- See the [release notes](https://github.com/RozbehSharahi/bootstrap_grids/releases).
 
 ## Special thanks
 
