@@ -23,7 +23,7 @@ class ColumnOptionsProvider
     public function getColumnOptions(array $config): array
     {
         $fieldName = $config['field'];
-        $columnType = substr($fieldName, 0, -1);
+        $columnType = substr((string) $fieldName, 0, -1);
 
         $optionList = [];
         switch ($columnType) {
