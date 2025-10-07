@@ -58,6 +58,10 @@ _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is co
 
 ## Change log
 
+### Version 5.1.0
+
+ - Upgrade for TYPO3 13
+ 
 ### Version 5.0.0
 
 - UPDATED: Switched to Bootstrap 5
