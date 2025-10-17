@@ -6,29 +6,25 @@
     <sheets>
         <sDEF>
             <ROOT type="array">
-                <TCEforms>
-                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
-                </TCEforms>
+                <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
                 <type>array</type>
                 <el type="array">
                     <rowclass type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.style</label>
-                            <config type="array">
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.allClosed</numIndex>
-                                        <numIndex index="1" />
-                                    </numIndex>
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.firstOpened</numIndex>
-                                        <numIndex index="1">first-opened</numIndex>
-                                    </numIndex>
-                                </items>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.style</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.allClosed</numIndex>
+                                    <numIndex index="1" />
+                                </numIndex>
+                                <numIndex index="1" type="array">
+                                    <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.firstOpened</numIndex>
+                                    <numIndex index="1">first-opened</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
                     </rowclass>
                 </el>
             </ROOT>

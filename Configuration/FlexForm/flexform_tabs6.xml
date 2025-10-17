@@ -6,89 +6,73 @@
     <sheets>
         <sDEF>
             <ROOT type="array">
-                <TCEforms>
-                    <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
-                </TCEforms>
+                <sheetTitle>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.sheet.layout</sheetTitle>
                 <type>array</type>
                 <el type="array">
                     <style type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabStyle</label>
-                            <config type="array">
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabStyle.0</numIndex>
-                                        <numIndex index="1">tab-v1</numIndex>
-                                    </numIndex>
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabStyle.1</numIndex>
-                                        <numIndex index="1">tab-v2</numIndex>
-                                    </numIndex>
-                                </items>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabStyle</label>
+                        <config type="array">
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabStyle.0</numIndex>
+                                    <numIndex index="1">tab-v1</numIndex>
+                                </numIndex>
+                                <numIndex index="1" type="array">
+                                    <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabStyle.1</numIndex>
+                                    <numIndex index="1">tab-v2</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
                     </style>
                     <tabTitle1 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle1</label>
-                            <config type="array">
-                                <type>input</type>
-                                <size>15</size>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle1</label>
+                        <config type="array">
+                            <type>input</type>
+                            <size>15</size>
+                            <eval>trim</eval>
+                        </config>
                     </tabTitle1>
                     <tabTitle2 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle2</label>
-                            <config type="array">
-                                <type>input</type>
-                                <size>15</size>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle2</label>
+                        <config type="array">
+                            <type>input</type>
+                            <size>15</size>
+                            <eval>trim</eval>
+                        </config>
                     </tabTitle2>
                     <tabTitle3 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle3</label>
-                            <config type="array">
-                                <type>input</type>
-                                <size>15</size>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle3</label>
+                        <config type="array">
+                            <type>input</type>
+                            <size>15</size>
+                            <eval>trim</eval>
+                        </config>
                     </tabTitle3>
                     <tabTitle4 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle4</label>
-                            <config type="array">
-                                <type>input</type>
-                                <size>15</size>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle4</label>
+                        <config type="array">
+                            <type>input</type>
+                            <size>15</size>
+                            <eval>trim</eval>
+                        </config>
                     </tabTitle4>
                     <tabTitle5 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle5</label>
-                            <config type="array">
-                                <type>input</type>
-                                <size>15</size>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle5</label>
+                        <config type="array">
+                            <type>input</type>
+                            <size>15</size>
+                            <eval>trim</eval>
+                        </config>
                     </tabTitle5>
                     <tabTitle6 type="array">
-                        <TCEforms type="array">
-                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle6</label>
-                            <config type="array">
-                                <type>input</type>
-                                <size>15</size>
-                                <eval>trim</eval>
-                            </config>
-                        </TCEforms>
+                        <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.tabTitle6</label>
+                        <config type="array">
+                            <type>input</type>
+                            <size>15</size>
+                            <eval>trim</eval>
+                        </config>
                     </tabTitle6>
                 </el>
             </ROOT>
