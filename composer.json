@@ -3,7 +3,6 @@
   "type": "typo3-cms-extension",
   "description": "Predefined gridelements Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.",
   "license": "GPL-2.0-or-later",
-  "version": "5.0.0",
   "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "gridelements"],
   "homepage": "https://extensions.typo3.org/extension/bootstrap_grids/",
   "authors": [
