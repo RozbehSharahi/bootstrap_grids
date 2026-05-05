@@ -1,6 +1,6 @@
 services:
   app:
-    command: bash -c "cp -rn .docker/templates/v${TYPO3:-12}/* . && composer install && apache2-foreground"
+    command: bash -c "cp -rn .docker/templates/v${TYPO3:-12}/* . && composer install ${COMPOSER_IGNORE_PLATFORM_REQ:+--ignore-platform-req=${COMPOSER_IGNORE_PLATFORM_REQ}} && apache2-foreground"
     build:
       context: ..
       dockerfile: .docker/php${PHP:-8.2}-apache/Dockerfile
