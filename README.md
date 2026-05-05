@@ -38,25 +38,26 @@ We would love your help! We have Docker set up with helper scripts to make contr
 3. Clone the forked repository (e.g. `git clone https://github.com/your_username/bootstrap_grids.git`), change into the directory, then checkout a branch or create desired branch.
 4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
 5. OPTIONAL: Start Xdebug if you need to debug PHP code.
-6. Run `.docker/bin/start && .docker/bin/composer install`
-7. Login to http://localhost:8080/typo3 with username `admin` and password `Pass123!`.
+6. Run `.docker/bin/up && .docker/bin/composer install`
+   - If a dependency blocks your target PHP version temporarily, set `COMPOSER_IGNORE_PLATFORM_REQ=php` in `.docker/.env` before starting to run Composer with `--ignore-platform-req=php`.
+7. Login to [http://localhost:8080/typo3](http://localhost:8080/typo3) with username `admin` and password `Pass123!`.
 
-_NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/start`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, you can delete the container and those copied files by doing `.docker/bin/clean` or by doing it manually._
+_NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/up`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, use `.docker/bin/destroy` for a full teardown (including generated/copied files), or clean up manually._
 
 ![Development Site For Bootstrap Grids](Documentation/Images/DevelopmentSiteForBootstrapGrids.png)
 
 ### Docker scripts
 
-| Command                                  | Description                                                                                                                                                                                                                  |
-|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.docker/bin/start`                      | To start dev environment                                                                                                                                                                                                     |
-| `.docker/bin/stop`                       | To stop dev environment                                                                                                                                                                                                      |
-| `.docker/bin/clean`                      | Does `docker compose down --remove-orphans` and deletes generated/copied files (except `.docker/.env`) and resets the database to its initial state using the starting point in `.docker/templates/database/database.sqlite` |
-| `.docker/bin/logs`                       | Runs `.docker/bin/compose logs -f`                                                                                                                                                                                           |
-| `.docker/bin/cli`                        | Enter the dev environment container                                                                                                                                                                                          |
-| `.docker/bin/composer [command]`         | Runs `composer` commands (e.g. `./docker/bin/composer install`)                                                                                                                                                              |
-| `.docker/bin/typo3 [command]`            | Runs `vendor/bin/typo3` commands (e.g. `.docker/bin/typo3 cache:flush`)                                                                                                                                                      |
-| `.docker/bin/compose [command]`          | Runs `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)                                                                                                                                                   |
+| Command                          | App must be up | Description                                                                                                                                                                                                                                        |
+| -------------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.docker/bin/up`                 | ✗              | Runs `.docker/bin/compose up -d --build` to start or rebuild the dev environment.                                                                                                                                                                  |
+| `.docker/bin/down`               | ✗              | Runs `.docker/bin/compose down --remove-orphans` to stop and remove containers and network.                                                                                                                                                        |
+| `.docker/bin/destroy`            | ✗              | Runs `.docker/bin/compose down --remove-orphans --volumes --rmi all`, then removes generated/copied project files.                                                                                                                                 |
+| `.docker/bin/logs`               | ✗              | Runs `.docker/bin/compose logs -f`.                                                                                                                                                                                                                |
+| `.docker/bin/cli`                | ✓              | Runs `.docker/bin/compose exec app bash` to open shell in the app container.                                                                                                                                                                       |
+| `.docker/bin/composer [command]` | ✓              | Runs `.docker/bin/compose exec app composer "$@"`.                                                                                                                                                                                                 |
+| `.docker/bin/typo3 [command]`    | ✓              | Runs `.docker/bin/compose exec app vendor/bin/typo3 "$@"`.                                                                                                                                                                                         |
+| `.docker/bin/compose [command]`  | ✗              | Wrapper around Docker Compose used by all helper scripts: auto-creates `.docker/.env` from `.docker/.env.dist` when missing, exports vars, prints selected `TYPO3`/`PHP`, then runs `docker compose -f .docker/docker-compose.base.yml [command]`. |
 
 ## Change log
 

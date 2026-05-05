@@ -2,6 +2,12 @@
 
 set -e
 
+# Shared wrapper used by all .docker/bin helper scripts.
+# It ensures .docker/.env exists, exports env vars for compose interpolation,
+# prints the selected TYPO3/PHP versions, then forwards all args to
+# docker compose with the project's base compose file.
+# Usage example from project root:
+#   ./.docker/bin/compose up -d --build
 if [[ ! -f ".docker/.env" ]]; then
     echo "Creating file '.env' since it didn't exist: cp .docker/bin/.env.dist .docker/bin/.env"
     cp .docker/.env.dist .docker/.env

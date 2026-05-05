@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-.docker/bin/compose exec app bash -c "composer $*"
+set -e
+
+# Usage example from project root (requires `app` container already running or run `./.docker/bin/up` first):
+#   ./.docker/bin/composer --version
+#   ./.docker/bin/composer update
+.docker/bin/compose exec app composer "$@"

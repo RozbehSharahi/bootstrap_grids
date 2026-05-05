@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-.docker/bin/stop
+set -e
+
+.docker/bin/compose down --remove-orphans --volumes --rmi all
 
 rm -rf ./config
 rm -rf ./database

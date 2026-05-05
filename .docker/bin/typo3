@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-.docker/bin/compose exec app bash -c "vendor/bin/typo3 $*"
+set -e
+
+.docker/bin/compose exec app vendor/bin/typo3 "$@"
