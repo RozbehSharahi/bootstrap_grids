@@ -2,7 +2,13 @@
 
 set -e
 
-# Usage example from project root (requires `app` container already running or run `./.docker/bin/up` first):
-#   ./.docker/bin/composer --version
-#   ./.docker/bin/composer update
-.docker/bin/compose exec app composer "$@"
+# Usage example from project root (requires `app` container already running or run `.docker/bin/up` first):
+#   .docker/bin/composer --version
+#   .docker/bin/composer update
+source .docker/bin/_common.sh
+load_docker_env
+
+# Populate optional --ignore-platform-req arg from COMPOSER_IGNORE_PLATFORM_REQ.
+set_composer_ignore_platform_arg
+# Forward all args to Composer in container and optionally prepend --ignore-platform-req.
+.docker/bin/compose exec app composer "${COMPOSER_IGNORE_PLATFORM_ARG[@]}" "$@"
