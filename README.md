@@ -31,6 +31,8 @@ The paths of TypoScript files have changed. Please ensure you reselect the templ
 
 We would love your help! We have Docker set up with helper scripts to make contributions easy.
 
+![Development Site For Bootstrap Grids](Documentation/Images/DevelopmentSiteForBootstrapGrids.png)
+
 ### Development setup
 
 1. Install [Docker](https://www.docker.com/).
@@ -44,7 +46,17 @@ We would love your help! We have Docker set up with helper scripts to make contr
 
 _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/up`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, use `.docker/bin/destroy` for a full teardown (including generated/copied files), or clean up manually._
 
-![Development Site For Bootstrap Grids](Documentation/Images/DevelopmentSiteForBootstrapGrids.png)
+### Verify GitHub Actions test job locally
+
+Before pushing, you can run the same `test` job locally with [act](https://github.com/nektos/act):
+
+1. Install [Docker](https://www.docker.com/) and make sure Docker Desktop is running.
+2. Install [act](https://github.com/nektos/act) to run [GitHub Actions](https://developer.github.com/actions/) locally (e.g. on macOS: `brew install act`).
+3. Run
+
+   ```bash
+   act -j test --container-architecture linux/amd64
+   ```
 
 ### Docker scripts
 
