@@ -1,8 +1,37 @@
 name: GitHub Actions | Pipeline
-on: [push]
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          extensions: intl, mbstring, json, zip, curl
+          tools: composer:v2
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Lint PHP files
+        run: git ls-files '*.php' | xargs -r -n1 php -l
+
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
+    needs: test
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
@@ -37,7 +66,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.4
+          php-version: 8.3
           extensions: intl, mbstring, json, zip, curl
           tools: composer:v2
 
