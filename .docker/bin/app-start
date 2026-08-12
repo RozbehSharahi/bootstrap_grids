@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+TYPO3="${TYPO3:-13}"
+template=".docker/templates/v${TYPO3}"
+
+if [[ ! -d "$template" ]]; then
+    echo "Unknown TYPO3=${TYPO3}. Use 12 or 13." >&2
+    exit 1
+fi
+
+cp -rn "${template}/"* .
+
+ignore=()
+if [[ -n "${COMPOSER_IGNORE_PLATFORM_REQ:-}" ]]; then
+    ignore+=(--ignore-platform-req="${COMPOSER_IGNORE_PLATFORM_REQ}")
+fi
+
+case "$TYPO3" in
+    12)
+        core_constraint='typo3/cms-core:^12.4'
+        ge_constraint='gridelementsteam/gridelements:^12.1'
+        ;;
+    13)
+        core_constraint='typo3/cms-core:^13.4.7'
+        ge_constraint='gridelementsteam/gridelements:^13.0'
+        ;;
+esac
+
+installed_major=""
+if [[ -f vendor/composer/installed.php ]]; then
+    installed_major="$(php -r '
+        $installed = require "vendor/composer/installed.php";
+        $version = $installed["versions"]["typo3/cms-core"]["pretty_version"] ?? "";
+        echo $version !== "" ? explode(".", ltrim($version, "v"))[0] : "";
+    ')"
+fi
+
+if [[ -f composer.lock && "$installed_major" == "$TYPO3" ]]; then
+    composer install --no-interaction --prefer-dist "${ignore[@]}"
+else
+    # Temporary --with constraints pin the TYPO3 line without rewriting composer.json.
+    composer update --no-interaction --prefer-dist --with-all-dependencies \
+        --with="$core_constraint" \
+        --with="$ge_constraint" \
+        "${ignore[@]}"
+fi
+
+exec apache2-foreground

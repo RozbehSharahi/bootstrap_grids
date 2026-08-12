@@ -38,7 +38,7 @@ We would love your help! We have Docker set up with helper scripts to make contr
 1. Install [Docker](https://www.docker.com/).
 2. Fork the [boostrap_grids repository](https://github.com/laxap/bootstrap_grids.git).
 3. Clone the forked repository (e.g. `git clone https://github.com/your_username/bootstrap_grids.git`), change into the directory, then checkout a branch or create desired branch.
-4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Set `TYPO3=12` or `TYPO3=13` and `PHP=8.2`, `8.3`, or `8.4`. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
+4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than the defaults (TYPO3 13, PHP 8.4). Set `TYPO3=12` or `TYPO3=13` and `PHP=8.2`, `8.3`, or `8.4`. `TYPO3=` selects Docker templates and pins Composer to that core line. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
 5. OPTIONAL: Start Xdebug if you need to debug PHP code.
 6. Run `.docker/bin/up && .docker/bin/composer install`
    - If a dependency blocks your target PHP version temporarily, set `COMPOSER_IGNORE_PLATFORM_REQ=php` in `.docker/.env` before starting to run Composer with `--ignore-platform-req=php`.

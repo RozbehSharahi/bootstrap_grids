@@ -1,6 +1,6 @@
 services:
   app:
-    command: bash -c "cp -rn .docker/templates/v${TYPO3:-12}/* . && composer install $${COMPOSER_IGNORE_PLATFORM_REQ:+--ignore-platform-req=$${COMPOSER_IGNORE_PLATFORM_REQ}} && apache2-foreground"
+    command: bash .docker/bin/app-start
     build:
       context: ..
       dockerfile: .docker/Dockerfile
@@ -15,7 +15,7 @@ services:
       - XDEBUG_SESSION=1
       - PHP_IDE_CONFIG=serverName=bootstrap_grids
       - TYPO3_CONTEXT=Development/BootstrapGrids/Docker
-      - TYPO3=${TYPO3:-12}
+      - TYPO3=${TYPO3:-13}
       - COMPOSER_IGNORE_PLATFORM_REQ=${COMPOSER_IGNORE_PLATFORM_REQ:-}
     volumes:
       - "../:/var/www/html"
