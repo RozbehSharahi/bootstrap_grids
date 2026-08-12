@@ -24,7 +24,7 @@ jobs:
         run: composer validate --strict
 
       - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist --no-progress
+        run: composer install --no-interaction --prefer-dist --no-progress --no-scripts
 
       - name: Lint PHP files
         run: git ls-files '*.php' | xargs -r -n1 php -l

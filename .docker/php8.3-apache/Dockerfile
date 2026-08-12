@@ -41,16 +41,10 @@ RUN apt-get update \
     && docker-php-ext-enable xdebug \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Imagick/imagick.git --depth 1 /tmp/imagick && \
-    cd /tmp/imagick && \
-    git fetch origin master && \
-    git switch master && \
-    cd /tmp/imagick && \
-    phpize && \
-    ./configure && \
-    make && \
-    make install && \
-    docker-php-ext-enable imagick
+RUN git clone https://github.com/Imagick/imagick.git --depth 1 /tmp/imagick \
+    && cd /tmp/imagick && phpize && ./configure && make && make install \
+    && docker-php-ext-enable imagick \
+    && rm -rf /tmp/imagick
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer \
