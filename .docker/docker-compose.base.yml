@@ -3,8 +3,9 @@ services:
     command: bash -c "cp -rn .docker/templates/v${TYPO3:-12}/* . && composer install $${COMPOSER_IGNORE_PLATFORM_REQ:+--ignore-platform-req=$${COMPOSER_IGNORE_PLATFORM_REQ}} && apache2-foreground"
     build:
       context: ..
-      dockerfile: .docker/php${PHP:-8.4}-apache/Dockerfile
+      dockerfile: .docker/Dockerfile
       args:
+        - PHP_VERSION=${PHP:-8.4}
         - APACHE_DOCUMENT_ROOT=/var/www/html/public/
         - USER_ID=${USER_ID:-1000}
         - GROUP_ID=${GROUP_ID:-1000}

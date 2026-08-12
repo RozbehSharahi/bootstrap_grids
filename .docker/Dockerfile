@@ -1,4 +1,5 @@
-FROM php:8.4-apache
+ARG PHP_VERSION=8.4
+FROM php:${PHP_VERSION}-apache
 
 ARG USER_ID
 ARG GROUP_ID
