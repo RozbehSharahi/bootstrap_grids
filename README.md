@@ -38,7 +38,7 @@ We would love your help! We have Docker set up with helper scripts to make contr
 1. Install [Docker](https://www.docker.com/).
 2. Fork the [boostrap_grids repository](https://github.com/laxap/bootstrap_grids.git).
 3. Clone the forked repository (e.g. `git clone https://github.com/your_username/bootstrap_grids.git`), change into the directory, then checkout a branch or create desired branch.
-4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
+4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Set `TYPO3=12` or `TYPO3=13` and `PHP=8.2`, `8.3`, or `8.4`. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
 5. OPTIONAL: Start Xdebug if you need to debug PHP code.
 6. Run `.docker/bin/up && .docker/bin/composer install`
    - If a dependency blocks your target PHP version temporarily, set `COMPOSER_IGNORE_PLATFORM_REQ=php` in `.docker/.env` before starting to run Composer with `--ignore-platform-req=php`.
@@ -46,14 +46,28 @@ We would love your help! We have Docker set up with helper scripts to make contr
 
 _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/up`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, use `.docker/bin/destroy` for a full teardown (including generated/copied files), or clean up manually._
 
-### Coding style
+### Run tests locally
+
+Unit tests do not boot TYPO3. Functional tests boot a SQLite TYPO3 instance.
 
 ```bash
+composer install --no-scripts
+composer test
+composer test:functional
 composer cs
 composer cs:fix
 ```
 
-`composer cs` is a dry-run. `composer cs:fix` rewrites PHP to TYPO3 coding standards (`typo3/coding-standards` / php-cs-fixer). CI runs the same dry-run as the `coding-style` job.
+`composer cs` is a dry-run. `composer cs:fix` rewrites PHP to TYPO3 coding standards (`typo3/coding-standards` / php-cs-fixer).
+
+Needs PHP 8.2–8.4 with `intl` and `pdo_sqlite`. Inside Docker (after `.docker/bin/up`):
+
+```bash
+.docker/bin/composer test
+.docker/bin/composer test:functional
+```
+
+To match GitHub’s PHP matrix locally, use [act](https://github.com/nektos/act) (below) or switch PHP with phpbrew/Homebrew and re-run the commands above. Changing `PHP=` in `.docker/.env` rebuilds the app image; that is only needed to run the TYPO3 site, not the test suites.
 
 ### Verify GitHub Actions test job locally
 

@@ -84,10 +84,9 @@ final class ExtensionContractTest extends TestCase
         require self::root() . '/ext_emconf.php';
 
         $depends = $EM_CONF[$_EXTKEY]['constraints']['depends'];
-        [$typo3Min] = explode('-', $depends['typo3'], 2);
         [$gridelementsMin] = explode('-', $depends['gridelements'], 2);
 
-        self::assertSame('12.4.0', $typo3Min);
+        self::assertSame('12.4.0-13.99.99', $depends['typo3']);
         self::assertSame('12.1.0', $gridelementsMin);
         self::assertStringContainsString('^12.4', $composer['require']['typo3/cms-core']);
         self::assertStringContainsString('^13.4.7', $composer['require']['typo3/cms-core']);

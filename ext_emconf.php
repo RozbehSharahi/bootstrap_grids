@@ -16,6 +16,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'constraints' => [
         'depends' => [
+            // Single min-max range only. Composer additionally floors TYPO3 13 at 13.4.7 (gridelements 13).
             'typo3' => '12.4.0-13.99.99',
             'gridelements' => '12.1.0-13.99.99',
         ],

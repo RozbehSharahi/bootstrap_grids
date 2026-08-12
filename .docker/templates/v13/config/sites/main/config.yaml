@@ -1,0 +1,14 @@
+base: "http://localhost:8080/"
+errorHandling: {}
+languages:
+  - title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    hreflang: en-US
+    flag: us
+rootPageId: 1
+websiteTitle: "Development Site For Bootstrap Grids"
+routes: {}
