@@ -11,7 +11,7 @@ Predefined `gridelements` Bootstrap 5 content elements: column grids, grids for 
 
 ![static TypoScript templates](Documentation/Images/IncludeStatic.png)
 
-_NOTE: As of 2025-03-03, `gridelements` v12 doesn't support PHP 8.4, but we have an issue open they are responding to fix that. So, we will preemptively support PHP 8.4 in anticipation of that fix._
+_NOTE: PHP is capped at 8.4 for now. `gridelements` 13 declares `~8.2 || ~8.3 || ~8.4`, and this extension still supports TYPO3 12, whose Composer constraint is `^8.1` (no 8.5)._
 
 ## Usage
 
