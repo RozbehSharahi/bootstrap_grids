@@ -34,9 +34,11 @@
     "typo3/cms-fluid-styled-content": "^12 || ^13",
     "typo3/cms-filelist": "^12 || ^13",
     "typo3/cms-lowlevel": "^12 || ^13",
-    "helhum/typo3-console": "^8.2"
+    "helhum/typo3-console": "^8.2",
+    "phpunit/phpunit": "^11.5"
   },
   "scripts": {
+    "test": "phpunit",
     "post-install-cmd": [
       "vendor/bin/typo3 install:extensionsetupifpossible",
       "vendor/bin/typo3 install:fixfolderstructure",
@@ -49,6 +51,11 @@
   "autoload": {
     "psr-4": {
       "Laxap\\BootstrapGrids\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Laxap\\BootstrapGrids\\Tests\\": "Tests/"
     }
   },
   "extra": {
