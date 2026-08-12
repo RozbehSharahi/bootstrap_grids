@@ -3,7 +3,12 @@
   "type": "typo3-cms-extension",
   "description": "Predefined gridelements Bootstrap 5 content elements: column grids, grids for simple accordions, and tabs.",
   "license": "GPL-2.0-or-later",
-  "keywords": ["typo3", "TYPO3 CMS", "bootstrap", "gridelements"],
+  "keywords": [
+    "typo3",
+    "TYPO3 CMS",
+    "bootstrap",
+    "gridelements"
+  ],
   "homepage": "https://extensions.typo3.org/extension/bootstrap_grids/",
   "authors": [
     {
@@ -35,10 +40,12 @@
     "typo3/cms-filelist": "^12 || ^13",
     "typo3/cms-lowlevel": "^12 || ^13",
     "helhum/typo3-console": "^8.2",
-    "phpunit/phpunit": "^11.5"
+    "phpunit/phpunit": "^11.5",
+    "typo3/testing-framework": "^8.2 || ^9.0"
   },
   "scripts": {
     "test": "phpunit",
+    "test:functional": "phpunit -c phpunit.functional.xml.dist",
     "post-install-cmd": [
       "vendor/bin/typo3 install:extensionsetupifpossible",
       "vendor/bin/typo3 install:fixfolderstructure",
@@ -62,7 +69,7 @@
     "typo3/cms": {
       "extension-key": "bootstrap_grids"
     }
-},
+  },
   "config": {
     "allow-plugins": {
       "typo3/cms-composer-installers": true,

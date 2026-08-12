@@ -7,3 +7,5 @@
 /.docker/.env
 /database
 /database/database.v12.sql
+/typo3temp
+/.Build
