@@ -16,11 +16,12 @@ services:
       - PHP_IDE_CONFIG=serverName=bootstrap_grids
       - TYPO3_CONTEXT=Development/BootstrapGrids/Docker
       - TYPO3=${TYPO3:-13}
+      - HTTP_PORT=${HTTP_PORT:-8080}
       - COMPOSER_IGNORE_PLATFORM_REQ=${COMPOSER_IGNORE_PLATFORM_REQ:-}
     volumes:
       - "../:/var/www/html"
     ports:
-      - "8080:80"
+      - "${HTTP_PORT:-8080}:80"
     extra_hosts:
       - host.docker.internal:host-gateway
     healthcheck:

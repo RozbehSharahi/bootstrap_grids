@@ -12,6 +12,12 @@ fi
 
 cp -rn "${template}/"* .
 
+HTTP_PORT="${HTTP_PORT:-8080}"
+site_config="config/sites/main/config.yaml"
+if [[ -f "$site_config" ]]; then
+    sed -i "s#^base:.*#base: \"http://localhost:${HTTP_PORT}/\"#" "$site_config"
+fi
+
 ignore=()
 if [[ -n "${COMPOSER_IGNORE_PLATFORM_REQ:-}" ]]; then
     ignore+=(--ignore-platform-req="${COMPOSER_IGNORE_PLATFORM_REQ}")

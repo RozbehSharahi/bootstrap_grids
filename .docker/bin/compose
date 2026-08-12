@@ -14,8 +14,9 @@ load_docker_env
 
 echo "
 Environment...
-  $(if [[ ${TYPO3} ]] ;    then echo 'TYPO3:   ' ${TYPO3}; else echo 'TYPO3: Not set'; fi)
-  $(if [[ ${PHP} ]] ;      then echo 'PHP:     ' ${PHP};   else echo 'PHP: Not set'; fi)
+  $(if [[ ${TYPO3} ]] ;     then echo 'TYPO3:     ' ${TYPO3};     else echo 'TYPO3: Not set'; fi)
+  $(if [[ ${PHP} ]] ;       then echo 'PHP:       ' ${PHP};       else echo 'PHP: Not set'; fi)
+  $(if [[ ${HTTP_PORT} ]] ; then echo 'HTTP_PORT: ' ${HTTP_PORT}; else echo 'HTTP_PORT: Not set'; fi)
 "
 
 docker compose -f .docker/docker-compose.base.yml "$@"
