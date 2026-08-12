@@ -1,4 +1,5 @@
 .phpunit.cache
+.php-cs-fixer.cache
 /composer.lock
 /vendor
 /public

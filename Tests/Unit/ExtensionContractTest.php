@@ -106,7 +106,7 @@ final class ExtensionContractTest extends TestCase
     private function formatLibxmlErrors(array $errors): string
     {
         return implode('; ', array_map(
-            static fn (\LibXMLError $error): string => trim($error->message) . ' on line ' . $error->line,
+            static fn(\LibXMLError $error): string => trim($error->message) . ' on line ' . $error->line,
             $errors
         ));
     }

@@ -4,7 +4,6 @@ namespace Laxap\BootstrapGrids\Backend;
 
 class ColumnOptionsProvider
 {
-
     public function getTwoColumnOptions(array $config): array
     {
         return $this->getColumnOptions($config);
@@ -46,7 +45,7 @@ class ColumnOptionsProvider
                     ['100%', 'col-12'],
                     [$this->getLangKey('grid.label.moreOptions'), '--div--'],
                     [$this->getLangKey('grid.label.notset'), '---'],
-                    [$this->getLangKey('grid.label.variableWidth'), 'col-auto']
+                    [$this->getLangKey('grid.label.variableWidth'), 'col-auto'],
                 ];
                 break;
 
@@ -68,7 +67,7 @@ class ColumnOptionsProvider
                     ['100%', 'col-sm-12'],
                     [$this->getLangKey('grid.label.moreOptions'), '--div--'],
                     [$this->getLangKey('grid.label.variableWidth'), 'col-sm-auto'],
-                    [$this->getLangKey('grid.label.hidden'), 'd-sm-none']
+                    [$this->getLangKey('grid.label.hidden'), 'd-sm-none'],
                 ];
                 break;
 
@@ -90,7 +89,7 @@ class ColumnOptionsProvider
                     ['100%', 'col-md-12'],
                     [$this->getLangKey('grid.label.moreOptions'), '--div--'],
                     [$this->getLangKey('grid.label.variableWidth'), 'col-md-auto'],
-                    [$this->getLangKey('grid.label.hidden'), 'd-md-none']
+                    [$this->getLangKey('grid.label.hidden'), 'd-md-none'],
                 ];
                 break;
 
@@ -112,7 +111,7 @@ class ColumnOptionsProvider
                     ['100%', 'col-lg-12'],
                     [$this->getLangKey('grid.label.moreOptions'), '--div--'],
                     [$this->getLangKey('grid.label.variableWidth'), 'col-lg-auto'],
-                    [$this->getLangKey('grid.label.hidden'), 'd-lg-none']
+                    [$this->getLangKey('grid.label.hidden'), 'd-lg-none'],
                 ];
                 break;
 
@@ -134,7 +133,7 @@ class ColumnOptionsProvider
                     ['100% (col-xl-12)', 'col-xl-12'],
                     [$this->getLangKey('grid.label.moreOptions'), '--div--'],
                     [$this->getLangKey('grid.label.variableWidth'), 'col-xl-auto'],
-                    [$this->getLangKey('grid.label.hidden'), 'd-xl-none']
+                    [$this->getLangKey('grid.label.hidden'), 'd-xl-none'],
                 ];
                 break;
         }

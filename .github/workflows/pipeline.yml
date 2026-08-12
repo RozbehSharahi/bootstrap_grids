@@ -8,6 +8,27 @@ on:
       - "v*"
   workflow_dispatch:
 jobs:
+  coding-style:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.4
+          tools: composer:v2
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --no-progress --no-scripts
+
+      - name: Check PHP coding style
+        run: vendor/bin/php-cs-fixer fix --dry-run --diff --using-cache=no
+
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -45,7 +66,7 @@ jobs:
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: test
+    needs: [test, coding-style]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:

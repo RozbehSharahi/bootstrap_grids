@@ -41,11 +41,14 @@
     "typo3/cms-lowlevel": "^12 || ^13",
     "helhum/typo3-console": "^8.2",
     "phpunit/phpunit": "^11.5",
-    "typo3/testing-framework": "^8.2 || ^9.0"
+    "typo3/testing-framework": "^8.2 || ^9.0",
+    "typo3/coding-standards": "^0.9.0"
   },
   "scripts": {
     "test": "phpunit",
     "test:functional": "phpunit -c phpunit.functional.xml.dist",
+    "cs": "php-cs-fixer fix --dry-run --diff",
+    "cs:fix": "php-cs-fixer fix",
     "post-install-cmd": [
       "vendor/bin/typo3 install:extensionsetupifpossible",
       "vendor/bin/typo3 install:fixfolderstructure",

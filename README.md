@@ -46,6 +46,15 @@ We would love your help! We have Docker set up with helper scripts to make contr
 
 _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/up`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, use `.docker/bin/destroy` for a full teardown (including generated/copied files), or clean up manually._
 
+### Coding style
+
+```bash
+composer cs
+composer cs:fix
+```
+
+`composer cs` is a dry-run. `composer cs:fix` rewrites PHP to TYPO3 coding standards (`typo3/coding-standards` / php-cs-fixer). CI runs the same dry-run as the `coding-style` job.
+
 ### Verify GitHub Actions test job locally
 
 Before pushing, you can run the same `test` job locally with [act](https://github.com/nektos/act):

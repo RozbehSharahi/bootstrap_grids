@@ -96,7 +96,7 @@ final class ColumnOptionsProviderTest extends TestCase
         $labels = array_column($items, 0);
         $lllLabels = array_filter(
             $labels,
-            static fn (string $label): bool => str_starts_with($label, 'LLL:')
+            static fn(string $label): bool => str_starts_with($label, 'LLL:')
         );
 
         self::assertNotEmpty($lllLabels);
