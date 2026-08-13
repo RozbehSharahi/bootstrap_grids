@@ -2,4 +2,4 @@
 
 set -e
 
-.docker/bin/compose up -d --build
+.docker/bin/compose up -d --build --wait --wait-timeout 300
