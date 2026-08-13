@@ -40,9 +40,6 @@ jobs:
       matrix:
         php: ["8.2", "8.3", "8.4"]
         typo3: ["12", "13"]
-        exclude:
-          - php: "8.4"
-            typo3: "12"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -60,14 +57,18 @@ jobs:
       - name: Install dependencies
         run: |
           if [ "${{ matrix.typo3 }}" = "12" ]; then
-            composer require --no-interaction --prefer-dist --no-progress --no-scripts --with-all-dependencies \
-              "typo3/cms-core:^12.4" \
-              "gridelementsteam/gridelements:^12.1"
+            composer update --no-interaction --prefer-dist --no-progress --no-scripts --no-blocking --with-all-dependencies \
+              --with="typo3/cms-core:^12.4" \
+              --with="gridelementsteam/gridelements:^12.1"
           else
-            composer require --no-interaction --prefer-dist --no-progress --no-scripts --with-all-dependencies \
-              "typo3/cms-core:^13.4.7" \
-              "gridelementsteam/gridelements:^13.0"
+            composer update --no-interaction --prefer-dist --no-progress --no-scripts --with-all-dependencies \
+              --with="typo3/cms-core:^13.4.7" \
+              --with="gridelementsteam/gridelements:^13.0"
           fi
+
+      - name: Audit supported dependencies
+        if: matrix.typo3 == '13'
+        run: composer audit --locked --abandoned=report
 
       - name: Lint PHP files
         run: git ls-files '*.php' | xargs -r -n1 php -l

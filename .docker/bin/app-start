@@ -24,10 +24,13 @@ if [[ -n "${COMPOSER_IGNORE_PLATFORM_REQ:-}" ]]; then
     ignore+=(--ignore-platform-req="${COMPOSER_IGNORE_PLATFORM_REQ}")
 fi
 
+policy=()
 case "$TYPO3" in
     12)
         core_constraint='typo3/cms-core:^12.4'
         ge_constraint='gridelementsteam/gridelements:^12.1'
+        # TYPO3 12 is EOL and its public packages currently have unresolved advisories.
+        policy+=(--no-blocking)
         ;;
     13)
         core_constraint='typo3/cms-core:^13.4.7'
@@ -49,6 +52,7 @@ if [[ -f composer.lock && "$installed_major" == "$TYPO3" ]]; then
 else
     # Temporary --with constraints pin the TYPO3 line without rewriting composer.json.
     composer update --no-interaction --prefer-dist --with-all-dependencies \
+        "${policy[@]}" \
         --with="$core_constraint" \
         --with="$ge_constraint" \
         "${ignore[@]}"

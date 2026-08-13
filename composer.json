@@ -31,7 +31,6 @@
     "gridelementsteam/gridelements": "^12.1 || ^13.0"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
     "typo3/cms-install": "^12 || ^13",
     "typo3/cms-setup": "^12 || ^13",
     "typo3/cms-tstemplate": "^12 || ^13",
@@ -40,7 +39,7 @@
     "typo3/cms-filelist": "^12 || ^13",
     "typo3/cms-lowlevel": "^12 || ^13",
     "helhum/typo3-console": "^8.2",
-    "phpunit/phpunit": "^11.5",
+    "phpunit/phpunit": "^10.5 || ^11.5",
     "typo3/testing-framework": "^8.2 || ^9.0",
     "typo3/coding-standards": "^0.9.0"
   },
