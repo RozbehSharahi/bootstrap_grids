@@ -110,7 +110,7 @@ jobs:
         env:
           VERSION: ${{ steps.get-version.outputs.version }}
         run: |
-          comment=$(git tag -n10 -l "v${VERSION}" | sed "s/^[0-9.]*[ ]*//g")
+          comment=$(git tag -l "v${VERSION}" --format='%(contents)')
 
           if [[ -z "${comment// }" ]]; then
             comment="Released version ${VERSION} of ${TYPO3_EXTENSION_KEY}"
