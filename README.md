@@ -69,7 +69,7 @@ Needs PHP 8.2–8.4 with `intl` and `pdo_sqlite`. Inside Docker (after `.docker/
 .docker/bin/composer test:clean
 ```
 
-To match GitHub’s PHP matrix locally, use [act](https://github.com/nektos/act) (below) or switch PHP with phpbrew/Homebrew and re-run the commands above. Changing `PHP=` in `.docker/.env` rebuilds the app image; that is only needed to run the TYPO3 site, not the test suites.
+To match GitHub’s PHP matrix locally, use [act](https://github.com/nektos/act) (below), switch the host PHP version for the plain `composer` commands, or change `PHP=` in `.docker/.env` and rerun `.docker/bin/up` for the `.docker/bin/composer` commands. Docker-based tests and the TYPO3 site both use the selected app image.
 
 ### Verify GitHub Actions test job locally
 
