@@ -69,15 +69,6 @@
                 <target>Alle Elemente sind standardmäßig geschlossen</target>
             </trans-unit>
 
-            <trans-unit id="xSimpleRow.title" xml:space="preserve">
-                <source>Row</source>
-                <target>Zeile</target>
-            </trans-unit>
-            <trans-unit id="xSimpleRow.description" xml:space="preserve">
-                <source>For use with responsive column width.</source>
-                <target>Zur Verwendung mit responsiver Spaltenbreite.</target>
-            </trans-unit>
-
             <trans-unit id="celayout.leftColumn" xml:space="preserve">
                 <source>Left Column</source>
                 <target>Linke Spalte</target>
@@ -129,10 +120,6 @@
             <trans-unit id="celayout.accordionElements" xml:space="preserve">
                 <source>Accordion Elements</source>
                 <target>Akkordeon-Elemente</target>
-            </trans-unit>
-            <trans-unit id="celayout.columnElements" xml:space="preserve">
-                <source>Column Elements</source>
-                <target>Spaltenelemente</target>
             </trans-unit>
 
             <trans-unit id="grid.sheet.mediumDevices" xml:space="preserve">

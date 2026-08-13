@@ -53,13 +53,6 @@
                 <source>Show all closed by default</source>
             </trans-unit>
 
-            <trans-unit id="xSimpleRow.title" xml:space="preserve">
-                <source>Row</source>
-            </trans-unit>
-            <trans-unit id="xSimpleRow.description" xml:space="preserve">
-                <source>For use with responsive column width.</source>
-            </trans-unit>
-
             <trans-unit id="celayout.leftColumn" xml:space="preserve">
                 <source>Left Column</source>
             </trans-unit>
@@ -98,9 +91,6 @@
             </trans-unit>
             <trans-unit id="celayout.accordionElements" xml:space="preserve">
                 <source>Accordion Elements</source>
-            </trans-unit>
-            <trans-unit id="celayout.columnElements" xml:space="preserve">
-                <source>Column Elements</source>
             </trans-unit>
 
             <trans-unit id="grid.sheet.mediumDevices" xml:space="preserve">

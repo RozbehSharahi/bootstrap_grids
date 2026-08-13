@@ -55,6 +55,38 @@ final class ExtensionContractTest extends TestCase
     }
 
     #[Test]
+    #[DataProvider('languageFileProvider')]
+    public function locallangLayoutTitleKeysMatchRegisteredGridLayouts(string $path): void
+    {
+        $tsconfig = file_get_contents(self::root() . '/Configuration/TypoScript/Backend/setup.tsconfig');
+        self::assertNotFalse($tsconfig);
+        preg_match_all('/locallang_db\.xlf:(\w+)\.title/', $tsconfig, $tsconfigMatches);
+        $registered = array_values(array_unique($tsconfigMatches[1]));
+        sort($registered);
+        self::assertNotEmpty($registered);
+
+        $xlf = file_get_contents($path);
+        self::assertNotFalse($xlf);
+        preg_match_all('/id="(\w+)\.title"/', $xlf, $xlfMatches);
+        $labeled = array_values(array_unique($xlfMatches[1]));
+        sort($labeled);
+
+        self::assertSame(
+            $registered,
+            $labeled,
+            basename($path) . ' layout *.title keys must match tx_gridelements.setup layouts'
+        );
+    }
+
+    public static function languageFileProvider(): array
+    {
+        return [
+            'en' => [self::root() . '/Resources/Private/Language/locallang_db.xlf'],
+            'de' => [self::root() . '/Resources/Private/Language/de.locallang_db.xlf'],
+        ];
+    }
+
+    #[Test]
     public function staticTypoScriptPathFromSysTemplateExists(): void
     {
         $source = file_get_contents(self::root() . '/Configuration/TCA/Overrides/sys_template.php');
