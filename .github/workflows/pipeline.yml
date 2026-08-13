@@ -87,16 +87,17 @@ jobs:
     permissions:
       contents: read
     env:
-      TYPO3_API_TOKEN: ${{ secrets.TYPO3_API_TOKEN }}
       TYPO3_EXTENSION_KEY: bootstrap_grids
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Check tag
+        env:
+          REF_NAME: ${{ github.ref_name }}
         run: |
-          if ! [[ ${{ github.ref_name }} =~ ^v[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
-            echo "Invalid tag '${{ github.ref_name }}'. Expected vMAJOR.MINOR.PATCH."
+          if ! [[ "$REF_NAME" =~ ^v[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
+            echo "Invalid tag '${REF_NAME}'. Expected vMAJOR.MINOR.PATCH."
             exit 1
           fi
 
@@ -106,17 +107,20 @@ jobs:
 
       - name: Get comment
         id: get-comment
+        env:
+          VERSION: ${{ steps.get-version.outputs.version }}
         run: |
-          comment=$(git tag -n10 -l v${{ steps.get-version.outputs.version }} | sed "s/^[0-9.]*[ ]*//g")
+          comment=$(git tag -n10 -l "v${VERSION}" | sed "s/^[0-9.]*[ ]*//g")
 
           if [[ -z "${comment// }" ]]; then
-            comment="Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}"
+            comment="Released version ${VERSION} of ${TYPO3_EXTENSION_KEY}"
           fi
 
+          delimiter=$(openssl rand -hex 16)
           {
-            echo "comment<<COMMENT_EOF"
+            echo "comment<<${delimiter}"
             echo "$comment"
-            echo "COMMENT_EOF"
+            echo "${delimiter}"
           } >> "$GITHUB_OUTPUT"
 
       - name: Setup PHP
@@ -130,4 +134,8 @@ jobs:
         run: composer global require typo3/tailor --prefer-dist --no-progress
 
       - name: Publish to TER
-        run: php ~/.composer/vendor/bin/tailor ter:publish --comment "${{ steps.get-comment.outputs.comment }}" ${{ steps.get-version.outputs.version }}
+        env:
+          RELEASE_COMMENT: ${{ steps.get-comment.outputs.comment }}
+          RELEASE_VERSION: ${{ steps.get-version.outputs.version }}
+          TYPO3_API_TOKEN: ${{ secrets.TYPO3_API_TOKEN }}
+        run: php ~/.composer/vendor/bin/tailor ter:publish --comment "$RELEASE_COMMENT" "$RELEASE_VERSION"
