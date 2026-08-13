@@ -47,6 +47,7 @@
   "scripts": {
     "test": "phpunit",
     "test:functional": "phpunit -c phpunit.functional.xml.dist",
+    "test:clean": "rm -rf public/typo3temp var/typo3temp",
     "cs": "php-cs-fixer fix --dry-run --diff",
     "cs:fix": "php-cs-fixer fix",
     "post-install-cmd": [

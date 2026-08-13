@@ -54,17 +54,19 @@ Unit tests do not boot TYPO3. Functional tests boot a SQLite TYPO3 instance.
 composer install --no-scripts
 composer test
 composer test:functional
+composer test:clean
 composer cs
 composer cs:fix
 ```
 
-`composer cs` is a dry-run. `composer cs:fix` rewrites PHP to TYPO3 coding standards (`typo3/coding-standards` / php-cs-fixer).
+`composer cs` is a dry-run. `composer cs:fix` rewrites PHP to TYPO3 coding standards (`typo3/coding-standards` / php-cs-fixer). `composer test:clean` removes functional-test `typo3temp` trees (they symlink the extension back to the repo root and can hang PHP language servers).
 
 Needs PHP 8.2–8.4 with `intl` and `pdo_sqlite`. Inside Docker (after `.docker/bin/up`):
 
 ```bash
 .docker/bin/composer test
 .docker/bin/composer test:functional
+.docker/bin/composer test:clean
 ```
 
 To match GitHub’s PHP matrix locally, use [act](https://github.com/nektos/act) (below) or switch PHP with phpbrew/Homebrew and re-run the commands above. Changing `PHP=` in `.docker/.env` rebuilds the app image; that is only needed to run the TYPO3 site, not the test suites.
