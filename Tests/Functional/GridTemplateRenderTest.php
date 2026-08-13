@@ -63,6 +63,104 @@ final class GridTemplateRenderTest extends FunctionalTestCase
     }
 
     #[Test]
+    public function threeColumnTemplateRendersBootstrapRowAndColumnClasses(): void
+    {
+        $html = $this->render('3cols', [
+            'data' => [
+                'uid' => 2,
+                'flexform_rowValign' => 'align-items-start',
+                'flexform_rowHalign' => 'justify-content-center',
+                'flexform_rowCustom' => 'three-row',
+                'flexform_xsCol1' => 'col-12',
+                'flexform_smCol1' => 'col-sm-4',
+                'flexform_mdCol1' => 'col-md-4',
+                'flexform_lgCol1' => '',
+                'flexform_xlCol1' => '',
+                'flexform_col31class' => 'first-col',
+                'flexform_xsCol2' => 'col-12',
+                'flexform_smCol2' => 'col-sm-4',
+                'flexform_mdCol2' => 'col-md-4',
+                'flexform_lgCol2' => '',
+                'flexform_xlCol2' => '',
+                'flexform_col32class' => 'second-col',
+                'flexform_xsCol3' => 'col-12',
+                'flexform_smCol3' => 'col-sm-4',
+                'flexform_mdCol3' => 'col-md-4',
+                'flexform_lgCol3' => '',
+                'flexform_xlCol3' => '',
+                'flexform_col33class' => 'third-col',
+            ],
+            'children' => [
+                1 => [
+                    101 => [],
+                    102 => [],
+                    103 => [],
+                ],
+            ],
+            'options' => [],
+            'settings' => [],
+        ]);
+
+        self::assertStringContainsString('class="row align-items-start justify-content-center three-row"', $html);
+        self::assertStringContainsString('class="col-12 col-sm-4 col-md-4   first-col"', $html);
+        self::assertStringContainsString('class="col-12 col-sm-4 col-md-4   second-col"', $html);
+        self::assertStringContainsString('class="col-12 col-sm-4 col-md-4   third-col"', $html);
+    }
+
+    #[Test]
+    public function fourColumnTemplateRendersBootstrapRowAndColumnClasses(): void
+    {
+        $html = $this->render('4cols', [
+            'data' => [
+                'uid' => 3,
+                'flexform_rowValign' => 'align-items-end',
+                'flexform_rowHalign' => 'justify-content-around',
+                'flexform_rowCustom' => 'four-row',
+                'flexform_xsCol1' => 'col-6',
+                'flexform_smCol1' => 'col-sm-3',
+                'flexform_mdCol1' => 'col-md-3',
+                'flexform_lgCol1' => '',
+                'flexform_xlCol1' => '',
+                'flexform_col41class' => 'first-col',
+                'flexform_xsCol2' => 'col-6',
+                'flexform_smCol2' => 'col-sm-3',
+                'flexform_mdCol2' => 'col-md-3',
+                'flexform_lgCol2' => '',
+                'flexform_xlCol2' => '',
+                'flexform_col42class' => 'second-col',
+                'flexform_xsCol3' => 'col-6',
+                'flexform_smCol3' => 'col-sm-3',
+                'flexform_mdCol3' => 'col-md-3',
+                'flexform_lgCol3' => '',
+                'flexform_xlCol3' => '',
+                'flexform_col43class' => 'third-col',
+                'flexform_xsCol4' => 'col-6',
+                'flexform_smCol4' => 'col-sm-3',
+                'flexform_mdCol4' => 'col-md-3',
+                'flexform_lgCol4' => '',
+                'flexform_xlCol4' => '',
+                'flexform_col44class' => 'fourth-col',
+            ],
+            'children' => [
+                1 => [
+                    101 => [],
+                    102 => [],
+                    103 => [],
+                    104 => [],
+                ],
+            ],
+            'options' => [],
+            'settings' => [],
+        ]);
+
+        self::assertStringContainsString('class="row align-items-end justify-content-around four-row"', $html);
+        self::assertStringContainsString('class="col-6 col-sm-3 col-md-3   first-col"', $html);
+        self::assertStringContainsString('class="col-6 col-sm-3 col-md-3   second-col"', $html);
+        self::assertStringContainsString('class="col-6 col-sm-3 col-md-3   third-col"', $html);
+        self::assertStringContainsString('class="col-6 col-sm-3 col-md-3   fourth-col"', $html);
+    }
+
+    #[Test]
     public function accordionTemplateOpensFirstItemWhenConfigured(): void
     {
         $html = $this->render('Accordion', [
