@@ -13,5 +13,7 @@ load_docker_env() {
     ensure_docker_env_file
     set -a
     source .docker/.env
+    USER_ID="${USER_ID:-$(id -u)}"
+    GROUP_ID="${GROUP_ID:-$(id -g)}"
     set +a
 }
