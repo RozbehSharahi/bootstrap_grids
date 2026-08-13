@@ -49,11 +49,13 @@
     "test:clean": "rm -rf public/typo3temp var/typo3temp",
     "cs": "php-cs-fixer fix --dry-run --diff",
     "cs:fix": "php-cs-fixer fix",
-    "post-install-cmd": [
+    "typo3:setup": [
       "vendor/bin/typo3 install:extensionsetupifpossible",
       "vendor/bin/typo3 install:fixfolderstructure",
       "vendor/bin/typo3 cache:flush"
-    ]
+    ],
+    "post-install-cmd": "@typo3:setup",
+    "post-update-cmd": "@typo3:setup"
   },
   "replace": {
     "typo3-ter/bootstrap-grids": "self.version"
