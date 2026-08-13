@@ -34,6 +34,7 @@ RUN apt-get update \
         libzip-dev \
         telnet \
         zip \
+    && git config --system --add safe.directory /var/www/html \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl pdo pdo_mysql mysqli \
     && docker-php-ext-configure gd --with-jpeg --with-freetype \
