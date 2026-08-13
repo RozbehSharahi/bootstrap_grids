@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace Laxap\BootstrapGrids\Tests\Functional;
 
 use PHPUnit\Framework\Attributes\Test;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\View\ViewFactoryData;
 use TYPO3\CMS\Core\View\ViewFactoryInterface;
+use TYPO3\CMS\Fluid\View\StandaloneView;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 final class GridTemplateRenderTest extends FunctionalTestCase
@@ -22,15 +24,6 @@ final class GridTemplateRenderTest extends FunctionalTestCase
     ];
 
     protected bool $initializeDatabase = false;
-
-    protected function setUp(): void
-    {
-        if (!interface_exists(ViewFactoryInterface::class)) {
-            self::markTestSkipped('Fluid render tests need TYPO3 13 ViewFactory.');
-        }
-
-        parent::setUp();
-    }
 
     #[Test]
     public function twoColumnTemplateRendersBootstrapRowAndColumnClasses(): void
@@ -146,18 +139,35 @@ final class GridTemplateRenderTest extends FunctionalTestCase
      */
     private function render(string $template, array $variables): string
     {
-        $viewFactory = $this->get(ViewFactoryInterface::class);
-        $view = $viewFactory->create(new ViewFactoryData(
-            templateRootPaths: ['EXT:bootstrap_grids/Resources/Private/Templates/Default/'],
-            partialRootPaths: [
-                'EXT:bootstrap_grids/Resources/Private/Partials/',
-                'EXT:gridelements/Resources/Private/Partials/',
-            ],
-            layoutRootPaths: ['EXT:bootstrap_grids/Tests/Functional/Fixtures/Layouts/'],
-        ));
+        $templateRootPaths = ['EXT:bootstrap_grids/Resources/Private/Templates/Default/'];
+        $partialRootPaths = [
+            'EXT:bootstrap_grids/Resources/Private/Partials/',
+            'EXT:gridelements/Resources/Private/Partials/',
+        ];
+        $layoutRootPaths = ['EXT:bootstrap_grids/Tests/Functional/Fixtures/Layouts/'];
+
+        if (interface_exists(ViewFactoryInterface::class)) {
+            $view = $this->get(ViewFactoryInterface::class)->create(new ViewFactoryData(
+                templateRootPaths: $templateRootPaths,
+                partialRootPaths: $partialRootPaths,
+                layoutRootPaths: $layoutRootPaths,
+            ));
+            $view->assignMultiple($variables);
+
+            return $view->render($template);
+        }
+
+        $view = GeneralUtility::makeInstance(StandaloneView::class);
+        $view->setPartialRootPaths($partialRootPaths);
+        $view->setLayoutRootPaths($layoutRootPaths);
+        $view->setTemplatePathAndFilename(
+            GeneralUtility::getFileAbsFileName(
+                'EXT:bootstrap_grids/Resources/Private/Templates/Default/' . $template . '.html'
+            )
+        );
         $view->assignMultiple($variables);
 
-        return $view->render($template);
+        return $view->render();
     }
 
     private function compact(string $html): string
