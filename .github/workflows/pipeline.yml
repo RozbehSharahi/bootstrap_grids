@@ -130,6 +130,21 @@ jobs:
           extensions: intl, mbstring, json, zip, curl
           tools: composer:v2
 
+      - name: Check extension version
+        env:
+          RELEASE_VERSION: ${{ steps.get-version.outputs.version }}
+        run: |
+          manifest_version=$(php -r '
+              $_EXTKEY = getenv("TYPO3_EXTENSION_KEY");
+              require "ext_emconf.php";
+              echo $EM_CONF[$_EXTKEY]["version"] ?? "";
+          ')
+
+          if [[ "$manifest_version" != "$RELEASE_VERSION" ]]; then
+            echo "Tag version ${RELEASE_VERSION} does not match ext_emconf.php version ${manifest_version}."
+            exit 1
+          fi
+
       - name: Install tailor
         run: composer global require typo3/tailor --prefer-dist --no-progress
 
