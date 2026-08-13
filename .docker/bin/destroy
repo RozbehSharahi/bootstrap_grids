@@ -6,6 +6,6 @@ echo "Destroying development environment..."
 .docker/bin/compose down --remove-orphans --volumes --rmi all
 
 echo "Removing generated/copied project files..."
-rm -rf ./config ./database ./public ./var ./vendor ./composer.lock
+rm -rf ./config ./database ./public ./var ./vendor ./composer.lock ./.Build
 
 echo "Done!"
