@@ -11,7 +11,8 @@ if [[ ! -d "$template" ]]; then
 fi
 
 cp -rn "${template}/"* .
-mkdir -p database
+export COMPOSER_CACHE_DIR="${COMPOSER_CACHE_DIR:-/var/www/html/.Build/composer-cache}"
+mkdir -p database "$COMPOSER_CACHE_DIR"
 
 HTTP_PORT="${HTTP_PORT:-8080}"
 site_config="config/sites/main/config.yaml"
