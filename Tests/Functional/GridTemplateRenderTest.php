@@ -23,6 +23,15 @@ final class GridTemplateRenderTest extends FunctionalTestCase
 
     protected bool $initializeDatabase = false;
 
+    protected function setUp(): void
+    {
+        if (!interface_exists(ViewFactoryInterface::class)) {
+            self::markTestSkipped('Fluid render tests need TYPO3 13 ViewFactory.');
+        }
+
+        parent::setUp();
+    }
+
     #[Test]
     public function twoColumnTemplateRendersBootstrapRowAndColumnClasses(): void
     {
