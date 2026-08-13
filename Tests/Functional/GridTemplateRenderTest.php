@@ -232,6 +232,81 @@ final class GridTemplateRenderTest extends FunctionalTestCase
         self::assertStringContainsString('id="nav-c31"', $html);
     }
 
+    #[Test]
+    public function fourTabsTemplateRendersFlexformTitlesAndOmitsUnsetTabs(): void
+    {
+        $html = $this->render('Tabs4', [
+            'data' => [
+                'uid' => 40,
+                'flexform_style' => 'tabs4-style',
+                'flexform_tabTitle1' => 'Alpha',
+                'flexform_tabTitle2' => 'Beta',
+                'flexform_tabTitle3' => 'Gamma',
+                'flexform_tabTitle4' => '',
+            ],
+            'children' => [
+                1 => [
+                    101 => [],
+                    102 => [],
+                    103 => [],
+                ],
+            ],
+            'options' => [],
+            'settings' => [],
+        ]);
+
+        self::assertStringContainsString('class="tabs4-style"', $html);
+        self::assertStringContainsString('class="nav nav-tabs"', $html);
+        self::assertStringContainsString('Alpha', $html);
+        self::assertStringContainsString('Beta', $html);
+        self::assertStringContainsString('Gamma', $html);
+        self::assertStringContainsString('nav-link active', $html);
+        self::assertStringContainsString('id="nav-c40-tab1"', $html);
+        self::assertStringContainsString('id="nav-c40-tab2"', $html);
+        self::assertStringContainsString('id="nav-c40-tab3"', $html);
+        self::assertStringContainsString('tab-pane fade show active', $html);
+        self::assertStringContainsString('id="nav-c40-c1"', $html);
+        self::assertStringNotContainsString('id="nav-c40-tab4"', $html);
+        self::assertStringNotContainsString('id="nav-c40-c4"', $html);
+    }
+
+    #[Test]
+    public function sixTabsTemplateRendersLaterTabsOnlyWhenTitled(): void
+    {
+        $html = $this->render('Tabs6', [
+            'data' => [
+                'uid' => 60,
+                'flexform_style' => 'tabs6-style',
+                'flexform_tabTitle1' => 'One',
+                'flexform_tabTitle2' => 'Two',
+                'flexform_tabTitle3' => '',
+                'flexform_tabTitle4' => '',
+                'flexform_tabTitle5' => '',
+                'flexform_tabTitle6' => 'Six',
+            ],
+            'children' => [
+                1 => [
+                    101 => [],
+                    106 => [],
+                ],
+            ],
+            'options' => [],
+            'settings' => [],
+        ]);
+
+        self::assertStringContainsString('class="tabs6-style"', $html);
+        self::assertStringContainsString('One', $html);
+        self::assertStringContainsString('Two', $html);
+        self::assertStringContainsString('Six', $html);
+        self::assertStringContainsString('nav-link active', $html);
+        self::assertStringContainsString('id="nav-c60-tab1"', $html);
+        self::assertStringContainsString('id="nav-c60-tab2"', $html);
+        self::assertStringContainsString('id="nav-c60-tab6"', $html);
+        self::assertStringNotContainsString('id="nav-c60-tab3"', $html);
+        self::assertStringNotContainsString('id="nav-c60-tab4"', $html);
+        self::assertStringNotContainsString('id="nav-c60-tab5"', $html);
+    }
+
     /**
      * @param array<string, mixed> $variables
      */
