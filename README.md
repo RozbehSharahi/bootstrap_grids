@@ -80,8 +80,10 @@ Before pushing, you can run the same `test` job locally with [act](https://githu
 3. Run
 
    ```bash
-   act -j test --container-architecture linux/amd64
+   act -j test
    ```
+
+   Repo `.actrc` selects the `act` runner image and `linux/amd64` so Apple Silicon does not prompt for an image.
 
 ### Docker scripts
 
