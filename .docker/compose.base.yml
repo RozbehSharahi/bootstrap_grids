@@ -1,0 +1,61 @@
+name: bootstrap-grids
+services:
+  init:
+    image: alpine:latest
+    command: >
+      sh -c "
+        chown ${COMPOSE_USER_ID:-1000}:${COMPOSE_GROUP_ID:-1000} /data/db
+      "
+    volumes:
+      - ${DATA_PATH:-../.data}/db:/data/db
+
+  www:
+    build:
+      context: ..
+      dockerfile: .docker/www/Dockerfile
+      args:
+        USER_ID: ${COMPOSE_USER_ID:-1000}
+        GROUP_ID: ${COMPOSE_GROUP_ID:-1000}
+        TYPO3_VERSION: ${WWW_TYPO3_VERSION:-13}
+      ssh:
+        - default
+    environment:
+      TYPO3_CONTEXT: ${WWW_TYPO3_CONTEXT:-Development/BootstrapGrids/Docker}
+      BASE_URL: ${WWW_BASE_URL:-http://localhost:${WWW_HOST_PORT:-}}
+      XDEBUG_MODE: ${WWW_XDEBUG_MODE:-debug}
+      XDEBUG_CONFIG: client_host=${XDEBUG_HOST:-host} client_port=9003
+      XDEBUG_SESSION: 1
+      PHP_IDE_CONFIG: serverName=bootstrap-grids
+    extra_hosts:
+      - host:host-gateway
+    healthcheck:
+      test: [ "CMD-SHELL", "wget --spider -q http://127.0.0.1/health || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_interval: 1s
+      start_period: 20s
+
+  db:
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    build:
+      context: ..
+      dockerfile: .docker/maria-db/Dockerfile
+      args:
+        USER_ID: ${COMPOSE_USER_ID:-1000}
+        GROUP_ID: ${COMPOSE_GROUP_ID:-1000}
+    shm_size: 128mb
+    environment:
+      MARIADB_USER: db
+      MARIADB_PASSWORD: db
+      MARIADB_ROOT_PASSWORD: db
+      MARIADB_DATABASE: db
+    healthcheck:
+      test: [ "CMD", "healthcheck.sh", "--connect", "--innodb_initialized" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_interval: 1s
+      start_period: 20s

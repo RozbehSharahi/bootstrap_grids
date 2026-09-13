@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+grep -q '^DB_HOST_PORT=' .docker/.env 2>/dev/null || echo "DB_HOST_PORT=$(.docker/bin/_random-number 20000 30000)" >> .docker/.env
+grep -q '^WWW_HOST_PORT=' .docker/.env 2>/dev/null || echo "WWW_HOST_PORT=$(.docker/bin/_random-number 20000 30000)" >> .docker/.env

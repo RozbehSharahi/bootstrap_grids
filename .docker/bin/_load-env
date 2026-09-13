@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+# if we have a docker env => load it
+[ -f .docker/.env ] && . .docker/.env
+
+export CONTEXT="${CONTEXT_FORCED:-${CONTEXT:-dev}}"

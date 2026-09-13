@@ -1,5 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 set -e
 
-.docker/bin/compose up -d --build
+. .docker/bin/_load-env
+
+echo "Context is: ${CONTEXT}"
+
+.docker/bin/compose up -d --build --wait
+.docker/bin/www-composer-fast post-start
+.docker/bin/print-urls

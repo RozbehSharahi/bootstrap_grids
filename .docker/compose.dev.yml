@@ -1,0 +1,13 @@
+services:
+
+  www:
+    ports:
+      - "127.0.0.1:${WWW_HOST_PORT:-80}:80"
+    volumes:
+      - ../:/app
+
+  db:
+    ports:
+      - "127.0.0.1:${DB_HOST_PORT:-3306}:3306"
+    volumes:
+      - ${DATA_PATH:-../.data}/db:/var/lib/mysql

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+.docker/bin/www-ecs --fix
+.docker/bin/compose exec --user=1000:1000 www vendor/bin/phpstan "$@"

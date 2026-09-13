@@ -2,19 +2,8 @@
 
 set -e
 
-if [[ ! -f ".docker/.env" ]]; then
-    echo "Creating file '.env' since it didn't exist: cp .docker/bin/.env.dist .docker/bin/.env"
-    cp .docker/.env.dist .docker/.env
-fi
+. .docker/bin/_load-env
 
-set -a
-source .docker/.env
-set +a
+.docker/bin/create-random-ports
 
-echo "
-Environment...
-  $(if [[ ${TYPO3} ]] ;    then echo 'TYPO3:   ' ${TYPO3}; else echo 'TYPO3: Not set'; fi)
-  $(if [[ ${PHP} ]] ;      then echo 'PHP:     ' ${PHP};   else echo 'PHP: Not set'; fi)
-"
-
-docker compose -f .docker/docker-compose.base.yml "$@"
+docker compose -f .docker/compose.base.yml -f .docker/compose.${CONTEXT}.yml "$@"
