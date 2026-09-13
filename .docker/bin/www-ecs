@@ -1,0 +1,5 @@
+#! /bin/sh
+
+set -e
+
+.docker/bin/compose exec www sh -c "XDEBUG_MODE=off vendor/bin/ecs $*"

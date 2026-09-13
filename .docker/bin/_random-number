@@ -1,0 +1,20 @@
+#!/bin/bash
+# Usage: ./_random-number MIN MAX
+set -eu
+
+[ "$#" -eq 2 ] || { echo "Usage: $0 MIN MAX" >&2; exit 2; }
+
+min="$1"
+max="$2"
+
+# Random source: $RANDOM if available, else /dev/urandom, else current time.
+if [ -n "${RANDOM-}" ]; then
+  r="$RANDOM"
+elif [ -r /dev/urandom ]; then
+  r="$(od -An -N2 -t u2 /dev/urandom | tr -d ' ')"
+else
+  r="$(date +%s)"
+fi
+
+range=$((max - min + 1))
+echo $((min + (r % range)))

@@ -36,27 +36,44 @@ We would love your help! We have Docker set up with helper scripts to make contr
 1. Install [Docker](https://www.docker.com/).
 2. Fork the [boostrap_grids repository](https://github.com/laxap/bootstrap_grids.git).
 3. Clone the forked repository (e.g. `git clone https://github.com/your_username/bootstrap_grids.git`), change into the directory, then checkout a branch or create desired branch.
-4. OPTIONAL: Do `cp -i .docker/.env.dist .docker/.env` before the next step if you need anything other than default versions of TYPO3/PHP. Otherwise `.docker/.env.dist` will automatically be copied to `.docker/.env` if it doesn't already exist and you can skip this step.
+4. OPTIONAL: Set `WWW_TYPO3_VERSION=12` (or `14`) in `.docker/.env` (create the file if it doesn't exist yet) if you want to test against TYPO3 v12 or v14 instead of the default v13.
 5. OPTIONAL: Start Xdebug if you need to debug PHP code.
-6. Run `.docker/bin/start && .docker/bin/composer install`
-7. Login to http://localhost:8080/typo3 with username `admin` and password `Pass123!`.
+6. Run `.docker/bin/start`.
+7. Login at the printed TYPO3 URL with `admin` / `Password123_`.
 
-_NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is copied to the project root during `.docker/bin/start`, so from that point on you'll need to edit files in their new location to see live changes. When you're done with the install, you can delete the container and those copied files by doing `.docker/bin/clean` or by doing it manually._
+The stack is PHP 8.3 (nginx + php-fpm) with a MariaDB database. On first start, `bootstrap-grids:setup-settings` and `bootstrap-grids:setup-database` (in `Classes/Command`) automatically generate `config/system/settings.php`, a site config, a root page with the required static TypoScript templates already included, an admin backend user, and one example Grid Element per supported layout (2/3/4 columns, tabs, tabs from content elements, accordion) with dummy content, so there is already something to look at on the front page — no manual TYPO3 install-tool wizard or TypoScript setup needed. Ports are randomly assigned per checkout and written to `.docker/.env`; `.docker/bin/start` prints the URLs to use.
+
+_NOTE: `WWW_TYPO3_VERSION=14` builds against gridelements' `ea_14-0` early-access branch (private GitHub repo, priority access). It resolves via Composer only if you personally have access to that repo and have your own GitHub credentials configured locally for Composer (e.g. a `github-oauth` token in your global `auth.json`, or a `COMPOSER_AUTH`/`GITHUB_TOKEN` environment variable) — nothing is or should be committed to this repo for that. Without access, stick to the default v13 or use v12._
+
+Both setup commands refuse to run unless `TYPO3_CONTEXT` starts with `Development/BootstrapGrids/Docker` (the context `.docker/compose.base.yml` sets), so they are inert outside this Docker dev environment.
 
 ![Development Site For Bootstrap Grids](Documentation/Images/DevelopmentSiteForBootstrapGrids.png)
 
+### Switching TYPO3 versions
+
+`WWW_TYPO3_VERSION` is only read when the `www` image is built, so just changing it in `.docker/.env` and running `.docker/bin/start` again won't switch anything if the image already exists. `.docker/bin/reset` is the clean way to switch: it stops the environment, wipes `vendor/`, `public/`, `var/`, `config/`, `composer.lock` and the database volume, then rebuilds and starts fresh against whatever `WWW_TYPO3_VERSION` is currently set to.
+
+```
+WWW_TYPO3_VERSION=12 .docker/bin/reset
+```
+
+(or set `WWW_TYPO3_VERSION` in `.docker/.env` beforehand and just run `.docker/bin/reset` — both work the same way, since it's read via normal Docker Compose variable interpolation). Note that this **wipes the database** — there is no in-place migration between TYPO3 major versions here, each version starts from a fresh install with the example fixtures reseeded.
+
 ### Docker scripts
 
-| Command                                  | Description                                                                                                                                                                                                                  |
-|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `.docker/bin/start`                      | To start dev environment                                                                                                                                                                                                     |
-| `.docker/bin/stop`                       | To stop dev environment                                                                                                                                                                                                      |
-| `.docker/bin/clean`                      | Does `docker compose down --remove-orphans` and deletes generated/copied files (except `.docker/.env`) and resets the database to its initial state using the starting point in `.docker/templates/database/database.sqlite` |
-| `.docker/bin/logs`                       | Runs `.docker/bin/compose logs -f`                                                                                                                                                                                           |
-| `.docker/bin/cli`                        | Enter the dev environment container                                                                                                                                                                                          |
-| `.docker/bin/composer [command]`         | Runs `composer` commands (e.g. `./docker/bin/composer install`)                                                                                                                                                              |
-| `.docker/bin/typo3 [command]`            | Runs `vendor/bin/typo3` commands (e.g. `.docker/bin/typo3 cache:flush`)                                                                                                                                                      |
-| `.docker/bin/compose [command]`          | Runs `docker compose` commands (e.g. `./docker/bin/compose up -d --build`)                                                                                                                                                   |
+| Command                          | Description                                                                                     |
+|-----------------------------------|---------------------------------------------------------------------------------------------------|
+| `.docker/bin/start`              | Build and start the dev environment, then run the post-start setup (settings/database/cache)      |
+| `.docker/bin/stop`               | Stop the dev environment                                                                          |
+| `.docker/bin/reset`              | Stop, wipe `vendor/`, `public/`, `var/`, `config/`, `composer.lock` and the DB volume, then start again |
+| `.docker/bin/logs`               | Tail logs for all services                                                                        |
+| `.docker/bin/www-logs`           | Tail logs for the `www` service only                                                              |
+| `.docker/bin/www-cli`            | Enter the `www` container                                                                         |
+| `.docker/bin/www-composer [cmd]` | Runs `composer` commands inside the container (e.g. `.docker/bin/www-composer install`)           |
+| `.docker/bin/www-console [cmd]`  | Runs `vendor/bin/typo3` commands (e.g. `.docker/bin/www-console cache:flush`)                      |
+| `.docker/bin/www-cache-clear`    | Flushes the TYPO3 cache                                                                           |
+| `.docker/bin/print-urls`         | Prints the frontend/backend URLs and login credentials                                            |
+| `.docker/bin/compose [command]`  | Runs `docker compose` commands directly (e.g. `.docker/bin/compose up -d --build`)                |
 
 ## Change log
 
@@ -64,5 +81,6 @@ _NOTE: The `.docker/templates/[typo3-version-specified-in-.env]` directory is co
 
 ## Special thanks
 
+- [Charles Coleman](https://github.com/outdoorsman) Constantly pushing me on continuation and supporting me on updates
 - [Daniel Corn](https://www.cundd.net): Defining the grids via pageTS brings a lot of advantages.
 - [Josef Körner](https://www.brandical.de): For reducing the accordion TypoScript setup.

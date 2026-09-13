@@ -1,0 +1,3 @@
+#!/bin/bash
+
+.docker/bin/compose exec --user=1000:1000 www sh -c "XDEBUG_MODE=off vendor/bin/typo3 cache:flush"

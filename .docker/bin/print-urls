@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+. .docker/bin/_load-env
+
+echo ""
+echo "Frontend http://localhost:${WWW_HOST_PORT}"
+echo "TYPO3 http://localhost:${WWW_HOST_PORT}/typo3 (admin:Password123_)"
+echo "Have fun!"

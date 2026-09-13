@@ -1,10 +1,13 @@
 .idea
 /composer.lock
+/composer-*.lock
 /vendor
 /public
 /var
 /config
 /.docker/.env
+/.data/*
+!/.data/.gitkeep
 /database
 /database/database.v12.sql
 /zzz_*

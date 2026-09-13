@@ -1,0 +1,12 @@
+#! /bin/sh
+
+set -e
+
+.docker/bin/stop
+rm -rf ./.data/db
+rm -rf ./public
+rm -rf ./vendor
+rm -rf ./var
+rm -rf ./config
+rm -rf ./composer.lock
+.docker/bin/start

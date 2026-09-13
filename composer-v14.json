@@ -21,9 +21,9 @@
     "issues": "https://github.com/laxap/bootstrap_grids/issues"
   },
   "require": {
-    "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
-    "typo3/cms-core": "^12 || ^13 || ^14",
-    "gridelementsteam/gridelements": "^12 || ^13 || dev-ea_14-0"
+    "php": "^8.3 || ^8.4",
+    "typo3/cms-core": "^14",
+    "gridelementsteam/gridelements": "dev-ea_14-0"
   },
   "repositories": [
     {
@@ -33,13 +33,13 @@
   ],
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "typo3/cms-install": "^12 || ^13 || ^14",
-    "typo3/cms-setup": "^12 || ^13 || ^14",
-    "typo3/cms-tstemplate": "^12 || ^13 || ^14",
-    "typo3/cms-fluid": "^12 || ^13 || ^14",
-    "typo3/cms-fluid-styled-content": "^12 || ^13 || ^14",
-    "typo3/cms-filelist": "^12 || ^13 || ^14",
-    "typo3/cms-lowlevel": "^12 || ^13 || ^14",
+    "typo3/cms-install": "^14",
+    "typo3/cms-setup": "^14",
+    "typo3/cms-tstemplate": "^14",
+    "typo3/cms-fluid": "^14",
+    "typo3/cms-fluid-styled-content": "^14",
+    "typo3/cms-filelist": "^14",
+    "typo3/cms-lowlevel": "^14",
     "helhum/typo3-console": "^8.2"
   },
   "scripts": {
@@ -66,7 +66,7 @@
     "typo3/cms": {
       "extension-key": "bootstrap_grids"
     }
-},
+  },
   "config": {
     "allow-plugins": {
       "typo3/cms-composer-installers": true,
