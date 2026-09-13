@@ -25,12 +25,6 @@
     "typo3/cms-core": "^12 || ^13 || ^14",
     "gridelementsteam/gridelements": "^12 || ^13 || dev-ea_14-0"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/CodersCare/gridelements_EA"
-    }
-  ],
   "require-dev": {
     "roave/security-advisories": "dev-latest",
     "typo3/cms-install": "^12 || ^13 || ^14",
@@ -71,10 +65,6 @@
     "allow-plugins": {
       "typo3/cms-composer-installers": true,
       "typo3/class-alias-loader": true
-    },
-    "preferred-install": {
-      "gridelementsteam/gridelements": "source",
-      "*": "dist"
     }
   }
 }
